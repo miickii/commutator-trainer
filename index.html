@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubik's Cube Commutator Trainer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Start Screen -->
+    <div id="start-screen" class="screen active">
+        <h1>Rubik's Cube Commutator Trainer</h1>
+        <form id="start-form">
+            <!-- Commutator Type Selection -->
+            <div class="form-group">
+                <label>Select Commutator Type:</label><br>
+                <input type="radio" id="edge" name="commutator-type" value="edge" checked>
+                <label for="edge">Edge</label><br>
+                <input type="radio" id="corner" name="commutator-type" value="corner">
+                <label for="corner">Corner</label>
+            </div>
+
+            <!-- Starting Letters Input -->
+            <div class="form-group">
+                <label for="letters">Enter Starting Letters (e.g., ASJ):</label><br>
+                <input type="text" id="letters" name="letters" required>
+            </div>
+
+            <!-- Time Threshold Input -->
+            <div class="form-group">
+                <label for="threshold">Set Time Threshold (seconds):</label><br>
+                <input type="number" id="threshold" name="threshold" min="1" step="0.1" required>
+            </div>
+
+            <!-- Number of Pairs per Step Input -->
+            <div class="form-group">
+                <label for="num-pairs">Number of Pairs per Step:</label><br>
+                <input type="number" id="num-pairs" name="num-pairs" min="1" value="1" required>
+            </div>
+
+            <!-- Commutator Display Option -->
+            <div class="form-group">
+                <input type="checkbox" id="show-comm" name="show-comm">
+                <label for="show-comm">Show Commutator After First Action</label>
+            </div>
+
+            <!-- Start Button -->
+            <button type="submit">Start Practice</button>
+        </form>
+    </div>
+
+    <!-- Practice Screen -->
+    <div id="practice-screen" class="screen">
+        <!-- Progress Bar -->
+        <div id="progress-container">
+            <progress id="progress-bar" value="0" max="100"></progress>
+        </div>
+
+        <!-- Pair Display -->
+        <div id="pair-display">
+            <!-- Pairs or Commutators will be dynamically inserted here -->
+        </div>
+
+        <!-- Timer -->
+        <div id="timer">00:00.00</div>
+
+        <!-- Instructions -->
+        <div id="instructions">Instructions will appear here.</div>
+
+        <!-- Next Button for Mobile Interaction -->
+        <button id="next-button" style="display: none;">Next</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

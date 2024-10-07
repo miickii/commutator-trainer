@@ -1,0 +1,342 @@
+// script.js
+
+// Global Variables
+let commutators = [];
+let threshold = 4;
+let numPairsPerStep = 1;
+let mode = 'edge';
+let showCommutator = false;
+let currentStep = 0;
+let totalSteps = 0;
+let results = [];
+let toRepeat = [];
+let timerInterval = null;
+let startTime = null;
+let waitingForSecondAction = false;
+
+// DOM Elements
+const startScreen = document.getElementById('start-screen');
+const practiceScreen = document.getElementById('practice-screen');
+const startForm = document.getElementById('start-form');
+const progressBar = document.getElementById('progress-bar');
+const pairDisplay = document.getElementById('pair-display');
+const timerDisplay = document.getElementById('timer');
+const instructions = document.getElementById('instructions');
+const nextButton = document.getElementById('next-button');
+
+// Event Listeners
+startForm.addEventListener('submit', startPractice);
+nextButton.addEventListener('click', handleNext);
+
+// Function to Start Practice
+function startPractice(event) {
+    event.preventDefault();
+
+    // Get Form Values
+    mode = document.querySelector('input[name="commutator-type"]:checked').value;
+    const letters = document.getElementById('letters').value.trim().toUpperCase();
+    threshold = parseFloat(document.getElementById('threshold').value);
+    numPairsPerStep = parseInt(document.getElementById('num-pairs').value);
+    showCommutator = document.getElementById('show-comm').checked;
+
+    // Input Validation
+    if (!/^[A-Z]+$/.test(letters)) {
+        alert('Please enter valid starting letters containing only A-Z.');
+        return;
+    }
+
+    if (isNaN(threshold) || threshold <= 0) {
+        alert('Please enter a valid positive number for the time threshold.');
+        return;
+    }
+
+    if (isNaN(numPairsPerStep) || numPairsPerStep <= 0) {
+        alert('Please enter a valid positive integer for the number of pairs per step.');
+        return;
+    }
+
+    const startingLetters = new Set(letters);
+
+    // Load Commutators
+    const jsonFile = mode === 'edge' ? 'processed_edge_commutators.json' : 'processed_corner_commutators.json';
+
+    fetch(jsonFile)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Failed to load ${jsonFile}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            commutators = Object.keys(data)
+                .filter(key => startingLetters.has(key[0].toUpperCase()))
+                .map(key => ({
+                    pair: key,
+                    setup: data[key].setup || 'N/A',
+                    algorithm: data[key].algorithm || 'N/A',
+                    words: data[key].words || 'N/A',
+                    commutator: data[key].commutator || 'N/A'
+                }));
+
+            if (commutators.length === 0) {
+                alert(`No commutators found starting with letters: ${Array.from(startingLetters).join(', ')}`);
+                return;
+            }
+
+            if (numPairsPerStep > commutators.length) {
+                alert(`Number of pairs per step (${numPairsPerStep}) exceeds total available pairs (${commutators.length}). All pairs will be shown in one step.`);
+                numPairsPerStep = commutators.length;
+            }
+
+            // Initialize Training Data
+            commutators = shuffleArray(commutators);
+            totalSteps = Math.ceil(commutators.length / numPairsPerStep);
+            progressBar.max = totalSteps;
+            progressBar.value = 0;
+            currentStep = 0;
+            results = [];
+            toRepeat = [];
+
+            // Show Practice Screen
+            startScreen.classList.remove('active');
+            practiceScreen.classList.add('active');
+
+            // Start First Step
+            showNextStep();
+            startTimer();
+        })
+        .catch(error => {
+            alert(error.message);
+        });
+}
+
+// Function to Shuffle Array
+function shuffleArray(array) {
+    return array.sort(() => Math.random() - 0.5);
+}
+
+// Function to Show Next Step
+function showNextStep() {
+    if (currentStep >= totalSteps) {
+        endTraining();
+        return;
+    }
+
+    // Clear Previous Display
+    pairDisplay.innerHTML = '';
+    instructions.innerHTML = '';
+    nextButton.style.display = 'none';
+    waitingForSecondAction = false;
+
+    // Determine Pairs for Current Step
+    const startIdx = currentStep * numPairsPerStep;
+    const endIdx = startIdx + numPairsPerStep;
+    const currentPairs = commutators.slice(startIdx, endIdx);
+
+    // Display Each Pair or Words
+    currentPairs.forEach(comm => {
+        const displayText = mode === 'edge' ? comm.pair : comm.words;
+        const pairElement = document.createElement('div');
+        pairElement.classList.add('pair');
+        pairElement.textContent = displayText;
+        pairDisplay.appendChild(pairElement);
+    });
+
+    // Update Progress Bar
+    progressBar.value = currentStep;
+
+    // Update Instructions
+    if (showCommutator) {
+        instructions.textContent = 'Press Spacebar (or "Show Commutator" button) to display commutator.';
+    } else {
+        instructions.textContent = 'Press Spacebar (or "Next" button) to move to the next step.';
+    }
+}
+
+// Function to Start Timer
+function startTimer() {
+    startTime = Date.now();
+    timerInterval = setInterval(updateTimer, 100);
+}
+
+// Function to Update Timer Display
+function updateTimer() {
+    const elapsed = (Date.now() - startTime) / 1000; // in seconds
+    const minutes = Math.floor(elapsed / 60);
+    const seconds = (elapsed % 60).toFixed(2);
+    timerDisplay.textContent = `${pad(minutes)}:${pad(seconds)}`;
+
+    // Update Timer Color Based on Threshold
+    if (elapsed < threshold) {
+        timerDisplay.style.color = 'green';
+    } else if (elapsed < threshold * 1.5) {
+        timerDisplay.style.color = 'orange';
+    } else {
+        timerDisplay.style.color = 'red';
+    }
+}
+
+// Function to Pad Numbers with Leading Zeros
+function pad(num) {
+    return num.toString().padStart(2, '0');
+}
+
+// Function to Stop Timer
+function stopTimer() {
+    clearInterval(timerInterval);
+}
+
+// Function to Handle Spacebar Press or Next Button Click
+function handleNext() {
+    if (showCommutator) {
+        if (!waitingForSecondAction) {
+            // Show Commutator
+            stopTimer();
+            displayCommutator();
+            waitingForSecondAction = true;
+            instructions.textContent = 'Press Next to move to the next step.';
+            nextButton.style.display = 'inline-block';
+        } else {
+            // Record Result and Move to Next Step
+            recordResult();
+            currentStep++;
+            showNextStep();
+            startTimer();
+        }
+    } else {
+        // Single Action: Stop Timer and Move to Next Step
+        stopTimer();
+        recordResult();
+        currentStep++;
+        showNextStep();
+        startTimer();
+    }
+}
+
+// Function to Handle Spacebar Press
+document.addEventListener('keydown', function(event) {
+    if (event.code === 'Space') {
+        event.preventDefault(); // Prevent default spacebar scrolling
+        handleNext();
+    }
+});
+
+// Function to Display Commutator
+function displayCommutator() {
+    const startIdx = currentStep * numPairsPerStep;
+    const endIdx = startIdx + numPairsPerStep;
+    const currentPairs = commutators.slice(startIdx, endIdx);
+
+    pairDisplay.innerHTML = '';
+    currentPairs.forEach(comm => {
+        const commText = comm.commutator;
+        const commElement = document.createElement('div');
+        commElement.classList.add('commutator');
+        commElement.textContent = commText;
+        commElement.style.color = '#00FF00'; // Green color
+        pairDisplay.appendChild(commElement);
+    });
+}
+
+// Function to Record Results
+function recordResult() {
+    const elapsed = (Date.now() - startTime) / 1000; // in seconds
+    const startIdx = currentStep * numPairsPerStep;
+    const endIdx = startIdx + numPairsPerStep;
+    const currentPairs = commutators.slice(startIdx, endIdx);
+
+    currentPairs.forEach(comm => {
+        results.push({ pair: comm.pair, time: elapsed.toFixed(2) });
+        if (elapsed > threshold) {
+            toRepeat.push(comm);
+        }
+    });
+}
+
+// Function to End Training
+function endTraining() {
+    stopTimer();
+    progressBar.value = totalSteps;
+    instructions.textContent = 'Training Completed!';
+    pairDisplay.innerHTML = generateStatistics();
+    nextButton.style.display = 'none';
+
+    // Optionally, Prompt to Repeat Challenging Pairs
+    if (toRepeat.length > 0) {
+        const repeat = confirm(`Training Completed!\n\nDo you want to repeat the ${toRepeat.length} pairs that exceeded ${threshold} seconds?`);
+        if (repeat) {
+            commutators = shuffleArray(toRepeat);
+            totalSteps = Math.ceil(commutators.length / numPairsPerStep);
+            progressBar.max = totalSteps;
+            progressBar.value = 0;
+            currentStep = 0;
+            results = [];
+            toRepeat = [];
+            showNextStep();
+            startTimer();
+            return;
+        }
+    }
+
+    // Save Results as CSV
+    downloadCSV(results, 'commutator_training_results.csv');
+
+    // Optionally, Redirect to Start Screen
+    // setTimeout(() => {
+    //     practiceScreen.classList.remove('active');
+    //     startScreen.classList.add('active');
+    // }, 5000);
+}
+
+// Function to Generate Statistics
+function generateStatistics() {
+    if (results.length === 0) {
+        return "No commutators completed.";
+    }
+
+    const times = results.map(r => parseFloat(r.time));
+    const avgTime = (times.reduce((a, b) => a + b, 0) / times.length).toFixed(2);
+    const medianTime = calculateMedian(times).toFixed(2);
+    const minTime = Math.min(...times).toFixed(2);
+    const maxTime = Math.max(...times).toFixed(2);
+
+    return `
+        <h2>Training Completed!</h2>
+        <p>Total Pairs: ${results.length}</p>
+        <p>Average Time: ${avgTime} seconds</p>
+        <p>Median Time: ${medianTime} seconds</p>
+        <p>Minimum Time: ${minTime} seconds</p>
+        <p>Maximum Time: ${maxTime} seconds</p>
+        <p>Results have been downloaded as a CSV file.</p>
+    `;
+}
+
+// Function to Calculate Median
+function calculateMedian(arr) {
+    const sorted = arr.slice().sort((a, b) => a - b);
+    const mid = Math.floor(sorted.length / 2);
+    return sorted.length % 2 !== 0 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
+}
+
+// Function to Download CSV
+function downloadCSV(data, filename) {
+    const csvRows = [];
+    const headers = ['Letter Pair', 'Time Taken (seconds)'];
+    csvRows.push(headers.join(','));
+
+    data.forEach(row => {
+        csvRows.push([row.pair, row.time].join(','));
+    });
+
+    const csvString = csvRows.join('\n');
+    const blob = new Blob([csvString], { type: 'text/csv' });
+    const url = window.URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.setAttribute('hidden', '');
+    a.setAttribute('href', url);
+    a.setAttribute('download', filename);
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}

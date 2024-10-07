@@ -1,0 +1,1514 @@
+{
+  "DF": {
+    "commutator": "[Lw': [R' D2 R, U]]",
+    "words": "Duft"
+  },
+  "FD": {
+    "commutator": "[Lw': [U, R' D2 R]]",
+    "words": "Fed (tyk)"
+  },
+  "DA": {
+    "commutator": "[Lw D: [R' D' R, U]]",
+    "words": "大, stor"
+  },
+  "AD": {
+    "commutator": "[Lw D: [U, R' D' R]]",
+    "words": "Adiós, adresse, Adolf Hitler"
+  },
+  "DK": {
+    "commutator": "[R: [U, R D R']]",
+    "words": "Dukke, Doktor"
+  },
+  "KD": {
+    "commutator": "[R: [R D R', U]]",
+    "words": "Kød, at kede sig"
+  },
+  "DL": {
+    "commutator": "[R': [R' D' R, U']]",
+    "words": "Dårlig, 大楼 🏢, Dele"
+  },
+  "LD": {
+    "commutator": "[R': [U', R' D' R]]",
+    "words": "Luder"
+  },
+  "DJ": {
+    "commutator": "[R' D R, U]",
+    "words": "En DJ, Dejlig"
+  },
+  "JD": {
+    "commutator": "[U, R' D R]",
+    "words": "Jøde"
+  },
+  "DI": {
+    "commutator": "[U', R D' R']",
+    "words": "低 - lav, Dansk Industri"
+  },
+  "ID": {
+    "commutator": "[R D' R', U']",
+    "words": "ID (kort)"
+  },
+  "DG": {
+    "commutator": "[R: [U2, R D R']]",
+    "words": "Dag"
+  },
+  "GD": {
+    "commutator": "[R: [R D R', U2]]",
+    "words": "Gåde, Gade"
+  },
+  "DH": {
+    "commutator": "[D': [R' D R, U]]",
+    "words": "大海, havet"
+  },
+  "HD": {
+    "commutator": "[D': [U, R' D R]]",
+    "words": "Hade, HD - high definition"
+  },
+  "DE": {
+    "commutator": "[D: [R' D' R, U]]",
+    "words": "Delusional, Tyskland"
+  },
+  "ED": {
+    "commutator": "[D: [U, R' D' R]]",
+    "words": "Edderkop"
+  },
+  "DN": {
+    "commutator": "[U', R D R']",
+    "words": "Dansker"
+  },
+  "ND": {
+    "commutator": "[R D R', U']",
+    "words": "Nyde, Nød, Nørd"
+  },
+  "DM": {
+    "commutator": "[R' D' R, U]",
+    "words": "Dame(r), Dam, Dum"
+  },
+  "MD": {
+    "commutator": "[U, R' D' R]",
+    "words": "Mad, mødde"
+  },
+  "DT": {
+    "commutator": "[R': [R' D' R, U2]]",
+    "words": "Data, Datamatiker"
+  },
+  "TD": {
+    "commutator": "[R': [U2, R' D' R]]",
+    "words": "Tid"
+  },
+  "DR": {
+    "commutator": "[R' D2 R, U]",
+    "words": "Drømme, DRTV"
+  },
+  "RD": {
+    "commutator": "[U, R' D2 R]",
+    "words": "Rød, at redde, en ræde"
+  },
+  "DO": {
+    "commutator": "[D: [U', R D' R']]",
+    "words": "JUST DO IT, 多, DODO"
+  },
+  "OD": {
+    "commutator": "[D: [R D' R', U']]",
+    "words": "Over dosis, Odder"
+  },
+  "DB": {
+    "commutator": "[x': [D2, R U R']]",
+    "words": "Dobby"
+  },
+  "BD": {
+    "commutator": "[x': [R U R', D2]]",
+    "words": "Bade"
+  },
+  "DX": {
+    "commutator": "[U' R' D R: [R D' R', U]]",
+    "words": "Dexter (morder)"
+  },
+  "XD": {
+    "commutator": "[U' R' D R: [U, R D' R']]",
+    "words": "兄弟, bror"
+  },
+  "DV": {
+    "commutator": "[U R D' R': [U', R' D R]]",
+    "words": "Diva, Doven"
+  },
+  "VD": {
+    "commutator": "[U R D' R': [R' D R, U']]",
+    "words": "Våd, at væde"
+  },
+  "DU": {
+    "commutator": "[x: [R' U' R, D2]]",
+    "words": "En dug, du (dig)"
+  },
+  "UD": {
+    "commutator": "[x: [D2, R' U' R]]",
+    "words": "Udefor"
+  },
+  "AF": {
+    "commutator": "[R' D'U': [R' D R, U']]",
+    "words": "Afghanistan, Afrika"
+  },
+  "FA": {
+    "commutator": "[R' D'U': [U', R' D R]]",
+    "words": "Far"
+  },
+  "AK": {
+    "commutator": "[U' R: [R D R', U2]]",
+    "words": "Akrobat, AK-47, Aktier"
+  },
+  "KA": {
+    "commutator": "[U' R: [U2, R D R']]",
+    "words": "Kage"
+  },
+  "AJ": {
+    "commutator": "[R' D R, U']",
+    "words": "Ajax"
+  },
+  "JA": {
+    "commutator": "[U', R' D R]",
+    "words": "Ja"
+  },
+  "AI": {
+    "commutator": "[U': [R D' R', U']]",
+    "words": "AI, Kunstig intelligens"
+  },
+  "IA": {
+    "commutator": "[U': [U', R D' R']]",
+    "words": "I alt, IDA (forening)"
+  },
+  "AH": {
+    "commutator": "[D': [R' D R, U']]",
+    "words": "Ahh,"
+  },
+  "HA": {
+    "commutator": "[D': [U', R' D R]]",
+    "words": "Griner - HAHAHA"
+  },
+  "AE": {
+    "commutator": "[D: [R' D' R, U']]",
+    "words": "at age"
+  },
+  "EA": {
+    "commutator": "[D: [U', R' D' R]]",
+    "words": "EA games"
+  },
+  "AP": {
+    "commutator": "[U' R': [U2, R' D' R]]",
+    "words": "App"
+  },
+  "PA": {
+    "commutator": "[U' R': [R' D' R, U2]]",
+    "words": "怕, bange, pasta"
+  },
+  "AN": {
+    "commutator": "[U': [R D R', U']]",
+    "words": "HC Andersen"
+  },
+  "NA": {
+    "commutator": "[U': [U', R D R']]",
+    "words": "Nazi"
+  },
+  "AM": {
+    "commutator": "[R' D' R, U']",
+    "words": "Arm, Amager"
+  },
+  "MA": {
+    "commutator": "[U', R' D' R]",
+    "words": "马 - hest"
+  },
+  "AS": {
+    "commutator": "[U' R: [R D R', U]]",
+    "words": "暗示 (anshi - hint), Aske"
+  },
+  "SA": {
+    "commutator": "[U' R: [U, R D R']]",
+    "words": "Sexual assault"
+  },
+  "AT": {
+    "commutator": "[U' R': [U', R' D' R]]",
+    "words": "Attack"
+  },
+  "TA": {
+    "commutator": "[U' R': [R' D' R, U']]",
+    "words": "Tarzan, Teaching assistance"
+  },
+  "AR": {
+    "commutator": "[R' D2 R, U']",
+    "words": "Ar (sår)"
+  },
+  "RA": {
+    "commutator": "[U', R' D2 R]",
+    "words": "Rar"
+  },
+  "AO": {
+    "commutator": "[D': [R' D' R, U']]",
+    "words": "Aolong"
+  },
+  "OA": {
+    "commutator": "[D': [U', R' D' R]]",
+    "words": "Oase"
+  },
+  "AB": {
+    "commutator": "[U' x': [R U R', D2]]",
+    "words": "Abe, ABBA"
+  },
+  "BA": {
+    "commutator": "[U' x': [D2, R U R']]",
+    "words": "八 - 8, en bager, at bage"
+  },
+  "AX": {
+    "commutator": "[D R D' R': [R' D R, U']]",
+    "words": "Ax (økse)"
+  },
+  "XA": {
+    "commutator": "[D R D' R': [U', R' D R]]",
+    "words": "西安"
+  },
+  "AV": {
+    "commutator": "[R D' R': [R' D R, U']]",
+    "words": "AV!"
+  },
+  "VA": {
+    "commutator": "[R D' R': [U', R' D R]]",
+    "words": "Voice actor"
+  },
+  "AU": {
+    "commutator": "[R' D' R : [R U' R', D]]",
+    "words": "Audi, Australien"
+  },
+  "UA": {
+    "commutator": "[R' D' R: [D, R U' R']]",
+    "words": "Uartig"
+  },
+  "FL": {
+    "commutator": "[F: [U2, R' D' R]]",
+    "words": "Flad, flåt, flot, falde, Falsk"
+  },
+  "LF": {
+    "commutator": "[F: [R' D' R, U2]]",
+    "words": "Luffy"
+  },
+  "FJ": {
+    "commutator": "[R' D R, U2]",
+    "words": "at feje, fejl"
+  },
+  "JF": {
+    "commutator": "[U2, R' D R]",
+    "words": "Jeff (Jeffrey Dahmer)"
+  },
+  "FI": {
+    "commutator": "[U': [R D' R', U2]]",
+    "words": "Fie (Luca)"
+  },
+  "IF": {
+    "commutator": "[U': [U2, R D' R']]",
+    "words": "衣服"
+  },
+  "FG": {
+    "commutator": "[Lw': [U2, R' D2 R]]",
+    "words": "Faggot"
+  },
+  "GF": {
+    "commutator": "[Lw': [R' D2 R, U2]]",
+    "words": "Gift"
+  },
+  "FH": {
+    "commutator": "[DU': [R D R', U2]]",
+    "words": "Flash (karakter)"
+  },
+  "HF": {
+    "commutator": "[DU': [U2, R D R']]",
+    "words": "HF - uddanelse, Høffelig"
+  },
+  "FE": {
+    "commutator": "[U'D': [R D' R', U2]]",
+    "words": "en fe"
+  },
+  "EF": {
+    "commutator": "[U'D': [U2, R D' R']]",
+    "words": "Effekt"
+  },
+  "FP": {
+    "commutator": "[R D R': [R' D2 R, U2]]",
+    "words": "Fappe"
+  },
+  "PF": {
+    "commutator": "[R D R': [U2, R' D2 R]]",
+    "words": "PF (DTU), Parfume, Pifte"
+  },
+  "FN": {
+    "commutator": "[U': [R D R', U2]]",
+    "words": "Fanta"
+  },
+  "NF": {
+    "commutator": "[U': [U2, R D R']]",
+    "words": "NF - sanger, at nerfe, nerf pistol"
+  },
+  "FM": {
+    "commutator": "[R' D' R, U2]",
+    "words": "Familie"
+  },
+  "MF": {
+    "commutator": "[U2, R' D' R]",
+    "words": "Muffin"
+  },
+  "FS": {
+    "commutator": "[R' D': [U2, R' D R]]",
+    "words": "Fest, fis"
+  },
+  "SF": {
+    "commutator": "[R' D': [R' D R, U2]]",
+    "words": "Sofa, Surfe"
+  },
+  "FR": {
+    "commutator": "[R' D2 R, U2]",
+    "words": "Fryse, Fri"
+  },
+  "RF": {
+    "commutator": "[U2, R' D2 R]",
+    "words": "Refleks, Reform, Riffel"
+  },
+  "FO": {
+    "commutator": "[U' D: [R D' R', U2]]",
+    "words": "佛 (fo - buddha)"
+  },
+  "OF": {
+    "commutator": "[U' D: [U2, R D' R']]",
+    "words": "Only Fans"
+  },
+  "FB": {
+    "commutator": "[R F' R' U': [R D R', U2]]",
+    "words": "Facebook, Fobi (bange for noget)"
+  },
+  "BF": {
+    "commutator": "[R F' R' U': [U2, R D R']]",
+    "words": "BFF, Bøf, Buffet"
+  },
+  "FX": {
+    "commutator": "[D R D' R': [R' D R, U2]]",
+    "words": "Fix (at fikse, drug addiction fix)"
+  },
+  "XF": {
+    "commutator": "[D R D' R': [U2, R' D R]]",
+    "words": "幸福"
+  },
+  "FV": {
+    "commutator": "[R D' R': [R' D R, U2]]",
+    "words": "en farve, at farve"
+  },
+  "VF": {
+    "commutator": "[R D' R': [U2, R' D R]]",
+    "words": "Vifter"
+  },
+  "FU": {
+    "commutator": "[D' R D' R': [R' D R, U2]]",
+    "words": "Fuck"
+  },
+  "UF": {
+    "commutator": "[D' R D' R': [U2, R' D R]]",
+    "words": "UFO"
+  },
+  "KL": {
+    "commutator": "[L, U' R' U]",
+    "words": "Kilde, Koldt"
+  },
+  "LK": {
+    "commutator": "[U' R' U, L]",
+    "words": "Lækker, Luksus"
+  },
+  "KJ": {
+    "commutator": "[U R' U': [R' D R, U]]",
+    "words": "Kejser"
+  },
+  "JK": {
+    "commutator": "[U R' U': [U, R' D R]]",
+    "words": "Jakob"
+  },
+  "KI": {
+    "commutator": "[R D': [R D R', U]]",
+    "words": "Kina, Kineser"
+  },
+  "IK": {
+    "commutator": "[R D': [U, R D R']]",
+    "words": "Ikea"
+  },
+  "KG": {
+    "commutator": "[Lw' U: [R D' R', U2]]",
+    "words": "Kenguru, Kegle, Kikkert"
+  },
+  "GK": {
+    "commutator": "[Lw' U: [U2, R D' R']]",
+    "words": "Gak (crazy)"
+  },
+  "KH": {
+    "commutator": "[R U R' : [R' D' R, U']]",
+    "words": "København, Kalaha"
+  },
+  "HK": {
+    "commutator": "[R U R': [U', R' D' R]]",
+    "words": "Hong Kong, Hokus pokus"
+  },
+  "KE": {
+    "commutator": "[R U: [R' D R, U]]",
+    "words": "课 (kursus, modul)"
+  },
+  "EK": {
+    "commutator": "[R U: [U, R' D R]]",
+    "words": "Ekkenberg"
+  },
+  "KP": {
+    "commutator": "[R: [R2' D R2 D' R2', U]]",
+    "words": "Kappe, Kaptajn"
+  },
+  "PK": {
+    "commutator": "[R: [U, R2' D R2 D' R2']]",
+    "words": "Pik, Pakke"
+  },
+  "KN": {
+    "commutator": "[R D: [R D R', U]]",
+    "words": "Cancer, Kanin, Kunde"
+  },
+  "NK": {
+    "commutator": "[R D: [U, R D R']]",
+    "words": "Nord Korea, Nakke"
+  },
+  "KM": {
+    "commutator": "[D' R U : [R' D R, U]]",
+    "words": "Kamera, Kamel, Kæmpe"
+  },
+  "MK": {
+    "commutator": "[D' R U: [U, R' D R]]",
+    "words": "Mcdonalds"
+  },
+  "KS": {
+    "commutator": "[U R': [U', R' D' R]]",
+    "words": "Kasse, Kaste, Kysse, Kiste"
+  },
+  "SK": {
+    "commutator": "[U R': [R' D' R, U']]",
+    "words": "Sok, Sukker"
+  },
+  "KR": {
+    "commutator": "[U R': [U', R' D2 R]]",
+    "words": "Krone, Kæreste"
+  },
+  "RK": {
+    "commutator": "[U R': [R' D2 R, U']]",
+    "words": "Rakket"
+  },
+  "KO": {
+    "commutator": "[R U: [R' D' R, U]]",
+    "words": "en ko"
+  },
+  "OK": {
+    "commutator": "[R U: [U, R' D' R]]",
+    "words": "OK!"
+  },
+  "KB": {
+    "commutator": "[R: [R D2 R', U]]",
+    "words": "Købe"
+  },
+  "BK": {
+    "commutator": "[R: [U, R D2 R']]",
+    "words": "Bakke, Burger King"
+  },
+  "KX": {
+    "commutator": "[D2 R: [R D' R', U]]",
+    "words": "Kex - chokolade"
+  },
+  "XK": {
+    "commutator": "[D2 R: [U, R D' R']]",
+    "words": "下课, 辛苦"
+  },
+  "KV": {
+    "commutator": "[D R: [R D' R', U]]",
+    "words": "Kravle"
+  },
+  "VK": {
+    "commutator": "[D R: [U, R D' R']]",
+    "words": "at vække, viking"
+  },
+  "KU": {
+    "commutator": "[R: [R D' R', U]]",
+    "words": "KU - København universitet"
+  },
+  "UK": {
+    "commutator": "[R: [U, R D' R']]",
+    "words": "England"
+  },
+  "LJ": {
+    "commutator": "[R' U' : [D, R U R']]",
+    "words": "Leje, Lejerbål"
+  },
+  "JL": {
+    "commutator": "[R' U': [R U R', D]]",
+    "words": "Jul 🎄, Hjul"
+  },
+  "LI": {
+    "commutator": "[z: [R' D' R, U2]]",
+    "words": "Lig (mord)"
+  },
+  "IL": {
+    "commutator": "[z: [U2, R' D' R]]",
+    "words": "Ild"
+  },
+  "LH": {
+    "commutator": "[R, U L U']",
+    "words": "Lufthavn"
+  },
+  "HL": {
+    "commutator": "[U L U', R]",
+    "words": "Helved"
+  },
+  "LE": {
+    "commutator": "[D R' U': [D', R U R']]",
+    "words": "Lego"
+  },
+  "EL": {
+    "commutator": "[D R' U': [R U R', D']]",
+    "words": "EL, Elektronik, Elektrisk"
+  },
+  "LP": {
+    "commutator": "[F' U: [R' D R, U2]]",
+    "words": "Loop, Loppemarked, Lopper"
+  },
+  "PL": {
+    "commutator": "[F' U: [U2, R' D R]]",
+    "words": "Pluto, Pille"
+  },
+  "LN": {
+    "commutator": "[R' U': [R' D' R, U2]]",
+    "words": "Land"
+  },
+  "NL": {
+    "commutator": "[R' U': [U2, R' D' R]]",
+    "words": "Nål"
+  },
+  "LM": {
+    "commutator": "[R' U': [D', R U R']]",
+    "words": "at larme, Lomme, at være lam"
+  },
+  "ML": {
+    "commutator": "[R' U': [R U R', D']]",
+    "words": "Machine learning, Måle, Melde"
+  },
+  "LS": {
+    "commutator": "[R', U L U']",
+    "words": "Lys, Læse, Lås"
+  },
+  "SL": {
+    "commutator": "[U L U', R']",
+    "words": "Slår, Slange, sælge"
+  },
+  "LT": {
+    "commutator": "[x': [R U' R', D]]",
+    "words": "Lotto, Let"
+  },
+  "TL": {
+    "commutator": "[x': [D, R U' R']]",
+    "words": "Tælle, Tale"
+  },
+  "LR": {
+    "commutator": "[x': [R U2 R', D]]",
+    "words": "Lære, ler"
+  },
+  "RL": {
+    "commutator": "[x': [D, R U2 R']]",
+    "words": "Rulle, Reinforcement learning"
+  },
+  "LO": {
+    "commutator": "[F: [D', R U R']]",
+    "words": "Lort"
+  },
+  "OL": {
+    "commutator": "[F: [R U R', D']]",
+    "words": "OL (olympiske lege)"
+  },
+  "LB": {
+    "commutator": "[U' R' U: [R U' R', D]]",
+    "words": "Læbbe"
+  },
+  "BL": {
+    "commutator": "[U' R' U: [D, R U' R']]",
+    "words": "Bolle, Blod, Blå, Bælle (en drink)"
+  },
+  "LX": {
+    "commutator": "[R U' R': [R' D' R, U2]]",
+    "words": "流行 - liu xing - popular"
+  },
+  "XL": {
+    "commutator": "[R U' R': [U2, R' D' R]]",
+    "words": "心里, Extra large"
+  },
+  "LV": {
+    "commutator": "[z: [D2, R U R']]",
+    "words": "Lava, lav, larve"
+  },
+  "VL": {
+    "commutator": "[z: [R U R', D2]]",
+    "words": "at vælge"
+  },
+  "LU": {
+    "commutator": "[R2 D2: [R U' R', D]]",
+    "words": "Luca"
+  },
+  "UL": {
+    "commutator": "[R2 D2: [D, R U' R']]",
+    "words": "Ulækker"
+  },
+  "JI": {
+    "commutator": "[z': [R U' R', D']]",
+    "words": "记 (note)"
+  },
+  "IJ": {
+    "commutator": "[z': [D', R U' R']]",
+    "words": "Injektion"
+  },
+  "JG": {
+    "commutator": "[D R': [F2, R D' R' D]]",
+    "words": "Jagt, 价格 - pris, Jeg"
+  },
+  "GJ": {
+    "commutator": "[D R': [R D' R' D, F2]]",
+    "words": "冠军 🏆 - Champion, vinder"
+  },
+  "JH": {
+    "commutator": "[U: [D, R U' R']]",
+    "words": "机会"
+  },
+  "HJ": {
+    "commutator": "[U: [R U' R', D]]",
+    "words": "Hej, Haj"
+  },
+  "JP": {
+    "commutator": "[U R U: [R' D R, U2]]",
+    "words": "Japan, Japansk"
+  },
+  "PJ": {
+    "commutator": "[U R U: [U2, R' D R]]",
+    "words": "en pejs"
+  },
+  "JN": {
+    "commutator": "[R'U: [R U R', D]]",
+    "words": "John Cena"
+  },
+  "NJ": {
+    "commutator": "[R'U: [D, R U R']]",
+    "words": "Negl"
+  },
+  "JM": {
+    "commutator": "[LW: [D2, R U R']]",
+    "words": "Jomfru, Hjem"
+  },
+  "MJ": {
+    "commutator": "[LW: [R U R', D2]]",
+    "words": "Michael Jackson, Mejeri, Møj"
+  },
+  "JS": {
+    "commutator": "[R' U: [R U' R', D]]",
+    "words": "Jesus"
+  },
+  "SJ": {
+    "commutator": "[R' U: [D, R U' R']]",
+    "words": "Sej"
+  },
+  "JT": {
+    "commutator": "[Lw U2: [R D' R', U]]",
+    "words": "Jet fly"
+  },
+  "TJ": {
+    "commutator": "[Lw U2: [U, R D' R']]",
+    "words": "Tegne, Tjener, Tjekke"
+  },
+  "JR": {
+    "commutator": "[UD: [R U' R', D]]",
+    "words": "Jern"
+  },
+  "RJ": {
+    "commutator": "[UD: [D, R U' R']]",
+    "words": "Reje"
+  },
+  "JO": {
+    "commutator": "[R' U': [R U2 R', D]]",
+    "words": "Jord"
+  },
+  "OJ": {
+    "commutator": "[R' U': [D, R U2 R']]",
+    "words": "Øje"
+  },
+  "JX": {
+    "commutator": "[UD R D' : [U', R' D R]]",
+    "words": "家乡 (hjemby)"
+  },
+  "XJ": {
+    "commutator": "[UD R D': [R' D R, U']]",
+    "words": "现金 - cash, mønt"
+  },
+  "JV": {
+    "commutator": "[U R : [D, R U' R']]",
+    "words": "Java"
+  },
+  "VJ": {
+    "commutator": "[U R: [R U' R', D]]",
+    "words": "Vej, at veje"
+  },
+  "JU": {
+    "commutator": "[F': [R U' R', D2]]",
+    "words": "Yogurt"
+  },
+  "UJ": {
+    "commutator": "[F': [D2, R U' R']]",
+    "words": "Ujævn"
+  },
+  "IG": {
+    "commutator": "[Lw': [U2, R' D R]]",
+    "words": "Instagram, Igen"
+  },
+  "GI": {
+    "commutator": "[Lw': [R' D R, U2]]",
+    "words": "Gi (kampsport)"
+  },
+  "IH": {
+    "commutator": "[U R U': [R D' R', U']]",
+    "words": "遗憾 (regret/dissapointment for things beyond personal control)"
+  },
+  "HI": {
+    "commutator": "[U R U': [U', R D' R']]",
+    "words": "Hissig"
+  },
+  "IE": {
+    "commutator": "[D2: [R U R', D']]",
+    "words": "Ide"
+  },
+  "EI": {
+    "commutator": "[D2: [D', R U R']]",
+    "words": "恶意 😈, Eid"
+  },
+  "IP": {
+    "commutator": "[U R: [R D' R', U2]]",
+    "words": "IP man - kung fu"
+  },
+  "PI": {
+    "commutator": "[U R: [U2, R D' R']]",
+    "words": "皮肤, Pi-3.14"
+  },
+  "IN": {
+    "commutator": "[R D': [R' U' R, D2]]",
+    "words": "Indien"
+  },
+  "NI": {
+    "commutator": "[R D': [D2, R' U' R]]",
+    "words": "9"
+  },
+  "IM": {
+    "commutator": "[D2, R U R']",
+    "words": "Imorgen"
+  },
+  "MI": {
+    "commutator": "[R U R', D2]",
+    "words": "Micki"
+  },
+  "IS": {
+    "commutator": "[U' L U, R]",
+    "words": "Is"
+  },
+  "SI": {
+    "commutator": "[R, U' L U]",
+    "words": "En si"
+  },
+  "IT": {
+    "commutator": "[U2 R: [R D' R', U]]",
+    "words": "IT, Italien"
+  },
+  "TI": {
+    "commutator": "[U2 R: [U, R D' R']]",
+    "words": "Tiger"
+  },
+  "IO": {
+    "commutator": "[D': [D', R U R']]",
+    "words": "Idiot"
+  },
+  "OI": {
+    "commutator": "[D': [R U R', D']]",
+    "words": "Oyster"
+  },
+  "IB": {
+    "commutator": "[R D R' D: [R U R', D2]]",
+    "words": "Iben"
+  },
+  "BI": {
+    "commutator": "[R D R' D: [D2, R U R']]",
+    "words": "en bi, bisexuel"
+  },
+  "IX": {
+    "commutator": "[D2 R: [R D' R', U']]",
+    "words": "Index"
+  },
+  "XI": {
+    "commutator": "[D2 R: [U', R D' R']]",
+    "words": "xi jin ping"
+  },
+  "IV": {
+    "commutator": "[R D' R': [R' D R, U]]",
+    "words": "Ivan"
+  },
+  "VI": {
+    "commutator": "[R D' R': [U, R' D R]]",
+    "words": "Vin, Vi"
+  },
+  "GH": {
+    "commutator": "[R': [R D' R' D, F2]]",
+    "words": "过河 - krydse en flod"
+  },
+  "HG": {
+    "commutator": "[R': [F2, R D' R' D]]",
+    "words": "Hugge, Hygge"
+  },
+  "GE": {
+    "commutator": "[R U: [R' D R, U2]]",
+    "words": "Ged, g-streng"
+  },
+  "EG": {
+    "commutator": "[R U: [U2, R' D R]]",
+    "words": "Egern"
+  },
+  "GP": {
+    "commutator": "[R' : [U', R2 D' R2 D R2]]",
+    "words": "GoPro"
+  },
+  "PG": {
+    "commutator": "[R': [R2 D' R2 D R2, U']]",
+    "words": "苹果 🍎"
+  },
+  "GN": {
+    "commutator": "[Lw' U': [R D R', U2]]",
+    "words": "Gan cube, Gandalf"
+  },
+  "NG": {
+    "commutator": "[Lw' U': [U2, R D R']]",
+    "words": "N***er"
+  },
+  "GM": {
+    "commutator": "[Lw': [R' D' R, U2]]",
+    "words": "at gemme, Grandmaster, Gamer"
+  },
+  "MG": {
+    "commutator": "[Lw': [U2, R' D' R]]",
+    "words": "Mega, Meget"
+  },
+  "GS": {
+    "commutator": "[R D'U: [R' D' R, U2]]",
+    "words": "Gas, Gæst, Gås"
+  },
+  "SG": {
+    "commutator": "[R D'U: [U2, R' D' R]]",
+    "words": "Sigsag"
+  },
+  "GT": {
+    "commutator": "[R U R' D': [U2, R' D R]]",
+    "words": "at gætte, Ghetto"
+  },
+  "TG": {
+    "commutator": "[R U R' D': [R' D R, U2]]",
+    "words": "at tigge"
+  },
+  "GR": {
+    "commutator": "[D R' D : [F2, D' R D R']]",
+    "words": "Grøn"
+  },
+  "RG": {
+    "commutator": "[D R' D: [D' R D R', F2]]",
+    "words": "RGB, Regn"
+  },
+  "GO": {
+    "commutator": "[R U: [R' D' R, U2]]",
+    "words": "GO!, God"
+  },
+  "OG": {
+    "commutator": "[R U: [U2, R' D' R]]",
+    "words": "OG (slang - original gamer)"
+  },
+  "GB": {
+    "commutator": "[R : [R D2 R', U2]]",
+    "words": "Gigabyte, at gabe"
+  },
+  "BG": {
+    "commutator": "[R: [U2, R D2 R']]",
+    "words": "Baggrund"
+  },
+  "GX": {
+    "commutator": "[D' R UD: [R' D' R, U2]]",
+    "words": "Gen X"
+  },
+  "XG": {
+    "commutator": "[D' R UD: [U2, R' D' R]]",
+    "words": "性格"
+  },
+  "GV": {
+    "commutator": "[D R: [R D' R', U2]]",
+    "words": "Gave"
+  },
+  "VG": {
+    "commutator": "[D R: [U2, R D' R']]",
+    "words": "Vigga"
+  },
+  "GU": {
+    "commutator": "[R: [R D' R', U2]]",
+    "words": "Guld, Gul"
+  },
+  "UG": {
+    "commutator": "[R: [U2, R D' R']]",
+    "words": "Uge"
+  },
+  "HE": {
+    "commutator": "[U L' U', R]",
+    "words": "喝"
+  },
+  "EH": {
+    "commutator": "[R, U L' U']",
+    "words": "Enhed"
+  },
+  "HP": {
+    "commutator": "[U' R' U: [R D R', U2]]",
+    "words": "Hoppe, Hipster"
+  },
+  "PH": {
+    "commutator": "[U' R' U: [U2, R D R']]",
+    "words": "Philosophy - Filosofi"
+  },
+  "HN": {
+    "commutator": "[U: [R U' R', D']]",
+    "words": "Hånd, Handske"
+  },
+  "NH": {
+    "commutator": "[U: [D', R U' R']]",
+    "words": "男孩, Niall Horan"
+  },
+  "HS": {
+    "commutator": "[D' R' U: [R U' R', D]]",
+    "words": "Hash, Hest"
+  },
+  "SH": {
+    "commutator": "[D' R' U: [D, R U' R']]",
+    "words": "Sahara"
+  },
+  "HT": {
+    "commutator": "[R: [U' L' U, R]]",
+    "words": "Hotpot, Hat"
+  },
+  "TH": {
+    "commutator": "[R: [R, U' L' U]]",
+    "words": "天河 - milkyway - space, THC"
+  },
+  "HR": {
+    "commutator": "[U: [R U' R', D2]]",
+    "words": "Hare"
+  },
+  "RH": {
+    "commutator": "[U: [D2, R U' R']]",
+    "words": "人和 (human harmony), 柔和 - rouhe - soft"
+  },
+  "HO": {
+    "commutator": "[D R D: [R' U' R, D2]]",
+    "words": "Honning"
+  },
+  "OH": {
+    "commutator": "[D R D: [D2, R' U' R]]",
+    "words": "Ohaa, One handed"
+  },
+  "HB": {
+    "commutator": "[R : [R' U R U', F2]]",
+    "words": "Hobby, Håbe"
+  },
+  "BH": {
+    "commutator": "[R: [F2, R' U R U']]",
+    "words": "BH (tøj)"
+  },
+  "HV": {
+    "commutator": "[U R D': [U', R' D R]]",
+    "words": "Have, Havn"
+  },
+  "VH": {
+    "commutator": "[U R D': [R' D R, U']]",
+    "words": "Valhalla"
+  },
+  "HU": {
+    "commutator": "[z: [R U2 R', D]]",
+    "words": "虎 - tiger"
+  },
+  "UH": {
+    "commutator": "[z: [D, R U2 R']]",
+    "words": "Uhyggelig"
+  },
+  "EP": {
+    "commutator": "[F' U: [R' D' R, U2]]",
+    "words": "Epilepsi, Episode, Epic"
+  },
+  "PE": {
+    "commutator": "[F' U: [U2, R' D' R]]",
+    "words": "Pen, blyant"
+  },
+  "EN": {
+    "commutator": "[R D: [D, R' U' R]]",
+    "words": "Engelsk"
+  },
+  "NE": {
+    "commutator": "[R D: [R' U' R, D]]",
+    "words": "Ne (Neon element)"
+  },
+  "EM": {
+    "commutator": "[D, R U R']",
+    "words": "Emma (Fyn), Europa mesterskab"
+  },
+  "ME": {
+    "commutator": "[R U R', D]",
+    "words": "Melodi, Mere"
+  },
+  "ES": {
+    "commutator": "[R', U L' U']",
+    "words": "Espanol"
+  },
+  "SE": {
+    "commutator": "[U L' U', R']",
+    "words": "at se"
+  },
+  "ET": {
+    "commutator": "[D x': [R U' R', D']]",
+    "words": "ET (fra filmen)"
+  },
+  "TE": {
+    "commutator": "[D x': [D', R U' R']]",
+    "words": "Te - drik"
+  },
+  "ER": {
+    "commutator": "[D' R D': [R' U' R, D2]]",
+    "words": "Europa rekord"
+  },
+  "RE": {
+    "commutator": "[D' R D': [D2, R' U' R]]",
+    "words": "热 🔥"
+  },
+  "EO": {
+    "commutator": "[D: [R U R', D2]]",
+    "words": "Edge orientation"
+  },
+  "OE": {
+    "commutator": "[D: [D2, R U R']]",
+    "words": "Oeste (spanish east), Ole"
+  },
+  "EX": {
+    "commutator": "[R U' R': [R' D R, U2]]",
+    "words": "Ekskæreste"
+  },
+  "XE": {
+    "commutator": "[R U' R': [U2, R' D R]]",
+    "words": "Xenon (element)"
+  },
+  "EV": {
+    "commutator": "[D R: [R D' R', U']]",
+    "words": "El bil, Electric vehicle"
+  },
+  "VE": {
+    "commutator": "[D R: [U', R D' R']]",
+    "words": "V - BTS"
+  },
+  "EU": {
+    "commutator": "[Lw' D: [R' D' R, U']]",
+    "words": "Europa"
+  },
+  "UE": {
+    "commutator": "[Lw' D: [U', R' D' R]]",
+    "words": "Uenig"
+  },
+  "PN": {
+    "commutator": "[U R U': [R' D' R, U2]]",
+    "words": "Panda, Pind"
+  },
+  "NP": {
+    "commutator": "[U R U': [U2, R' D' R]]",
+    "words": "No problem"
+  },
+  "PM": {
+    "commutator": "[U' R' U'D: [R D' R', U2]]",
+    "words": "Pomfritter"
+  },
+  "MP": {
+    "commutator": "[U' R' U'D: [U2, R D' R']]",
+    "words": "Mappe, multiplayer"
+  },
+  "PT": {
+    "commutator": "[U R: [U2, R D R']]",
+    "words": "Prut, Putte"
+  },
+  "TP": {
+    "commutator": "[U R: [R D R', U2]]",
+    "words": "Teleportere, Tape"
+  },
+  "PR": {
+    "commutator": "[U' R' U': [R D' R', U2]]",
+    "words": "Program, Programmør"
+  },
+  "RP": {
+    "commutator": "[U' R' U': [U2, R D' R']]",
+    "words": "Rap, Rappe"
+  },
+  "PO": {
+    "commutator": "[UD R: [U2, R D' R']]",
+    "words": "Po - Kung Fu Panda"
+  },
+  "OP": {
+    "commutator": "[UD R: [R D' R', U2]]",
+    "words": "Over powered, Op, Oppe"
+  },
+  "PB": {
+    "commutator": "[U' R': [R' D R, U2]]",
+    "words": "Peanut butter"
+  },
+  "BP": {
+    "commutator": "[U' R': [U2, R' D R]]",
+    "words": "Boobs, babs"
+  },
+  "PX": {
+    "commutator": "[U' D' R': [R' D R, U2]]",
+    "words": "Pixel"
+  },
+  "XP": {
+    "commutator": "[U' D' R': [U2, R' D R]]",
+    "words": "芯片 (Chip, used in computers)"
+  },
+  "PV": {
+    "commutator": "[F': [U2, R D R']]",
+    "words": "Pave, Pindsvin"
+  },
+  "VP": {
+    "commutator": "[F': [R D R', U2]]",
+    "words": "VPN, Vape"
+  },
+  "PU": {
+    "commutator": "[U' R': [R' D2 R, U2]]",
+    "words": "Pude, Pussy"
+  },
+  "UP": {
+    "commutator": "[U' R': [U2, R' D2 R]]",
+    "words": "Ups"
+  },
+  "NM": {
+    "commutator": "[R D': [R' D R, U]]",
+    "words": "Nem, nummer"
+  },
+  "MN": {
+    "commutator": "[R D': [U, R' D R]]",
+    "words": "Måne, Mand, Menneske"
+  },
+  "NS": {
+    "commutator": "[U' R U: [R' U' R, D]]",
+    "words": "Næse, Nisse"
+  },
+  "SN": {
+    "commutator": "[U' R U: [D, R' U' R]]",
+    "words": "at sende, Sand"
+  },
+  "NT": {
+    "commutator": "[R' U: [R' D' R, U]]",
+    "words": "Netto, Nat"
+  },
+  "TN": {
+    "commutator": "[R' U: [U, R' D' R]]",
+    "words": "Tand, Tænde"
+  },
+  "NR": {
+    "commutator": "[U': [R' U' R, D']]",
+    "words": "National rekord"
+  },
+  "RN": {
+    "commutator": "[U': [D', R' U' R]]",
+    "words": "Rund, Ren, Random, at runde op"
+  },
+  "NB": {
+    "commutator": "[U' R': [R' D R, U]]",
+    "words": "Nabo, Noob"
+  },
+  "BN": {
+    "commutator": "[U' R': [U, R' D R]]",
+    "words": "Ben, Ban"
+  },
+  "NX": {
+    "commutator": "[R U' D' R' : [R' D R, U2]]",
+    "words": "NIX!"
+  },
+  "XN": {
+    "commutator": "[R U' D' R': [U2, R' D R]]",
+    "words": "新年"
+  },
+  "NU": {
+    "commutator": "[R2 D2: [R U R', D]]",
+    "words": "Nu"
+  },
+  "UN": {
+    "commutator": "[R2 D2: [D, R U R']]",
+    "words": "Undskyld, Under"
+  },
+  "MS": {
+    "commutator": "[R D: [R D' R', U']]",
+    "words": "Microsoft, Mus, Messi"
+  },
+  "SM": {
+    "commutator": "[R D: [U', R D' R']]",
+    "words": "Sommer, Sammen"
+  },
+  "MT": {
+    "commutator": "[x': [R U' R', D']]",
+    "words": "Metal, Mette"
+  },
+  "TM": {
+    "commutator": "[x': [D', R U' R']]",
+    "words": "Tømme, Tom"
+  },
+  "MR": {
+    "commutator": "[x': [R U2 R', D']]",
+    "words": "Mur, MR-skanning"
+  },
+  "RM": {
+    "commutator": "[x': [D', R U2 R']]",
+    "words": "Rummet, at ramme"
+  },
+  "MO": {
+    "commutator": "[R U R', D']",
+    "words": "Moden, Modig, Mor"
+  },
+  "OM": {
+    "commutator": "[D', R U R']",
+    "words": "Orm, Omelet"
+  },
+  "MB": {
+    "commutator": "[R D: [U, R' D' R]]",
+    "words": "MB - moob - mor ven"
+  },
+  "BM": {
+    "commutator": "[R D: [R' D' R, U]]",
+    "words": "Bombe"
+  },
+  "MV": {
+    "commutator": "[R U' R' D R: [U, R D' R']]",
+    "words": "Mave"
+  },
+  "VM": {
+    "commutator": "[R U' R' D R: [R D' R', U]]",
+    "words": "Verdensmesterskab, Hvem"
+  },
+  "MU": {
+    "commutator": "[R: [R D' R', U']]",
+    "words": "木 (træ)"
+  },
+  "UM": {
+    "commutator": "[R: [U', R D' R']]",
+    "words": "Umami, sige umm"
+  },
+  "ST": {
+    "commutator": "[R, U' L' U]",
+    "words": "Sort, Stolt, Stige, Stank"
+  },
+  "TS": {
+    "commutator": "[U' L' U, R]",
+    "words": "Tisse"
+  },
+  "SR": {
+    "commutator": "[R' U: [D2, R U' R']]",
+    "words": "Sarah (folkeskole)"
+  },
+  "RS": {
+    "commutator": "[R' U: [R U' R', D2]]",
+    "words": "Riste, Ris, Risiko"
+  },
+  "SO": {
+    "commutator": "[R U': [R' U R, D]]",
+    "words": "En so"
+  },
+  "OS": {
+    "commutator": "[R U': [D, R' U R]]",
+    "words": "Operating system, Ost"
+  },
+  "SB": {
+    "commutator": "[UD R' U': [R U R', D']]",
+    "words": "Sæbe"
+  },
+  "BS": {
+    "commutator": "[UD R' U': [D', R U R']]",
+    "words": "BS (bullshit), Bas, Bedste"
+  },
+  "SX": {
+    "commutator": "[U R' U': [R U R', D']]",
+    "words": "Sex"
+  },
+  "XS": {
+    "commutator": "[U R' U': [D', R U R']]",
+    "words": "现实, Extra small"
+  },
+  "SV": {
+    "commutator": "[D R U': [R' U R, D']]",
+    "words": "Svede, Svær, Sav, Sove, Savne"
+  },
+  "VS": {
+    "commutator": "[D R U': [D', R' U R]]",
+    "words": "Vaske, Vis"
+  },
+  "SU": {
+    "commutator": "[R U': [R' U R, D']]",
+    "words": "SU - uddanelse"
+  },
+  "US": {
+    "commutator": "[R U': [D', R' U R]]",
+    "words": "USA, Usikker"
+  },
+  "TR": {
+    "commutator": "[U' R' U': [R D' R', U']]",
+    "words": "tro, at true, trudsel, Trafik"
+  },
+  "RT": {
+    "commutator": "[U' R' U': [U', R D' R']]",
+    "words": "Rotte"
+  },
+  "TO": {
+    "commutator": "[R2 U : [R D R', U2]]",
+    "words": "2"
+  },
+  "OT": {
+    "commutator": "[R2 U: [U2, R D R']]",
+    "words": "Otto"
+  },
+  "TB": {
+    "commutator": "[U' R': [R' D R, U']]",
+    "words": "Tabe, Taber"
+  },
+  "BT": {
+    "commutator": "[U' R': [U', R' D R]]",
+    "words": "Batman"
+  },
+  "TX": {
+    "commutator": "[U'D' R': [R' D R, U']]",
+    "words": "Taxa"
+  },
+  "XT": {
+    "commutator": "[U'D' R': [U', R' D R]]",
+    "words": "系统 (System)"
+  },
+  "TV": {
+    "commutator": "[U R : [D', R U' R']]",
+    "words": "Tyv, TV (fjernsyn)"
+  },
+  "VT": {
+    "commutator": "[U R: [R U' R', D']]",
+    "words": "问题, Vinter, vat"
+  },
+  "TU": {
+    "commutator": "[U'D R': [R' D R, U']]",
+    "words": "兔子 🐰"
+  },
+  "UT": {
+    "commutator": "[U'D R': [U', R' D R]]",
+    "words": "Utro, Utopia, Utaknemmelig"
+  },
+  "RO": {
+    "commutator": "[U': [R', U' L U]]",
+    "words": "Ro (stilhed), at ro"
+  },
+  "OR": {
+    "commutator": "[U': [U' L U, R']]",
+    "words": "Oral s*x, Ord"
+  },
+  "RB": {
+    "commutator": "[x': [D2, R U2 R']]",
+    "words": "Rabarbar, Robin Hood"
+  },
+  "BR": {
+    "commutator": "[x': [R U2 R', D2]]",
+    "words": "BR (legetøj butik), Brænde"
+  },
+  "RX": {
+    "commutator": "[U'D' R': [R' D R, U]]",
+    "words": "T-rex"
+  },
+  "XR": {
+    "commutator": "[U'D' R': [U, R' D R]]",
+    "words": "新人"
+  },
+  "RV": {
+    "commutator": "[U R: [D2, R U' R']]",
+    "words": "Røv, Ræv"
+  },
+  "VR": {
+    "commutator": "[U R: [R U' R', D2]]",
+    "words": "Vejr"
+  },
+  "OB": {
+    "commutator": "[D' R: [R D' R', U']]",
+    "words": "Observere"
+  },
+  "BO": {
+    "commutator": "[D' R: [U', R D' R']]",
+    "words": "at bo"
+  },
+  "OX": {
+    "commutator": "[D' R D: [U, R' D' R]]",
+    "words": "Oxygen"
+  },
+  "XO": {
+    "commutator": "[D' R D: [R' D' R, U]]",
+    "words": "Kiss"
+  },
+  "OU": {
+    "commutator": "[R U' D' : [D2, R' U R]]",
+    "words": "Goku"
+  },
+  "UO": {
+    "commutator": "[R U' D': [R' U R, D2]]",
+    "words": "Ulovlig"
+  },
+  "BX": {
+    "commutator": "[U' R' F' : [R U' R', D']]",
+    "words": "Box"
+  },
+  "XB": {
+    "commutator": "[U' R' F': [D', R U' R']]",
+    "words": "宣布"
+  },
+  "BV": {
+    "commutator": "[U' R2: [R2 U R2 U' R2, D]]",
+    "words": "Bæver"
+  },
+  "VB": {
+    "commutator": "[U' R2: [D, R2 U R2 U' R2]]",
+    "words": "Vibe, Vibrere, Våben"
+  },
+  "BU": {
+    "commutator": "[x U: [R' D R, U2]]",
+    "words": "at bue ad nogen, 不(是), en bue"
+  },
+  "UB": {
+    "commutator": "[x U: [U2, R' D R]]",
+    "words": "Uber"
+  },
+  "XV": {
+    "commutator": "[F' R U': [R' D' R, U2]]",
+    "words": "虚无 (nothingness)"
+  },
+  "VX": {
+    "commutator": "[F' R U': [U2, R' D' R]]",
+    "words": "Voks, Vaccine"
+  },
+  "XU": {
+    "commutator": "[R U' R' U: [R D' R', U2]]",
+    "words": "雪"
+  },
+  "UX": {
+    "commutator": "[R U' R' U: [U2, R D' R']]",
+    "words": "UX design"
+  },
+  "VU": {
+    "commutator": "[z: [R U2 R', D2]]",
+    "words": "Vudu"
+  },
+  "UV": {
+    "commutator": "[z: [D2, R U2 R']]",
+    "words": "Uvenner, UV lys"
+  }
+}

@@ -1,0 +1,2202 @@
+{
+    "DF": {
+        "commutator": "[R2 U' : [R2' , S]]",
+        "algorithm": "R2 U' R2' S R2' S' U R2",
+        "setup": "R2 U F2 R2 F2 U F B U2 F' B' R2"
+    },
+    "PF": {
+        "commutator": "[L2' U : [L2 , S']]",
+        "algorithm": "L2' U L2 S' L2 S U' L2'",
+        "setup": "B2 U R2 F2 L2 D F2 B2 U2 R2 F2 L2 D2 F2"
+    },
+    "KF": {
+        "commutator": "[U' M U : [M' , U2]]",
+        "algorithm": "U' M U M' U2 M U2 U' M' U",
+        "setup": "R L F U2 F R L B2 R2 D L2 F2 R2 B2 U' R2"
+    },
+    "LF": {
+        "commutator": "[U : [R' E R , U2]]",
+        "algorithm": "U R' E R U2 R' E' R U2 U'",
+        "setup": "F R2 U2 R2 F U' D' R2 B2 U' D' L2 B2 R2"
+    },
+    "\u00d8F": {
+        "commutator": "[U' : [L' E' L , U2']]",
+        "algorithm": "U' L' E' L U2' L' E L U2' U",
+        "setup": "R L' F U2 F R L B2 R2 D L2 F2 R2 B2 U' R2 L2"
+    },
+    "IF": {
+        "commutator": "[U : [R E' R' , U2]]",
+        "algorithm": "U R E' R' U2 R E R' U2 U'",
+        "setup": "U2 F' U2 R2 D2 B U2 R2 L2 D2 F2 L2 U2 L2 U2"
+    },
+    "HF": {
+        "commutator": "[R' U : [S , R2]]",
+        "algorithm": "R' U S R2 S' R2 U' R",
+        "setup": "U' R F2 U2 F2 R U D F2 L2 U2 R2 B2 L2 D"
+    },
+    "GF": {
+        "commutator": "[R' F' : [E , R U R']]",
+        "algorithm": "R' F' E R U R' E' R U' R' F R",
+        "setup": "U R L' B' D2 B R' L U' R2 F2 L2 U2 R2 B2 L2 D2 B2"
+    },
+    "EF": {
+        "commutator": "[L U' : [S' , L2']]",
+        "algorithm": "L U' S' L2' S L2' U L'",
+        "setup": "U R' U2 F2 U2 R F2 R2 F2 D2 B2 L2 U' D' B2 D'"
+    },
+    "TF": {
+        "commutator": "[U M U' : [M , U2]]",
+        "algorithm": "U M U' M U2 M' U2 U M' U'",
+        "setup": "U R L' B D2 B R L B2 R2 U R2 B2 R2 B2 U2"
+    },
+    "CF": {
+        "commutator": "[U' : [L' E L , U2']]",
+        "algorithm": "U' L' E L U2' L' E' L U2' U",
+        "setup": "U2 F U2 R2 U2 F U' D' R2 B2 U D R2 F2 L2 D2"
+    },
+    "NF": {
+        "commutator": "[U : [R E R' , U2]]",
+        "algorithm": "U R E R' U2 R E' R' U2 U'",
+        "setup": "R L F' U2 F R L' U' R2 U2 B2 R2 B2 U2 R2 U R2"
+    },
+    "MF": {
+        "commutator": "[U' : [L E' L' , U2']]",
+        "algorithm": "U' L E' L' U2' L E L' U2' U",
+        "setup": "F' R2 U2 R2 F R2 B2 L2 U D B2 R2 U D F2"
+    },
+    "OF": {
+        "commutator": "[L' U : [L2 , S']]",
+        "algorithm": "L' U L2 S' L2 S U' L",
+        "setup": "U R U2 F2 D2 L B2 D2 F2 U'"
+    },
+    "RF": {
+        "commutator": "[U R' B R : [S , R2']]",
+        "algorithm": "U R' B R S R2' S' R2' R' B' R U'",
+        "setup": "U R' L F D2 F R L F2 L2 U L2 F2 L2 F2 U2"
+    },
+    "QF": {
+        "commutator": "[R U' : [R2' , S]]",
+        "algorithm": "R U' R2' S R2' S' U R'",
+        "setup": "U' R' F2 U2 F2 R F2 R2 F2 U2 F2 R2 U' D' F2 D"
+    },
+    "BF": {
+        "commutator": "[M' , U2]",
+        "algorithm": "M' U2 M U2",
+        "setup": "R2 F2 R2 U2 R2 F2 R2 U2"
+    },
+    "JF": {
+        "commutator": "[U : [S , R2']]",
+        "algorithm": "U S R2' S' R2' U'",
+        "setup": "U' F2 R2 F2 U2 F2 R2 F2 U'"
+    },
+    "VF": {
+        "commutator": "[U2 , M]",
+        "algorithm": "U2 M U2 M'",
+        "setup": "U2 R2 F2 L2 D2 L2 F2 R2"
+    },
+    "UF": {
+        "commutator": "[U' : [S' , L2]]",
+        "algorithm": "U' S' L2 S L2 U",
+        "setup": "U F2 R2 B2 D2 B2 R2 F2 U"
+    },
+    "FD": {
+        "commutator": "[R2 U' : [S , R2']]",
+        "algorithm": "R2 U' S R2' S' R2' U R2",
+        "setup": "F2 U R2 F2 R2 U R2 U2 F' B U2 F' B' R2 U2"
+    },
+    "PD": {
+        "commutator": "[M2' U' : [M , U2]]",
+        "algorithm": "M2' U' M U2 M' U2 U M2'",
+        "setup": "R L U2 R L D' L2 B2 L2 D R2 L2 U2"
+    },
+    "KD": {
+        "commutator": "[L F' L' , S']",
+        "algorithm": "L F' L' S' L F L' S",
+        "setup": "R U R' B' R2 U' R' U B U F2 L2 B2 D B2 L2 F2 U2"
+    },
+    "LD": {
+        "commutator": "[R' E R , U']",
+        "algorithm": "R' E R U' R' E' R U",
+        "setup": "U' B U2 L2 U2 B U2 R2 U L2 U' R2 L2 U B2 U2"
+    },
+    "\u00d8D": {
+        "commutator": "[U2' : [L' E' L , U']]",
+        "algorithm": "U2' L' E' L U' L' E L U U2'",
+        "setup": "U R L F' L2 F R L B2 R2 D F2 D' R2 B2 R2 L2 U'"
+    },
+    "ID": {
+        "commutator": "[R E' R' , U']",
+        "algorithm": "R E' R' U' R E R' U",
+        "setup": "U F' U2 L2 U2 F' D2 L2 U' D2 R2 U' R2 L2 U F2"
+    },
+    "HD": {
+        "commutator": "[E' : [R' E R , U']]",
+        "algorithm": "E' R' E R U' R' E' R U E",
+        "setup": "U2 R F2 D2 B2 L D R2 F2 U2 B2 L2 U2 F2 D' F2"
+    },
+    "GD": {
+        "commutator": "[R : [U' R' U , M']]",
+        "algorithm": "R U' R' U M' U' R U M R'",
+        "setup": "R L F' R2 F R L U2 D2 R2 U' L2 U' D2 R2"
+    },
+    "ED": {
+        "commutator": "[R E2 R' , U']",
+        "algorithm": "R E2 R' U' R E2 R' U",
+        "setup": "R' D2 F2 D2 R' U2 F2 U B2 U' F2 B2 U R2 U"
+    },
+    "CD": {
+        "commutator": "[U2' : [L' E L , U']]",
+        "algorithm": "U2' L' E L U' L' E' L U U2'",
+        "setup": "U F U2 R2 U2 F U2 L2 U R2 U' R2 L2 U F2"
+    },
+    "ND": {
+        "commutator": "[R E R' , U']",
+        "algorithm": "R E R' U' R E' R' U",
+        "setup": "U R' L F R2 F' R' L D F2 R2 F2 R2 F2 D' R2 L2 U'"
+    },
+    "MD": {
+        "commutator": "[U2' : [L E' L' , U']]",
+        "algorithm": "U2' L E' L' U' L E L' U U2'",
+        "setup": "U' B' U2 R2 U2 B U2 R2 U' R2 L2 U' R2 U R2 L2"
+    },
+    "SD": {
+        "commutator": "[R' : [U' R U , M]]",
+        "algorithm": "R' U' R U M U' R' U M' R",
+        "setup": "R' L F' U2 F R L U D' F2 D' L2 D B2 U' D R2"
+    },
+    "OD": {
+        "commutator": "[R' E2 R , U']",
+        "algorithm": "R' E2 R U' R' E2 R U",
+        "setup": "R U2 B2 U2 R U2 F2 U B2 U' F2 B2 U R2 U"
+    },
+    "RD": {
+        "commutator": "(M U' M' U')2",
+        "algorithm": "M U' M' U' M U' M' U'",
+        "setup": "R' L F D2 F' R L U L2 B2 R2 D R2 B2 U F2 U'"
+    },
+    "QD": {
+        "commutator": "[E : [R E' R' , U']]",
+        "algorithm": "E R E' R' U' R E R' U E'",
+        "setup": "U2 R' F2 D2 B2 L' D R2 F2 U2 B2 L2 U2 F2 D' F2"
+    },
+    "BD": {
+        "commutator": "[L F' : [L' S' L , F2']]",
+        "algorithm": "L F' L' S' L F2' L' S L F2' F L'",
+        "setup": "R2 U' B2 L2 F2 D' L2 B2"
+    },
+    "JD": {
+        "commutator": "[R U R' : [S , R2]]",
+        "algorithm": "R U R' S R2 S' R2 R U' R'",
+        "setup": "U' F2 L2 B2 D' B2 L2 F2"
+    },
+    "VD": {
+        "commutator": "[R : [U' R' U , M2']]",
+        "algorithm": "R U' R' U M2' U' R U M2' R'",
+        "setup": "U2 R2 F2 L2 D' L2 F2 R2 U"
+    },
+    "UD": {
+        "commutator": "L U L' U' L' U' L' U L U",
+        "algorithm": "L U L' U' L' U' L' U L U",
+        "setup": "U F2 R2 B2 D' B2 R2 F2 U2"
+    },
+    "FA": {
+        "commutator": "[L2' U : [S' , L2]]",
+        "algorithm": "L2' U S' L2 S L2 U' L2'",
+        "setup": "F2 U' R2 F2 R2 U F B' R2 D2 L2 U2 F' B' L2 D2"
+    },
+    "DA": {
+        "commutator": "[M2' U : [M , U2']]",
+        "algorithm": "M2' U M U2' M' U2' U' M2'",
+        "setup": "F2 U R2 F2 R2 U R2 F2 U2 R2 F2 R2 U2 R2"
+    },
+    "LA": {
+        "commutator": "[U2 : [R' E R , U]]",
+        "algorithm": "U2 R' E R U R' E' R U' U2",
+        "setup": "U B U2 L2 U2 B D2 L2 U' L2 D F2 B2 D' F2 D2"
+    },
+    "\u00d8A": {
+        "commutator": "[L' E' L , U]",
+        "algorithm": "L' E' L U L' E L U'",
+        "setup": "U R L' F U2 F' R' L' F2 R2 U' L2 U R2 F2 L2 U'"
+    },
+    "IA": {
+        "commutator": "[U2 : [R E' R' , U]]",
+        "algorithm": "U2 R E' R' U R E R' U' U2",
+        "setup": "U' F' U2 L2 U2 F' U2 R2 U' L2 U R2 L2 U' F2"
+    },
+    "HA": {
+        "commutator": "[L' E2' L , U]",
+        "algorithm": "L' E2' L U L' E2' L U'",
+        "setup": "L D2 F2 D2 L U2 F2 U' B2 U F2 B2 U' L2 U'"
+    },
+    "GA": {
+        "commutator": "[L' : [U L U' , M']]",
+        "algorithm": "L' U L U' M' U L' U' M L",
+        "setup": "R L' F L2 F R L' U L2 U' R2 L2 U B2 D2 B2 U'"
+    },
+    "EA": {
+        "commutator": "[U2 : [R E2 R' , U]]",
+        "algorithm": "U2 R E2 R' U R E2 R' U' U2",
+        "setup": "U2 R' U2 F2 U2 R' U2 B2 U' F2 U F2 B2 U' R2 U"
+    },
+    "TA": {
+        "commutator": "[R' F R , S]",
+        "algorithm": "R' F R S R' F' R S'",
+        "setup": "R U R' B' R2 U' R' U B U2 R2 F2 U2 F2 R2 F2 U2 F2"
+    },
+    "CA": {
+        "commutator": "[L' E L , U]",
+        "algorithm": "L' E L U L' E' L U'",
+        "setup": "U' F U2 R2 U2 F D2 R2 U D2 L2 U R2 L2 U' F2"
+    },
+    "NA": {
+        "commutator": "[U2 : [R E R' , U]]",
+        "algorithm": "U2 R E R' U R E' R' U' U2",
+        "setup": "U R L F' U2 F R' L D' R2 L2 B2 R2 L2 D L2 U'"
+    },
+    "MA": {
+        "commutator": "[L E' L' , U]",
+        "algorithm": "L E' L' U L E L' U'",
+        "setup": "U B' U2 R2 U2 B' U2 L2 U' R2 U R2 L2 U' B2 U2"
+    },
+    "SA": {
+        "commutator": "[L : [U L' U' , M]]",
+        "algorithm": "L U L' U' M U L U' M' L'",
+        "setup": "R L F U2 F' R L U D' F2 D L2 D' B2 U' D"
+    },
+    "OA": {
+        "commutator": "[U2 : [R' E2 R , U]]",
+        "algorithm": "U2 R' E2 R U R' E2 R U' U2",
+        "setup": "U2 R U2 F2 D2 L D F2 U2 R2 B2 U2 F2 L2 D' F2"
+    },
+    "RA": {
+        "commutator": "(M U M' U)2",
+        "algorithm": "M U M' U M U M' U",
+        "setup": "R L F' D2 F R L' U2 R2 L2 D B2 D' R2 L2 U2 R2"
+    },
+    "QA": {
+        "commutator": "[L E2' L' , U]",
+        "algorithm": "L E2' L' U L E2' L' U'",
+        "setup": "L' U2 B2 U2 L' U2 F2 U' B2 U F2 B2 U' L2 U'"
+    },
+    "BA": {
+        "commutator": "[R' F : [R S R' , F2]]",
+        "algorithm": "R' F R S R' F2 R S' R' F2 F' R",
+        "setup": "R2 B2 L2 U B2 R2 F2 D"
+    },
+    "JA": {
+        "commutator": "R' U' R U R U R U R U' R' U'",
+        "algorithm": "R' U' R U R U R U R U' R' U'",
+        "setup": "U R U R' U2 R' U2 F2 L2 B2 D B2 L2 F2 U2"
+    },
+    "VA": {
+        "commutator": "[l' M' : [U L U' , M2']]",
+        "algorithm": "l' M' U L U' M2' U L' U' M2' M l",
+        "setup": "U R2 F2 L2 D' L2 F2 R2 U2"
+    },
+    "UA": {
+        "commutator": "[L' U' L : [S' , L2]]",
+        "algorithm": "L' U' L S' L2 S L2 L' U L",
+        "setup": "U F2 R2 B2 D B2 R2 F2"
+    },
+    "FK": {
+        "commutator": "[U' M U' : [M' , U2]]",
+        "algorithm": "U' M U' M' U2 M U2 U M' U",
+        "setup": "R L' F' L2 F R' L D' F2 U2 L2 F2 L2 U2 F2 D"
+    },
+    "DK": {
+        "commutator": "[S' , L F' L']",
+        "algorithm": "S' L F' L' S L F L'",
+        "setup": "R L' F' L2 F R L' U' F2 B2 R2 F2 B2 U R2 L2"
+    },
+    "LK": {
+        "commutator": "[S : [R' E R , U']]",
+        "algorithm": "S R' E R U' R' E' R U S'",
+        "setup": "F' U' L' U2 F' U' F L' U2 F2 R2 B2 D2 L2 D B2 R2 L2"
+    },
+    "\u00d8K": {
+        "commutator": "[l' U L : [S' , L2']]",
+        "algorithm": "l' U L S' L2' S L2' L' U' l",
+        "setup": "R L F' L2 F R L' U' L2 U F2 U' F2 R2 B2 D' B2"
+    },
+    "IK": {
+        "commutator": "[S : [R E' R' , U']]",
+        "algorithm": "S R E' R' U' R E R' U S'",
+        "setup": "L F2 L U L' F L F L2 B2 D L2 D' R2 D R2 L2 B2"
+    },
+    "HK": {
+        "commutator": "[M' : [R S' R' , U']]",
+        "algorithm": "M' R S' R' U' R S R' U M",
+        "setup": "R U' R' U L2 U F D F D2 F2 R2 B2 U' B2 R2 U' L2"
+    },
+    "GK": {
+        "commutator": "[l' : [U' L U , M']]",
+        "algorithm": "l' U' L U M' U' L' U M l",
+        "setup": "U R L' F L2 F R L' U' L2 U' R2 B2 R2 D R2 B2 L2"
+    },
+    "EK": {
+        "commutator": "[L' U' : [L S L' , U']]",
+        "algorithm": "L' U' L S L' U' L S' L' U U L",
+        "setup": "U' R' F L D2 F R F' L U F2 U' R2 L2 D R2 F2 U L2"
+    },
+    "TK": {
+        "commutator": "[M U' : [M' , U2]]",
+        "algorithm": "M U' M' U2 M U2 U M'",
+        "setup": "R L' B U2 B R L B2 R2 U L2 F2 L2 F2 U'"
+    },
+    "CK": {
+        "commutator": "[L' F' : [E , L2]]",
+        "algorithm": "L' F' E L2 E' L2 F L",
+        "setup": "R F' U F' U2 R' F U' R' B2 U' F2 U2 B2 D' R2 U F2 D"
+    },
+    "NK": {
+        "commutator": "[R' F R' : [S , R2]]",
+        "algorithm": "R' F R' S R2 S' R2 R F' R",
+        "setup": "R' L F R2 F' R L' U R2 F2 L2 B2 D' B2 L2 F2 U2"
+    },
+    "MK": {
+        "commutator": "[R M U' : [M' , U2]]",
+        "algorithm": "R M U' M' U2 M U2 U M' R'",
+        "setup": "U2 R B' R' B D' F' U2 F' L2 D2 B2 D' B2 U' F2 R2 U B2"
+    },
+    "SK": {
+        "commutator": "[l' : [U' L U , M]]",
+        "algorithm": "l' U' L U M U' L' U M' l",
+        "setup": "F U F' R' F2 U' F' U R U2 R2 F2 R2 U2 R2 F2 R2 U2"
+    },
+    "OK": {
+        "commutator": "[U' R F : [E' , R2']]",
+        "algorithm": "U' R F E' R2' E R2' F' R' U",
+        "setup": "U' R F D L2 U2 D B' L' U F2 L2 U D2 R2 F2 R2 U R2"
+    },
+    "RK": {
+        "commutator": "[R' F R U': [M, U2]]",
+        "algorithm": "R' F R U' M U2 M' U2 U R' F' R",
+        "setup": "U R L F' D2 F R L F2 R2 D L2 B2 R2 F2 U R2 U'"
+    },
+    "QK": {
+        "commutator": "[l' : [E , L U' L']]",
+        "algorithm": "l' E L U' L' E' L U L' l",
+        "setup": "U B' U2 B' U' L U' L' B D B2 D' R2 U R2 B2 U'"
+    },
+    "BK": {
+        "commutator": "[L' F' : [E' , L2]]",
+        "algorithm": "L' F' E' L2 E L2 F L",
+        "setup": "R L' F' L2 F R L B2 L2 U B2 R2 F2 L2 D"
+    },
+    "JK": {
+        "commutator": "[L2 : [S , L' F' L]]",
+        "algorithm": "L2 S L' F' L S' L' F L L2",
+        "setup": "R L' F' L2 F R L F2 L2 U F2 U' L2 F2 R2"
+    },
+    "VK": {
+        "commutator": "[l' : [U' L U , M2']]",
+        "algorithm": "l' U' L U M2' U' L' U M2' l",
+        "setup": "R L' F' L2 F R' L D2 R2 B2 L2 U' B2 R2 F2 L2 D"
+    },
+    "UK": {
+        "commutator": "[S , L F' L']",
+        "algorithm": "S L F' L' S' L F L'",
+        "setup": "R L' F' L2 F R L B2 R2 D F2 D' R2 B2 R2"
+    },
+    "FL": {
+        "commutator": "[U' : [R' E R , U2]]",
+        "algorithm": "U' R' E R U2 R' E' R U2 U",
+        "setup": "U2 F R2 U2 R2 F U' D' R2 B2 U D R2 F2 L2 D2"
+    },
+    "DL": {
+        "commutator": "[U' , R' E R]",
+        "algorithm": "U' R' E R U R' E' R",
+        "setup": "U2 F R2 D2 L2 B D R2 U2 F2 R2 D2 L2 B2 D' R2"
+    },
+    "PL": {
+        "commutator": "[U' : [R' E R , U']]",
+        "algorithm": "U' R' E R U' R' E' R U U",
+        "setup": "U2 F L2 D2 R2 B D F2 R2 D2 R2 F2 D2 R2 D' L2"
+    },
+    "KL": {
+        "commutator": "[S : [U' , R' E R]]",
+        "algorithm": "S U' R' E R U R' E' R S'",
+        "setup": "L U F U2 L U L' F U2 L2 B2 R2 D2 F2 D' R2 F2 B2"
+    },
+    "\u00d8L": {
+        "commutator": "[U S' U' , L]",
+        "algorithm": "U S' U' L U S U' L'",
+        "setup": "F D2 F' D' L D' L' F U F2 U' R2 D R2"
+    },
+    "IL": {
+        "commutator": "[M' U L' : [S' , L2']]",
+        "algorithm": "M' U L' S' L2' S L2' L U' M",
+        "setup": "F' U2 R2 D2 B U' D' B2 U2 R2 U D'"
+    },
+    "HL": {
+        "commutator": "[R U' R' , E]",
+        "algorithm": "R U' R' E R U R' E'",
+        "setup": "R F' R' U' D B R B U B2 U D' R2 U' R2"
+    },
+    "GL": {
+        "commutator": "[M' : [U' L' U , M']]",
+        "algorithm": "M' U' L' U M' U' L U M M",
+        "setup": "L D' F' R2 F R2 L' F' L2 B2 D L2 F2 R2 U2 F2 U' R2"
+    },
+    "TL": {
+        "commutator": "[M L' U' : [M' , U2']]",
+        "algorithm": "M L' U' M' U2' M U2' U L M'",
+        "setup": "F R2 F U F' R F R F2 L2 D F2 D' B2 D F2 B2 L2"
+    },
+    "CL": {
+        "commutator": "[r U R : [E , R2']]",
+        "algorithm": "r U R E R2' E' R2' R' U' r'",
+        "setup": "F U2 L2 D2 B U R2 U' D B2 D L2 U2"
+    },
+    "NL": {
+        "commutator": "[M' U R : [E , R2']]",
+        "algorithm": "M' U R E R2' E' R2' R' U' M",
+        "setup": "R U D' F' U' F' U' D R U F2 U L2 B2 R2 D B2 L2"
+    },
+    "ML": {
+        "commutator": "[U' E' L : [S' , L2']]",
+        "algorithm": "U' E' L S' L2' S L2' L' E U",
+        "setup": "U2 F' R2 U2 R2 F' R2 U2 F2 R2 U2 R2 F2 R2"
+    },
+    "SL": {
+        "commutator": "[M' , U' L' U]",
+        "algorithm": "M' U' L' U M U' L U",
+        "setup": "U' L F U F' U L U2 L' B2 U' B2 U B2 D' B2 D"
+    },
+    "OL": {
+        "commutator": "[L U L' , E']",
+        "algorithm": "L U L' E' L U' L' E",
+        "setup": "R F' R U D' F' L F U' D R2"
+    },
+    "RL": {
+        "commutator": "[U' r' : [E , R U R']]",
+        "algorithm": "U' r' E R U R' E' R U' R' r U",
+        "setup": "L F D' F' D2 L' D' F D R2 F2 R2 U2 L2 B2 L2 U2 F2"
+    },
+    "QL": {
+        "commutator": "[R2' : [R U' R' , E]]",
+        "algorithm": "R2' R U' R' E R U R' E' R2'",
+        "setup": "R F' R U' D B' R B U D' R2"
+    },
+    "BL": {
+        "commutator": "[U R' F' : [R S R' , F']]",
+        "algorithm": "U R' F' R S R' F' R S' R' F F R U'",
+        "setup": "U2 F R2 U2 R2 F R2 F2 U D' F2 U D R2 F2"
+    },
+    "JL": {
+        "commutator": "[U' E' R' : [E' , R2]]",
+        "algorithm": "U' E' R' E' R2 E R2 R E U",
+        "setup": "U2 F L2 D2 R2 B D R2 D2 F2 R2 D2 R2 F2 D' L2"
+    },
+    "VL": {
+        "commutator": "[M' : [U' L' U , M2']]",
+        "algorithm": "M' U' L' U M2' U' L U M2' M",
+        "setup": "U2 F R2 U2 R2 F R2 U2 F2 U2 L2 D2 R2 L2 F2 R2"
+    },
+    "UL": {
+        "commutator": "[U E L' : [E' , L2]]",
+        "algorithm": "U E L' E' L2 E L2 L E' U'",
+        "setup": "U2 F R2 D2 L2 B D F2 R2 U2 L2 B2 U2 R2 D' R2"
+    },
+    "F\u00d8": {
+        "commutator": "[U : [L' E' L , U2']]",
+        "algorithm": "U L' E' L U2' L' E L U2' U'",
+        "setup": "R L F' L2 F R' L D' F2 U2 L2 F2 L2 U2 F2 D L2"
+    },
+    "D\u00d8": {
+        "commutator": "[U : [L' E' L , U]]",
+        "algorithm": "U L' E' L U L' E L U' U'",
+        "setup": "R L F' L2 F R L' U' F2 B2 R2 F2 B2 U R2"
+    },
+    "P\u00d8": {
+        "commutator": "[U , L' E' L]",
+        "algorithm": "U L' E' L U' L' E L",
+        "setup": "R L F' L2 F R L B2 R2 D F2 D' R2 B2 R2 L2"
+    },
+    "K\u00d8": {
+        "commutator": "[l' U L' : [S' , L2]]",
+        "algorithm": "l' U L' S' L2 S L2 L U' l",
+        "setup": "R L' F' L2 F R L F2 U F2 R2 B2 D B2 D' L2 D"
+    },
+    "L\u00d8": {
+        "commutator": "[L , U S' U']",
+        "algorithm": "L U S' U' L' U S U'",
+        "setup": "L U2 L' U' F U' F' L D L2 D' B2 U B2"
+    },
+    "I\u00d8": {
+        "commutator": "[L' , U S' U']",
+        "algorithm": "L' U S' U' L U S U'",
+        "setup": "U B' U L F2 L' F2 B L U2 R2 U R2 D' F2 D L2 U2 L2"
+    },
+    "H\u00d8": {
+        "commutator": "[L' E2' : [L U L' , E]]",
+        "algorithm": "L' E2' L U L' E L U' L' E' E2' L",
+        "setup": "U' R F2 B' L D2 L' D' B R2 U2 D2 L2 B2 U' L2 D2"
+    },
+    "G\u00d8": {
+        "commutator": "[U : [S , L F L']]",
+        "algorithm": "U S L F L' S' L F' L' U'",
+        "setup": "U R L' F L2 F' R' L' B2 R2 U' F2 U R2 B2 L2 U'"
+    },
+    "E\u00d8": {
+        "commutator": "[L f' L : [S , L2']]",
+        "algorithm": "L f' L S L2' S' L2' L' f L'",
+        "setup": "R F2 R' F' D' R' D2 R F U F2 R2 B2 U' B2 R2 F2 U'"
+    },
+    "T\u00d8": {
+        "commutator": "[L F' L' : [S' , L2]]",
+        "algorithm": "L F' L' S' L2 S L2 L F L'",
+        "setup": "R L B U2 B R L B2 R2 U L2 F2 L2 F2 U' L2"
+    },
+    "C\u00d8": {
+        "commutator": "[L F' : [L2' , E]]",
+        "algorithm": "L F' L2' E L2' E' F L'",
+        "setup": "U2 B D' L' D2 B' D' B L B2 U2 R2 F2 R2 D2 R2 F2 R2 D'"
+    },
+    "N\u00d8": {
+        "commutator": "[L F' L : [S , L2']]",
+        "algorithm": "L F' L S L2' S' L2' L' F L'",
+        "setup": "R' L B U2 B R L B2 L2 D L2 B2 L2 B2 D'"
+    },
+    "M\u00d8": {
+        "commutator": "[M' U' L : [E' , L2']]",
+        "algorithm": "M' U' L E' L2' E L2' L' U M",
+        "setup": "F' D L D2 F D F' L F2 L2 U2 R2 B2 R2 U2 F2 D'"
+    },
+    "S\u00d8": {
+        "commutator": "[l' : [U' L' U , M]]",
+        "algorithm": "l' U' L' U M U' L U M' l",
+        "setup": "F U' D R U2 R' U D' F U F2 R2 B2 D2 B2 R2 F2 U' F2"
+    },
+    "O\u00d8": {
+        "commutator": "[S' U' R : [E' , R2']]",
+        "algorithm": "S' U' R E' R2' E R2' R' U S",
+        "setup": "F' U B L B' U' F' D' L U D' B2 D L2 F2 U' D R2"
+    },
+    "R\u00d8": {
+        "commutator": "[U l : [E , L' U' L]]",
+        "algorithm": "U l E L' U' L E' L' U L l' U'",
+        "setup": "U R L F' D2 F R L F2 R2 D L2 D' R2 F2 R2 L2 U'"
+    },
+    "Q\u00d8": {
+        "commutator": "[L E2' : [L' U L , E']]",
+        "algorithm": "L E2' L' U L E' L' U' L E E2' L'",
+        "setup": "U' R' F D F' D R D2 R U D' F2 U D' F2 U' R2 D R2"
+    },
+    "B\u00d8": {
+        "commutator": "[L F' : [E' , L2']]",
+        "algorithm": "L F' E' L2' E L2' F L'",
+        "setup": "R L F' L2 F R L B2 R2 D F2 R2 B2 L2 U R2"
+    },
+    "J\u00d8": {
+        "commutator": "[S , L' F' L]",
+        "algorithm": "S L' F' L S' L' F L",
+        "setup": "R L F' L2 F R L F2 L2 U F2 U' L2 F2 R2 L2"
+    },
+    "V\u00d8": {
+        "commutator": "[U : [L B' L' , S']]",
+        "algorithm": "U L B' L' S' L B L' S U'",
+        "setup": "R L F' L2 F' R' L D L2 B2 R2 F2 U' R2 B2"
+    },
+    "FI": {
+        "commutator": "[U' : [R E' R' , U2]]",
+        "algorithm": "U' R E' R' U2 R E R' U2 U",
+        "setup": "F' U2 R2 D2 B U2 R2 L2 D2 F2 L2 U2 L2"
+    },
+    "DI": {
+        "commutator": "[U' , R E' R']",
+        "algorithm": "U' R E' R' U R E R'",
+        "setup": "F' U2 L2 U2 F' U2 R2 U' L2 U R2 L2 U' F2 U'"
+    },
+    "PI": {
+        "commutator": "[U' : [R E' R' , U']]",
+        "algorithm": "U' R E' R' U' R E R' U U",
+        "setup": "F' D2 L2 D2 F' U2 L2 U R2 U' R2 L2 U F2 U"
+    },
+    "KI": {
+        "commutator": "[S : [U' , R E' R']]",
+        "algorithm": "S U' R E' R' U R E R' S'",
+        "setup": "U2 F R2 F D L' D L B' U' B2 U R2 D' F2 U2 B2 L2 B2"
+    },
+    "LI": {
+        "commutator": "[M' U L : [S' , L2']]",
+        "algorithm": "M' U L S' L2' S L2' L' U' M",
+        "setup": "U2 F R2 D2 L2 B D2 R2"
+    },
+    "\u00d8I": {
+        "commutator": "[U S U' , L']",
+        "algorithm": "U S U' L' U S' U' L",
+        "setup": "L F2 B R' D2 R D B U2 D2 F2 B2 U' D2 L2 U' L2"
+    },
+    "HI": {
+        "commutator": "[R2 : [R' U' R , E']]",
+        "algorithm": "R2 R' U' R E' R' U R E R2",
+        "setup": "F' L2 F' U' D R F2 R U R2 U D' F2 U'"
+    },
+    "GI": {
+        "commutator": "[M' : [U' L U , M']]",
+        "algorithm": "M' U' L U M' U' L' U M M",
+        "setup": "U2 L' D F D2 F' R2 L B U D' R2 U' R2 D R2 U2"
+    },
+    "EI": {
+        "commutator": "[L' U L , E]",
+        "algorithm": "L' U L E L' U' L E'",
+        "setup": "F' L2 F U' D R' F2 R U D'"
+    },
+    "TI": {
+        "commutator": "[R F : [E' , R2']]",
+        "algorithm": "R F E' R2' E R2' F' R'",
+        "setup": "R U' D B U' B U D' R U R2 F2 R2 U F2 U' R2 F2"
+    },
+    "CI": {
+        "commutator": "[u R' : [S , R2]]",
+        "algorithm": "u R' S R2 S' R2 R u'",
+        "setup": "F' U2 R2 D2 B2 U2 L2 D2 F'"
+    },
+    "NI": {
+        "commutator": "[R' F : [E' , R2]]",
+        "algorithm": "R' F E' R2 E R2 F' R",
+        "setup": "R U2 L2 F' L2 U2 L2 F' R U2 R2 F2 R2 U2 R2 F2 L2"
+    },
+    "MI": {
+        "commutator": "[l' U' L : [E' , L2']]",
+        "algorithm": "l' U' L E' L2' E L2' L' U l",
+        "setup": "U2 F' R2 U2 R2 F' R2 U' D' L2 F2 U D R2 F2 R2"
+    },
+    "SI": {
+        "commutator": "[M' , U' L U]",
+        "algorithm": "M' U' L U M U' L' U",
+        "setup": "U' L' F2 B' R U2 R' U' B U' D R2 U' R2 U F2 U2 D'"
+    },
+    "RI": {
+        "commutator": "[U' M : [L S L' , U]]",
+        "algorithm": "U' M L S L' U L S' L' U' M' U",
+        "setup": "L' F D' F' D2 L' D' F D F2 U2 R2 F2 L2 D2 R2 B2"
+    },
+    "QI": {
+        "commutator": "[R' U' R , E']",
+        "algorithm": "R' U' R E' R' U R E",
+        "setup": "F' L2 F U D' R' U2 R L2 F2 R2 U D F2 L2 B2 D2"
+    },
+    "BI": {
+        "commutator": "[l' U' : [S', L2 ]]",
+        "algorithm": "l' U' S' L2 S L2 U l",
+        "setup": "F' U2 R2 D2 B U2 L2 F2 R2 D2 R2 F2 D2 R2 F2"
+    },
+    "JI": {
+        "commutator": "[u' R : [E , R2']]",
+        "algorithm": "u' R E R2' E' R2' R' u",
+        "setup": "R2 F' U2 R2 D2 B' L2 U F2 R2 B2 U2 F2 L2 B2 U'"
+    },
+    "VI": {
+        "commutator": "[M' : [U' L U , M2']]",
+        "algorithm": "M' U' L U M2' U' L' U M2' M",
+        "setup": "F' U2 R2 D2 B R2 U2 L2 F2"
+    },
+    "UI": {
+        "commutator": "[u L : [E , L2']]",
+        "algorithm": "u L E L2' E' L2' L' u'",
+        "setup": "R2 F' U2 R2 D2 B' L2 U' F2 R2 F2 D2 B2 L2 B2 U"
+    },
+    "FX": {
+        "commutator": "[R' U' : [S , R2']]",
+        "algorithm": "R' U' S R2' S' R2' U R",
+        "setup": "U R F2 U2 F2 R U D F2 L2 D2 L2 F2 R2 D'"
+    },
+    "DX": {
+        "commutator": "[E' : [U' , R' E R]]",
+        "algorithm": "E' U' R' E R U R' E' R E",
+        "setup": "U L U2 F2 U2 L D2 F2 U' F2 D R2 L2 D' R2 D2"
+    },
+    "PX": {
+        "commutator": "[U , L' E2' L]",
+        "algorithm": "U L' E2' L U' L' E2' L",
+        "setup": "U L U2 F2 U2 L U2 B2 U F2 U' F2 B2 U L2"
+    },
+    "KX": {
+        "commutator": "[M' : [U' , R S' R']]",
+        "algorithm": "M' U' R S' R' U R S R' M",
+        "setup": "U B' L' D' F2 U2 D' R F U' F2 U F2 R2 F2 U D2 B2 R2"
+    },
+    "LX": {
+        "commutator": "[E , R U' R']",
+        "algorithm": "E R U' R' E' R U R'",
+        "setup": "R U' R' U D' F U F U F2 U' D R2 U' R2"
+    },
+    "\u00d8X": {
+        "commutator": "[L' : [E , R U' R']]",
+        "algorithm": "L' E R U' R' E' R U R' L",
+        "setup": "U' F D' L' D2 L F' B2 R U R2 U' B2 U"
+    },
+    "IX": {
+        "commutator": "[R2 : [E' , R' U' R]]",
+        "algorithm": "R2 E' R' U' R E R' U R R2",
+        "setup": "R U' R U' D B' U B U D' R2"
+    },
+    "GX": {
+        "commutator": "[U' R U , M']",
+        "algorithm": "U' R U M' U' R' U M",
+        "setup": "U F U' L' U2 F' U' F L F2 U2 R2 F2 R2 U2 R2 F2 R2"
+    },
+    "EX": {
+        "commutator": "[R' U' R' : [E , R2]]",
+        "algorithm": "R' U' R' E R2 E' R2 R U R",
+        "setup": "U' R' U2 B2 D2 L U' D' L2 U2 B2 U2 D'"
+    },
+    "TX": {
+        "commutator": "[R U2' : [R' S' R , U']]",
+        "algorithm": "R U2' R' S' R U' R' S R U U2' R'",
+        "setup": "U' R' U2 R' U' B U' B' R U F2 D' L2 U L2 F2 D"
+    },
+    "CX": {
+        "commutator": "[E' , R U' R']",
+        "algorithm": "E' R U' R' E R U R'",
+        "setup": "R U' R U D' F' U F U' D R2"
+    },
+    "NX": {
+        "commutator": "[R' f R : [S' , R2']]",
+        "algorithm": "R' f R S' R2' S R2' R' f' R",
+        "setup": "U F D R D2 R' F B2 L U D' B2 U' B2 D F2 B2 U'"
+    },
+    "SX": {
+        "commutator": "[U' R U , M]",
+        "algorithm": "U' R U M U' R' U M'",
+        "setup": "U2 F R U R' U F U2 F' L2 U' L2 D F2 D' F2 U2"
+    },
+    "OX": {
+        "commutator": "[R' U' R : [E' , R2']]",
+        "algorithm": "R' U' R E' R2' E R2' R' U R",
+        "setup": "U' R U2 F2 D2 L D2 F2 R2 U' D B2 D'"
+    },
+    "RX": {
+        "commutator": "[U2' : [U R U' , M]]",
+        "algorithm": "U2' U R U' M U R' U' M' U2'",
+        "setup": "U' L' F R' F' D2 L' F' R U L2 U' F2 R2 D' R2 L2 U F2"
+    },
+    "QX": {
+        "commutator": "[U R : [S , R2']]",
+        "algorithm": "U R S R2' S' R2' R' U'",
+        "setup": "U R' F2 U2 F2 R' F2 U2 R2 F2 U2 F2 R2 F2 U"
+    },
+    "BX": {
+        "commutator": "[U R U' : [M' , U2]]",
+        "algorithm": "U R U' M' U2 M U2 U R' U'",
+        "setup": "U R B2 U2 B2 R F2 L2 B2 U F2 R2 B2 U' R2 D"
+    },
+    "JX": {
+        "commutator": "U2 R U' R' U' R' U' R U R U'",
+        "algorithm": "U2 R U' R' U' R' U' R U R U'",
+        "setup": "U R F2 U2 F2 R F2 L2 B2 U' D' L2 F2 U2 D'"
+    },
+    "VX": {
+        "commutator": "[U' R U , M2']",
+        "algorithm": "U' R U M2' U' R' U M2'",
+        "setup": "R' D R2 L2 U' R L2 U' L2 U R2 L2 D' L2 D L2"
+    },
+    "UX": {
+        "commutator": "[U L' : [E' , L2]]",
+        "algorithm": "U L' E' L2 E L2 L U'",
+        "setup": "U R F2 U2 F2 R' F2 B2 L2 F2 B2 U D R2 U2 D'"
+    },
+    "FG": {
+        "commutator": "[R' F' : [R U R' , E]]",
+        "algorithm": "R' F' R U R' E R U' R' E' F R",
+        "setup": "U R L' B D2 B R L B2 R2 U R2 B2 R2 B2 U2"
+    },
+    "DG": {
+        "commutator": "[r : [U' R' U , M]]",
+        "algorithm": "r U' R' U M U' R U M' r'",
+        "setup": "U R L' F L2 F R L' U L2 U' R2 L2 U B2 D2 B2 U2"
+    },
+    "PG": {
+        "commutator": "[l' : [U L U' , M]]",
+        "algorithm": "l' U L U' M U L' U' M' l",
+        "setup": "U R L' F L2 F' R' L D2 R2 L2 U' L2 U R2 L2 U' D2"
+    },
+    "KG": {
+        "commutator": "[l' : [M' , U' L U]]",
+        "algorithm": "l' M' U' L U M U' L' U l",
+        "setup": "R F R' F2 L F' L' F2 U' F2 U F2 D' F2 D F2"
+    },
+    "LG": {
+        "commutator": "[M2' : [U' L' U , M]]",
+        "algorithm": "M2' U' L' U M U' L U M' M2'",
+        "setup": "R U L F' L' U' R' D' F D"
+    },
+    "\u00d8G": {
+        "commutator": "[U : [L F L' , S]]",
+        "algorithm": "U L F L' S L F' L' S' U'",
+        "setup": "R L F' L2 F R L U2 D2 L2 D' R2 U2 D' L2"
+    },
+    "IG": {
+        "commutator": "[M' : [M' , U' L U]]",
+        "algorithm": "M' M' U' L U M U' L' U M",
+        "setup": "U2 B' R D R' D B D2 B U D' R2 B2 D' B2 U R2 D"
+    },
+    "HG": {
+        "commutator": "[M' , U' R U]",
+        "algorithm": "M' U' R U M U' R' U",
+        "setup": "R U' F' L2 F R' L2 F' R2 B2 U R2 F2 L2 D2 F2 D' L2"
+    },
+    "EG": {
+        "commutator": "[M' , U L' U']",
+        "algorithm": "M' U L' U' M U L U'",
+        "setup": "L' U F R2 F' R2 L F L2 B2 U' L2 F2 R2 D2 F2 D R2"
+    },
+    "TG": {
+        "commutator": "[r : [M' , U R' U']]",
+        "algorithm": "r M' U R' U' M U R U' r'",
+        "setup": "R L F R2 F R L U L2 U L2 U2 D' F2 D F2 L2"
+    },
+    "CG": {
+        "commutator": "[M2' : [U R' U' , M]]",
+        "algorithm": "M2' U R' U' M U R U' M' M2'",
+        "setup": "U F U' L' U L' F' D2 B' R2 D' F2 U' R2 F2 R2 U' D' F2"
+    },
+    "NG": {
+        "commutator": "[U' : [R' F' R , S']]",
+        "algorithm": "U' R' F' R S' R' F R S U",
+        "setup": "R' L F R2 F R L' F2 U F2 U R2 D R2 U2 D' R2"
+    },
+    "MG": {
+        "commutator": "[M2' : [U R U' , M]]",
+        "algorithm": "M2' U R U' M U R' U' M' M2'",
+        "setup": "R U R' D R U' F R' F D F2 D' F2 U' F2 U L2 D' L2"
+    },
+    "SG": {
+        "commutator": "[U' : [R' F' R , S]]",
+        "algorithm": "U' R' F' R S R' F R S' U",
+        "setup": "R' B' D' F2 R' D2 B' U L' B2 D' R2 D F2 U2 F2 B2 D B2"
+    },
+    "OG": {
+        "commutator": "[M' , U L U']",
+        "algorithm": "M' U L U' M U L' U'",
+        "setup": "U L D' F' D2 L' D' L F L2 U D R2 F2 L2 D2 R2 B2 L2"
+    },
+    "RG": {
+        "commutator": "U M U M' U2 M' U' M U",
+        "algorithm": "U M U M' U2 M' U' M U",
+        "setup": "U R L F' D2 F' R L B2 L2 U' R2 F2 L2 B2 D L2 U'"
+    },
+    "QG": {
+        "commutator": "[M' , U' R' U]",
+        "algorithm": "M' U' R' U M U' R U",
+        "setup": "U F' L' U D2 F2 U R B U' F2 L2 U2 D' R2 F2 R2 D' R2"
+    },
+    "JG": {
+        "commutator": "[U R' F' R : [S , R2']]",
+        "algorithm": "U R' F' R S R2' S' R2' R' F R U'",
+        "setup": "U R L' B D2 B' R' L U B2 R2 F2 L2 D' B2 L2 F2 U"
+    },
+    "VG": {
+        "commutator": "[D : [S' , R F R']]",
+        "algorithm": "D S' R F R' S R F' R' D'",
+        "setup": "U R L' F L2 F' R L U2 D2 L2 D R2 U D"
+    },
+    "UG": {
+        "commutator": "[U' L F L' : [S' , L2]]",
+        "algorithm": "U' L F L' S' L2 S L2 L F' L' U",
+        "setup": "U R L' F L2 F' R' L F2 R2 B2 U' B2 R2 F2 L2 U' D'"
+    },
+    "FE": {
+        "commutator": "[L U : [S' , L2']]",
+        "algorithm": "L U S' L2' S L2' U' L'",
+        "setup": "U' R' U2 F2 U2 R F2 R2 F2 U2 F2 R2 U' D' F2 D"
+    },
+    "DE": {
+        "commutator": "[U' , R E2 R']",
+        "algorithm": "U' R E2 R' U R E2 R'",
+        "setup": "U' R' U2 F2 U2 R' U2 B2 U' F2 U F2 B2 U' R2"
+    },
+    "PE": {
+        "commutator": "[U' : [R E2 R' , U']]",
+        "algorithm": "U' R E2 R' U' R E2 R' U U",
+        "setup": "U' R' U2 F2 U2 R U2 F2 U' F2 B2 U' F2 U F2 B2"
+    },
+    "KE": {
+        "commutator": "[L' U2 : [L S L' , U]]",
+        "algorithm": "L' U2 L S L' U L S' L' U' U2 L",
+        "setup": "U L U2 L U B' U B L' U' F2 D R2 U' R2 F2 D'"
+    },
+    "\u00d8E": {
+        "commutator": "[L f' L' : [S , L2]]",
+        "algorithm": "L f' L' S L2 S' L2 L f L'",
+        "setup": "U F' D L B2 L' F B2 L U2 L2 D L2 U' F2 D B2 U2 F2"
+    },
+    "IE": {
+        "commutator": "[E , L' U L]",
+        "algorithm": "E L' U L E' L' U' L",
+        "setup": "L' U L U D' B' U' B U' D"
+    },
+    "HE": {
+        "commutator": "[R' U' R : [E , R2']]",
+        "algorithm": "R' U' R E R2' E' R2' R' U R",
+        "setup": "U R F2 D2 B2 L U2 B2 U' D2"
+    },
+    "GE": {
+        "commutator": "[U L' U' , M']",
+        "algorithm": "U L' U' M' U L U' M",
+        "setup": "U L' D2 L D F' D F L U D' B2 U' B2 D B2 D' B2 U'"
+    },
+    "TE": {
+        "commutator": "[M' : [U , L' S L]]",
+        "algorithm": "M' U L' S L U' L' S' L M",
+        "setup": "U' B R D F2 U2 D L' F' U R2 F2 U D2 B2 R2 B2 U B2"
+    },
+    "CE": {
+        "commutator": "[L2' : [E , L U' L']]",
+        "algorithm": "L2' E L U' L' E' L U L' L2'",
+        "setup": "L' U' L' U D' B U B U B2 U' D L2 U'"
+    },
+    "NE": {
+        "commutator": "[R E : [R' U' R , E]]",
+        "algorithm": "R E R' U' R E R' U R E' E' R'",
+        "setup": "U F' D R D2 R' F B2 L U D' B2 U' B2 D B2 U'"
+    },
+    "ME": {
+        "commutator": "[E' , L' U L]",
+        "algorithm": "E' L' U L E L' U' L",
+        "setup": "L' U L U' D F' U' F U D'"
+    },
+    "SE": {
+        "commutator": "[U L' U' , M]",
+        "algorithm": "U L' U' M U L U' M'",
+        "setup": "U2 F' R2 L' F R2 F' U' L U' F2 U2 F2 D' R2 D B2 U' B2"
+    },
+    "OE": {
+        "commutator": "[U' L' : [S' , L2]]",
+        "algorithm": "U' L' S' L2 S L2 L U",
+        "setup": "U' R U2 F2 D2 L U2 F2 B2 U D' L2 D'"
+    },
+    "RE": {
+        "commutator": "[U' R' B : [R2 , E]]",
+        "algorithm": "U' R' B R2 E R2 E' B' R U",
+        "setup": "U R F' L F D2 R F L' U' R2 U F2 L2 D R2 L2 U' F2"
+    },
+    "QE": {
+        "commutator": "[R U' R : [E , R2']]",
+        "algorithm": "R U' R E R2' E' R2' R' U R'",
+        "setup": "U R' F2 U2 F2 R' F2 U D F2 L2 U2 R2 B2 L2 D"
+    },
+    "BE": {
+        "commutator": "[U' D R : [E , R2']]",
+        "algorithm": "U' D R E R2' E' R2' R' D' U",
+        "setup": "U' L' B2 U2 B2 L' F2 R2 B2 U' F2 L2 B2 U L2 D'"
+    },
+    "JE": {
+        "commutator": "[U' R : [E , R2']]",
+        "algorithm": "U' R E R2' E' R2' R' U",
+        "setup": "U' R' U2 F2 U2 R U2 F2 U' D' F2 D"
+    },
+    "VE": {
+        "commutator": "[U L' U' , M2']",
+        "algorithm": "U L' U' M2' U L U' M2'",
+        "setup": "L U' F2 B2 D R' L2 U L2 D' F2 B2 U R2 D' R2"
+    },
+    "UE": {
+        "commutator": "U2' L' U L U L U L' U' L' U",
+        "algorithm": "U2' L' U L U L U L' U' L' U",
+        "setup": "U' R' U2 F2 U2 R U2 R2 B2 U D L2 B2 R2 F2 D"
+    },
+    "FT": {
+        "commutator": "[U M U : [M' , U2']]",
+        "algorithm": "U M U M' U2' M U2' U' M' U'",
+        "setup": "R L F R2 F R L B2 R2 D B2 L2 F2 R2 U' R2"
+    },
+    "PT": {
+        "commutator": "[S , R' F R]",
+        "algorithm": "S R' F R S' R' F' R",
+        "setup": "R L F R2 F R L F2 R2 D F2 D2 R2 F2 R2 D L2"
+    },
+    "KT": {
+        "commutator": "[M U : [M' , U2']]",
+        "algorithm": "M U M' U2' M U2' U' M'",
+        "setup": "R L' B' U2 B' R L B2 R2 U' L2 F2 L2 F2 U"
+    },
+    "LT": {
+        "commutator": "[M L' U : [M' , U2']]",
+        "algorithm": "M L' U M' U2' M U2' U' L M'",
+        "setup": "U2 R B2 R D F' D F L' U' L2 U B2 D' R2 U2 L2 F2 L2"
+    },
+    "\u00d8T": {
+        "commutator": "[L F' L : [S' , L2']]",
+        "algorithm": "L F' L S' L2' S L2' L' F L'",
+        "setup": "R L B' U2 B' R L B2 R2 U' L2 F2 L2 F2 U L2"
+    },
+    "IT": {
+        "commutator": "[R F : [R2' , E']]",
+        "algorithm": "R F R2' E' R2' E F' R'",
+        "setup": "R U' D B' U' B' U D' R U F2 U L2 B2 R2 D B2 L2"
+    },
+    "HT": {
+        "commutator": "[R U : [R' S' R , U]]",
+        "algorithm": "R U R' S' R U R' S R U' U' R'",
+        "setup": "U F U2 F U L' U L F' U' R2 D B2 U' B2 R2 D'"
+    },
+    "GT": {
+        "commutator": "[r : [U R' U' , M']]",
+        "algorithm": "r U R' U' M' U R U' M r'",
+        "setup": "U R L' F L2 F' R L B2 L2 U' B2 R2 F2 L2 U' D'"
+    },
+    "ET": {
+        "commutator": "[M' : [L' S L , U]]",
+        "algorithm": "M' L' S L U L' S' L U' M",
+        "setup": "R' U F L F2 L' U' F' R' U' F2 L2 B2 D' R2 B2 L2 F2 R2"
+    },
+    "CT": {
+        "commutator": "[S' : [L' E L , U]]",
+        "algorithm": "S' L' E L U L' E' L U' S",
+        "setup": "R U2 R U F' U F R U' D B2 U' L2 U L2 D' B2 R2"
+    },
+    "NT": {
+        "commutator": "[r U' R' : [S , R2]]",
+        "algorithm": "r U' R' S R2 S' R2 R U r'",
+        "setup": "R' L F R2 F' R L B2 U' L2 F2 R2 D' F2 U R2 U'"
+    },
+    "MT": {
+        "commutator": "[S' : [L E' L' , U]]",
+        "algorithm": "S' L E' L' U L E L' U' S",
+        "setup": "F U R U2 F U F' R U2 F2 L2 B2 D2 R2 D' B2 R2 L2"
+    },
+    "ST": {
+        "commutator": "[r : [U R' U' , M]]",
+        "algorithm": "r U R' U' M U R U' M' r'",
+        "setup": "F U F' R' F2 U' F' U R L2 F2 R2 D' L2 B2 L2 D R2 L2"
+    },
+    "OT": {
+        "commutator": "[M' : [R E' R' , U]]",
+        "algorithm": "M' R E' R' U R E R' U' M",
+        "setup": "U' B U2 B U R' U R B' D' B2 D L2 U' L2 B2 U"
+    },
+    "RT": {
+        "commutator": "M2' U M U M' U M U M' M2",
+        "algorithm": "M2' U M U M' U M U M' M2",
+        "setup": "U R L F' D2 F' R' L D B2 R2 F2 L2 U' R2 B2 U'"
+    },
+    "QT": {
+        "commutator": "[R u' R' : [E' , R2]]",
+        "algorithm": "R u' R' E' R2 E R2 R u R'",
+        "setup": "U L' F' D' R2 U2 D' B R U' R2 U R2 B2 R2 U D2 L2 B2"
+    },
+    "BT": {
+        "commutator": "[R F : [E , R2']]",
+        "algorithm": "R F E R2' E' R2' F' R'",
+        "setup": "R L F R2 F' R L B2 R2 D' B2 L2 F2 R2 U' R2"
+    },
+    "JT": {
+        "commutator": "[S' , R' F R]",
+        "algorithm": "S' R' F R S R' F' R",
+        "setup": "R L F R2 F R L' U R2 F2 R2 U2 F2 U R2 F2"
+    },
+    "VT": {
+        "commutator": "[r : [U R' U' , M2']]",
+        "algorithm": "r U R' U' M2' U R U' M2' r'",
+        "setup": "R L F R2 F R' L D' R2 F2 L2 B2 U R2 B2"
+    },
+    "UT": {
+        "commutator": "[R2' : [S' , R F R']]",
+        "algorithm": "R2' S' R F R' S R F' R' R2'",
+        "setup": "R L F R2 F' R L' U F2 B2 L2 F2 B2 U' R2"
+    },
+    "FC": {
+        "commutator": "[U : [L' E L , U2']]",
+        "algorithm": "U L' E L U2' L' E' L U2' U'",
+        "setup": "F U2 R2 U2 F U' D' R2 B2 U' D' L2 B2 R2"
+    },
+    "DC": {
+        "commutator": "[U : [L' E L , U]]",
+        "algorithm": "U L' E L U L' E' L U' U'",
+        "setup": "F D2 R2 D2 F U2 R2 U' L2 U R2 L2 U' F2 U'"
+    },
+    "PC": {
+        "commutator": "[U , L' E L]",
+        "algorithm": "U L' E L U' L' E' L",
+        "setup": "F U2 R2 U2 F U2 L2 U R2 U' R2 L2 U F2 U"
+    },
+    "KC": {
+        "commutator": "[L' F' : [E , L2]]",
+        "algorithm": "L' F' E L2 E' L2 F L",
+        "setup": "R F' U F' U2 R' F U' R' B2 U' F2 U2 B2 D' R2 U F2 D"
+    },
+    "LC": {
+        "commutator": "[r U R' : [E , R2]]",
+        "algorithm": "r U R' E R2 E' R2 R U' r'",
+        "setup": "U2 F R2 U2 R2 F U2 F2 U2 R2 U2 R2 U2 R2 F2 R2"
+    },
+    "\u00d8C": {
+        "commutator": "[L F' : [E , L2']]",
+        "algorithm": "L F' E L2' E' L2' F L'",
+        "setup": "F U2 R F2 U2 B2 L' D2 F U' D' F2 U D B2"
+    },
+    "IC": {
+        "commutator": "[u' L : [S' , L2']]",
+        "algorithm": "u' L S' L2' S L2' L' u",
+        "setup": "F' U2 R2 D2 B U D' R2 L2 D2 F2 U D B2"
+    },
+    "HC": {
+        "commutator": "[R U' R' , E']",
+        "algorithm": "R U' R' E' R U R' E",
+        "setup": "F R2 F' U D' R U2 R F2 R2 U2 R2 F2 R2 U D"
+    },
+    "GC": {
+        "commutator": "[M' : [U R' U' , M']]",
+        "algorithm": "M' U R' U' M' U R U' M M",
+        "setup": "U2 R D' F' D2 F R' L2 B U B2 U' L2 U2"
+    },
+    "EC": {
+        "commutator": "[L' : [U , L' E L]]",
+        "algorithm": "L' U L' E L U' L' E' L L",
+        "setup": "F R2 F U D' R' D2 R U' D R2 F2 U2 B2 L2 B2 U2"
+    },
+    "TC": {
+        "commutator": "[S' : [U , L' E L]]",
+        "algorithm": "S' U L' E L U' L' E' L S",
+        "setup": "U2 F' L2 F' D' R D' R' B U B2 U' L2 D F2 U2 B2 R2 B2"
+    },
+    "NC": {
+        "commutator": "[U' S U , R]",
+        "algorithm": "U' S U R U' S' U R'",
+        "setup": "R U' F' U2 R' U' R F R2 U2 F2 R2 F2 U2 F2 R2 F2 U"
+    },
+    "MC": {
+        "commutator": "[M' U' R' : [S , R2]]",
+        "algorithm": "M' U' R' S R2 S' R2 R U M",
+        "setup": "U2 F' R2 U2 R2 F U2 F2 U F2 R2 L2 B2 D B2 L2"
+    },
+    "SC": {
+        "commutator": "[M' , U R' U']",
+        "algorithm": "M' U R' U' M U R U'",
+        "setup": "U R F2 B L' U2 L U B U2 D2 F2 B2 U B2 D' B2 D'"
+    },
+    "OC": {
+        "commutator": "[L U L' , E]",
+        "algorithm": "L U L' E L U' L' E'",
+        "setup": "F R2 F U' D R' B2 R U D' F2"
+    },
+    "RC": {
+        "commutator": "[U M : [R' S' R , U']]",
+        "algorithm": "U M R' S' R U' R' S R U M' U'",
+        "setup": "R F' D F D2 R D F R2 L2 B2 U' R2 U2 B2 L2 F2 D2"
+    },
+    "BC": {
+        "commutator": "[r U' : [R2' , S]]",
+        "algorithm": "r U' R2' S R2' S' U r'",
+        "setup": "F U2 R2 U2 F U' D' F2 U D"
+    },
+    "JC": {
+        "commutator": "[u' R' : [E' , R2]]",
+        "algorithm": "u' R' E' R2 E R2 R u",
+        "setup": "B U F2 R2 F2 U F B U2 F' B2"
+    },
+    "VC": {
+        "commutator": "[M' : [U R' U' , M2']]",
+        "algorithm": "M' U R' U' M2' U R U' M2' M",
+        "setup": "F U2 R2 U2 F L2 B2 R2 U D B2 L2 U D"
+    },
+    "UC": {
+        "commutator": "[u L' : [E' , L2]]",
+        "algorithm": "u L' E' L2 E L2 L u'",
+        "setup": "D F U2 R2 U2 F U' D' F2 U"
+    },
+    "FN": {
+        "commutator": "[U' : [R E R' , U2]]",
+        "algorithm": "U' R E R' U2 R E' R' U2 U",
+        "setup": "R' L F R2 F R L B2 R2 D B2 L2 F2 R2 U'"
+    },
+    "DN": {
+        "commutator": "[U' , R E R']",
+        "algorithm": "U' R E R' U R E' R'",
+        "setup": "R' L F R2 F R L' U R2 F2 R2 U2 F2 U R2 F2 R2"
+    },
+    "PN": {
+        "commutator": "[U' : [R E R' , U']]",
+        "algorithm": "U' R E R' U' R E' R' U U",
+        "setup": "R' L F R2 F' R' L D F2 R2 F2 R2 F2 D' R2 L2"
+    },
+    "KN": {
+        "commutator": "[R' F R : [S , R2']]",
+        "algorithm": "R' F R S R2' S' R2' R' F' R",
+        "setup": "R F R' F2 L F' L B2 U B2 U' L2 B2 D' B2 D F2"
+    },
+    "LN": {
+        "commutator": "[M' U R' : [E , R2]]",
+        "algorithm": "M' U R' E R2 E' R2 R U' M",
+        "setup": "F D' R' D2 F' D' F R F2 U2 R2 F2 L2 D2 R2 B2 L2 D"
+    },
+    "\u00d8N": {
+        "commutator": "[R' F R' : [S' , R2]]",
+        "algorithm": "R' F R' S' R2 S R2 R F' R",
+        "setup": "R' L B' U2 B' R L B2 L2 D' L2 B2 L2 B2 D"
+    },
+    "IN": {
+        "commutator": "[R' F : [R2 , E']]",
+        "algorithm": "R' F R2 E' R2 E F' R",
+        "setup": "U B' U' L' U2 L F2 B' R D R2 D' F2 B2 U'"
+    },
+    "HN": {
+        "commutator": "[R' f R' : [S' , R2]]",
+        "algorithm": "R' f R' S' R2 S R2 R f' R",
+        "setup": "R U' R' D' B2 D' F D F' B2 D F2 L2 D L2 F2 R2 U2 R2"
+    },
+    "GN": {
+        "commutator": "[U' : [S' , R' F' R]]",
+        "algorithm": "U' S' R' F' R S R' F R U",
+        "setup": "U R L' F L2 F' R L' U F2 L2 F2 L2 F2 U' R2 L2 U'"
+    },
+    "EN": {
+        "commutator": "[R E2 : [R' U' R , E']]",
+        "algorithm": "R E2 R' U' R E' R' U R E E2 R'",
+        "setup": "U L' F2 B R' D2 R D B U2 D2 F2 B2 U' D2 L2 U2"
+    },
+    "TN": {
+        "commutator": "[r U' R : [S , R2']]",
+        "algorithm": "r U' R S R2' S' R2' R' U r'",
+        "setup": "R L F R2 F' R L' U R2 F2 L2 B2 D B2 L2 F2 R2"
+    },
+    "CN": {
+        "commutator": "[R , U' S U]",
+        "algorithm": "R U' S U R' U' S' U",
+        "setup": "U B U' L' U2 L F2 B' R D R2 D' F2 U'"
+    },
+    "MN": {
+        "commutator": "[R' , U' S U]",
+        "algorithm": "R' U' S U R U' S' U",
+        "setup": "R F R F' D F R2 F L2 F2 B2 U B2 U' F2 U L2 F2"
+    },
+    "SN": {
+        "commutator": "[r : [U R U' , M]]",
+        "algorithm": "r U R U' M U R' U' M' r'",
+        "setup": "F U F' R' F2 U' F' U R' L2 D2 R2 D R2 B2 R2 D L2 F2"
+    },
+    "ON": {
+        "commutator": "[R' E2 : [R U' R' , E]]",
+        "algorithm": "R' E2 R U' R' E R U R' E' E2 R",
+        "setup": "U L F' D' F D' R' B2 R' U2 L2 F2 L2 U2 R2 D B2 U' L2"
+    },
+    "RN": {
+        "commutator": "[U' r' : [E' , R U R']]",
+        "algorithm": "U' r' E' R U R' E R U' R' r U",
+        "setup": "U R L F' D2 F R L' U' R2 L2 B2 R2 L2 U R2 U'"
+    },
+    "QN": {
+        "commutator": "[S U L' : [E , L2]]",
+        "algorithm": "S U L' E L2 E' L2 L U' S'",
+        "setup": "R U' F2 U2 L' B' U B' L U2 D L2 U' F2 U F2 D2 L2 F2"
+    },
+    "BN": {
+        "commutator": "[R' F : [E , R2]]",
+        "algorithm": "R' F E R2 E' R2 F' R",
+        "setup": "R' L F R2 F' R L B2 R2 D' B2 L2 F2 R2 U'"
+    },
+    "VN": {
+        "commutator": "[U' : [R' B R , S]]",
+        "algorithm": "U' R' B R S R' B' R S' U",
+        "setup": "R' L F R2 F R' L D' R2 F2 L2 B2 U R2 B2 R2"
+    },
+    "UN": {
+        "commutator": "[S' , R F R']",
+        "algorithm": "S' R F R' S R F' R'",
+        "setup": "R' L F R2 F' R L' U F2 B2 L2 F2 B2 U'"
+    },
+    "FM": {
+        "commutator": "[U : [L E' L' , U2']]",
+        "algorithm": "U L E' L' U2' L E L' U2' U'",
+        "setup": "U2 F' R2 U2 R2 F' U' D' R2 B2 U D R2 F2 L2 D2"
+    },
+    "DM": {
+        "commutator": "[U : [L E' L' , U]]",
+        "algorithm": "U L E' L' U L E L' U' U'",
+        "setup": "U2 F' R2 D2 L2 B' D R2 U2 F2 R2 D2 L2 B2 D' R2"
+    },
+    "PM": {
+        "commutator": "[U , L E' L']",
+        "algorithm": "U L E' L' U' L E L'",
+        "setup": "U2 F' L2 D2 R2 B' D F2 R2 D2 R2 F2 D2 R2 D' L2"
+    },
+    "KM": {
+        "commutator": "[R M U : [M' , U2]]",
+        "algorithm": "R M U M' U2 M U2 U' M' R'",
+        "setup": "F U2 F U L' U L F U' D R2 U' B2 U B2 D' R2 F2"
+    },
+    "LM": {
+        "commutator": "[U E R' : [S , R2]]",
+        "algorithm": "U E R' S R2 S' R2 R E' U'",
+        "setup": "U2 F R2 U2 R2 F R2 U2 F2 R2 U2 R2 F2 R2"
+    },
+    "\u00d8M": {
+        "commutator": "[M' U' L' : [E' , L2]]",
+        "algorithm": "M' U' L' E' L2 E L2 L U M",
+        "setup": "F U B L' F L B' U' F' R2 D R2 D B2 L2 U' L2 B2 D2"
+    },
+    "IM": {
+        "commutator": "[l' U' L' : [E' , L2]]",
+        "algorithm": "l' U' L' E' L2 E L2 L U l",
+        "setup": "F' U2 R2 D2 B D2 R2 U2 F2"
+    },
+    "GM": {
+        "commutator": "[M' : [U R U' , M']]",
+        "algorithm": "M' U R U' M' U R' U' M M",
+        "setup": "R' D F L2 F' R L2 F R2 B2 D' R2 F2 L2 U2 F2 U L2"
+    },
+    "EM": {
+        "commutator": "[L' U L , E']",
+        "algorithm": "L' U L E' L' U' L E",
+        "setup": "F L F R L' U' R' F U' R2 B2 L2 D L2 B2 R2 U2 F2"
+    },
+    "TM": {
+        "commutator": "[S' : [U , L E' L']]",
+        "algorithm": "S' U L E' L' U' L E L' S",
+        "setup": "R' U' F' U2 R' U' R F' U2 R2 B2 L2 D2 F2 D L2 F2 B2"
+    },
+    "CM": {
+        "commutator": "[M' U' R : [S , R2']]",
+        "algorithm": "M' U' R S R2' S' R2' R' U M",
+        "setup": "F U2 L2 D2 B D2 L2 U2"
+    },
+    "NM": {
+        "commutator": "[U' S U , R']",
+        "algorithm": "U' S U R' U' S' U R",
+        "setup": "F R F R' U R F2 R B2 R2 L2 D L2 D' R2 D B2 R2"
+    },
+    "SM": {
+        "commutator": "[M' , U R U']",
+        "algorithm": "M' U R U' M U R' U'",
+        "setup": "U R' F' U' F U' R' U2 R B2 U B2 U' B2 D B2 D'"
+    },
+    "OM": {
+        "commutator": "[L2 : [L' U L , E']]",
+        "algorithm": "L2 L' U L E' L' U' L E L2",
+        "setup": "L F L U D' B' L' B U' D L2"
+    },
+    "RM": {
+        "commutator": "[U l : [E' , L' U' L]]",
+        "algorithm": "U l E' L' U' L E L' U L l' U'",
+        "setup": "R' F' D F D2 R D F' D' R2 F2 R2 U2 L2 B2 L2 U2 F2"
+    },
+    "QM": {
+        "commutator": "[R' U' R , E]",
+        "algorithm": "R' U' R E R' U R E'",
+        "setup": "L F L U' D F' R' F U D' L2"
+    },
+    "BM": {
+        "commutator": "[U' L F : [L' S' L , F]]",
+        "algorithm": "U' L F L' S' L F L' S L F' F' L' U",
+        "setup": "U2 F' R2 U2 R2 F U' D R2 B2 L2 F2 U D L2 B2"
+    },
+    "JM": {
+        "commutator": "[U' E' R : [E , R2']]",
+        "algorithm": "U' E' R E R2' E' R2' R' E U",
+        "setup": "U2 F' L2 D2 R2 B' D R2 D2 F2 R2 D2 R2 F2 D' L2"
+    },
+    "VM": {
+        "commutator": "[M' : [U R U' , M2']]",
+        "algorithm": "M' U R U' M2' U R' U' M2' M",
+        "setup": "U2 F' R2 U2 R2 F U' D F2 B2 L2 F2 B2 U' D' R2"
+    },
+    "UM": {
+        "commutator": "[U E L : [E , L2']]",
+        "algorithm": "U E L E L2' E' L2' L' E' U'",
+        "setup": "U2 F' R2 D2 L2 B' D F2 R2 U2 L2 B2 U2 R2 D' R2"
+    },
+    "DS": {
+        "commutator": "[r' : [U' R U , M']]",
+        "algorithm": "r' U' R U M' U' R' U M r",
+        "setup": "F U' D L F2 L' U D' F U L2 F2 L2 U' F2 L2"
+    },
+    "PS": {
+        "commutator": "[L : [M , U L' U']]",
+        "algorithm": "L M U L' U' M' U L U' L'",
+        "setup": "F U F' R' F2 U' F' U R U R2 B2 L2 D L2 B2 R2 U2"
+    },
+    "KS": {
+        "commutator": "[L' : [U' L U , M']]",
+        "algorithm": "L' U' L U M' U' L' U M L",
+        "setup": "R L' F' L2 F R L U D' B2 U' B2 D R2 L2"
+    },
+    "LS": {
+        "commutator": "[U' L' U , M']",
+        "algorithm": "U' L' U M' U' L U M",
+        "setup": "F' R2 L' B U2 B' U' L U' D B2 U' B2 U R2 U D'"
+    },
+    "\u00d8S": {
+        "commutator": "[L' : [U' L' U , M']]",
+        "algorithm": "L' U' L' U M' U' L U M L",
+        "setup": "R L F' L2 F R L U D' B2 U' B2 D R2"
+    },
+    "IS": {
+        "commutator": "[U' L U , M']",
+        "algorithm": "U' L U M' U' L' U M",
+        "setup": "U2 B R2 L F' U2 F U L U2 D2 R2 L2 D F2 D' F2 D2"
+    },
+    "HS": {
+        "commutator": "[M , U' R U]",
+        "algorithm": "M U' R U M' U' R' U",
+        "setup": "U' R' F' U' F U' R' U2 R B2 U B2 D' R2 D R2 U"
+    },
+    "GS": {
+        "commutator": "[U' : [S , R' F' R]]",
+        "algorithm": "U' S R' F' R S' R' F R U",
+        "setup": "U R L' F L2 F' R' L D F2 B2 R2 F2 B2 U' D'"
+    },
+    "ES": {
+        "commutator": "[M , U L' U']",
+        "algorithm": "M U L' U' M' U L U'",
+        "setup": "U L F U F' U L U2 L' B2 U' B2 D L2 D' L2 U'"
+    },
+    "TS": {
+        "commutator": "[R : [U R' U' , M']]",
+        "algorithm": "R U R' U' M' U R U' M R'",
+        "setup": "R L F R2 F R L' U' R2 U2 B2 L2 F2 D' L2 B2"
+    },
+    "CS": {
+        "commutator": "[U R' U' , M']",
+        "algorithm": "U R' U' M' U R U' M",
+        "setup": "U2 B' R' U' R U' F' L2 F L2 B2 U2 B2 D' L2 D F2 U' F2"
+    },
+    "NS": {
+        "commutator": "[R : [U R U' , M']]",
+        "algorithm": "R U R U' M' U R' U' M R'",
+        "setup": "R' L F R2 F R L U2 L2 F2 L2 U2 L2 F2 U' R2 U'"
+    },
+    "MS": {
+        "commutator": "[U R U' , M']",
+        "algorithm": "U R U' M' U R' U' M",
+        "setup": "F R U R' U F U2 F U D' L2 B2 U' B2 D L2 U' F2"
+    },
+    "OS": {
+        "commutator": "[M , U L U']",
+        "algorithm": "M U L U' M' U L' U'",
+        "setup": "U L' F2 B' R U2 R' U' B U' D R2 U' R2 U F2 D'"
+    },
+    "RS": {
+        "commutator": "[U' : [S , R B R']]",
+        "algorithm": "U' S R B R' S' R B' R' U",
+        "setup": "U R L F' D2 F R L B2 L2 U R2 U' L2 B2 R2 L2 U'"
+    },
+    "QS": {
+        "commutator": "[M , U' R' U]",
+        "algorithm": "M U' R' U M' U' R U",
+        "setup": "U' R F2 B L' U2 L U B U2 D2 F2 B2 U B2 D' B2 U2 D'"
+    },
+    "BS": {
+        "commutator": "[U : [R' F' R , S]]",
+        "algorithm": "U R' F' R S R' F R S' U'",
+        "setup": "F U' D R U2 R' U D' F U2 R2 F2 R2 U2 R2 F2 R2 U2 F2"
+    },
+    "JS": {
+        "commutator": "[r' : [U' R' U , M']]",
+        "algorithm": "r' U' R' U M' U' R U M r",
+        "setup": "F U' D L F2 L' U D' F B2 L2 F2 D' L2 F2 L2 D B2"
+    },
+    "VS": {
+        "commutator": "[U : [R B R' , S]]",
+        "algorithm": "U R B R' S R B' R' S' U'",
+        "setup": "R F D B2 R D2 F U' L F2 D R2 D F2 B2 U2 B2 D F2"
+    },
+    "US": {
+        "commutator": "[l : [U L U' , M']]",
+        "algorithm": "l U L U' M' U L' U' M l'",
+        "setup": "F U' D L F2 L' U D' F U' L2 F2 L2 U F2 L2"
+    },
+    "FO": {
+        "commutator": "[L' U' : [L2 , S']]",
+        "algorithm": "L' U' L2 S' L2 S U L",
+        "setup": "U' R U2 F2 D2 L B2 D2 F2 U"
+    },
+    "DO": {
+        "commutator": "[U' , R' E2 R]",
+        "algorithm": "U' R' E2 R U R' E2 R",
+        "setup": "U' R U2 B2 U2 R D2 B2 U D2 F2 U F2 B2 U' R2"
+    },
+    "PO": {
+        "commutator": "[U' : [R E2 R' , U']]",
+        "algorithm": "U' R E2 R' U' R E2 R' U U",
+        "setup": "U' R' U2 F2 U2 R U2 F2 U' F2 B2 U' F2 U F2 B2"
+    },
+    "KO": {
+        "commutator": "[U' R F : [R2' , E']]",
+        "algorithm": "U' R F R2' E' R2' E F' R' U",
+        "setup": "F' U L B L2 B' U' L' F' U' R2 B2 L2 D' F2 L2 F2 R2 B2"
+    },
+    "LO": {
+        "commutator": "[E' , L U L']",
+        "algorithm": "E' L U L' E L U' L'",
+        "setup": "L U L U D' B' U' B U' D L2"
+    },
+    "\u00d8O": {
+        "commutator": "[S' U' R' : [E' , R2]]",
+        "algorithm": "S' U' R' E' R2 E R2 R U S",
+        "setup": "U' B R' D R D2 B D R F2 B2 L2 U' B2 D2 R2 B2 L2 U'"
+    },
+    "HO": {
+        "commutator": "[R' U' R' : [E' , R2]]",
+        "algorithm": "R' U' R' E' R2 E R2 R U R",
+        "setup": "U R F2 U2 F2 R B2 U D F2 R2 U2 L2 B2 L2 D"
+    },
+    "GO": {
+        "commutator": "[U L U' , M']",
+        "algorithm": "U L U' M' U L' U' M",
+        "setup": "U' R F U2 D' R2 D' B' L' U F2 L2 U D2 R2 F2 R2 U R2"
+    },
+    "EO": {
+        "commutator": "[U' L : [S' , L2']]",
+        "algorithm": "U' L S' L2' S L2' L' U",
+        "setup": "U' R' U2 F2 U2 R' F2 D2 L2 B2 U' D' R2 B2 R2 D'"
+    },
+    "TO": {
+        "commutator": "[M' : [U , R E' R']]",
+        "algorithm": "M' U R E' R' U' R E R' M",
+        "setup": "U L' U2 L' U' F U' F' L D L2 D' B2 U B2 L2 U'"
+    },
+    "CO": {
+        "commutator": "[E , L U L']",
+        "algorithm": "E L U L' E' L U' L'",
+        "setup": "L U L' U D' B U' B U B2 U' D L2 U' L2"
+    },
+    "NO": {
+        "commutator": "[R' E' : [R U' R' , E']]",
+        "algorithm": "R' E' R U' R' E' R U R' E E R",
+        "setup": "U B D' R' D2 R F2 B' L U L2 U' F2 U'"
+    },
+    "MO": {
+        "commutator": "[L2 : [E' , L' U L]]",
+        "algorithm": "L2 E' L' U L E L' U' L L2",
+        "setup": "L U L U' D F' U' F U D' L2"
+    },
+    "SO": {
+        "commutator": "[U L U' , M]",
+        "algorithm": "U L U' M U L' U' M'",
+        "setup": "B R2 L F' U2 F U L U2 D2 R2 L2 U2 D' B2 D' B2"
+    },
+    "RO": {
+        "commutator": "[U2 : [U' L U , M]]",
+        "algorithm": "U2 U' L U M U' L' U M' U2",
+        "setup": "B R' U' R U' B' U2 B L2 U L2 D' B2 D"
+    },
+    "QO": {
+        "commutator": "[R U' R' : [E' , R2]]",
+        "algorithm": "R U' R' E' R2 E R2 R U R'",
+        "setup": "U R' F2 D2 B2 L U D L2 U2 F2 U2 D"
+    },
+    "BO": {
+        "commutator": "[U' L U : [M' , U2']]",
+        "algorithm": "U' L U M' U2' M U2' U' L' U",
+        "setup": "U' L B2 U2 B2 L F2 R2 B2 U' F2 L2 B2 U L2 D'"
+    },
+    "JO": {
+        "commutator": "[U' R' : [E' , R2]]",
+        "algorithm": "U' R' E' R2 E R2 R U",
+        "setup": "U' R U2 F2 D2 L F2 U2 R2 B2 U2 F2 L2 F2 U'"
+    },
+    "VO": {
+        "commutator": "[U L U' , M2']",
+        "algorithm": "U L U' M2' U L' U' M2'",
+        "setup": "L' U' F2 B2 D R L2 U L2 D' F2 B2 U R2 D' R2"
+    },
+    "UO": {
+        "commutator": "L U' L' U' L' U' L U L U",
+        "algorithm": "L U' L' U' L' U' L U L U",
+        "setup": "U' R U2 F2 D2 L U2 D2 R2 B2 U2 F2 L2 U' D2"
+    },
+    "FR": {
+        "commutator": "[U' R' B R : [S , R2']]",
+        "algorithm": "U' R' B R S R2' S' R2' R' B' R U",
+        "setup": "U R' L F' D2 F R L' U' R2 F2 R2 U2 R2 F2 R2 U2 F2"
+    },
+    "DR": {
+        "commutator": "(U M U M')2",
+        "algorithm": "U M U M' U M U M'",
+        "setup": "U R L F' D2 F R L' U' F2 U B2 L2 D L2 B2 R2"
+    },
+    "PR": {
+        "commutator": "(U' M U' M')2",
+        "algorithm": "U' M U' M' U' M U' M'",
+        "setup": "U R L F' D2 F R L U' D B2 D' L2 D F2 D'"
+    },
+    "KR": {
+        "commutator": "[R' F R U: [M, U2]]",
+        "algorithm": "R' F R U M U2 M' U2 U' R' F' R",
+        "setup": "R L' F' L2 F R' L D' F2 U2 B2 R2 B2 U2 F2 D"
+    },
+    "LR": {
+        "commutator": "[U' r' : [R U R' , E]]",
+        "algorithm": "U' r' R U R' E R U' R' E' r U",
+        "setup": "F R' D' R D' F' D2 F L2 D L2 U' F2 U"
+    },
+    "\u00d8R": {
+        "commutator": "[U l : [L' U' L , E]]",
+        "algorithm": "U l L' U' L E L' U L E' l' U'",
+        "setup": "R L F' L2 F R L' U2 R2 L2 D L2 D' R2 L2 U2 R2"
+    },
+    "IR": {
+        "commutator": "[U' M : [U , L S L']]",
+        "algorithm": "U' M U L S L' U' L S' L' M' U",
+        "setup": "R L F' L F' R' L D L' D F2 L2 U2 R2 B2 R2 U2"
+    },
+    "HR": {
+        "commutator": "[U2 : [M , U R U']]",
+        "algorithm": "U2 M U R U' M' U R' U' U2",
+        "setup": "R U F U2 F' R L2 B U' D L2 D' L2 U R2 L2"
+    },
+    "GR": {
+        "commutator": "U M' U' M U2 M U M' U",
+        "algorithm": "U M' U' M U2 M U M' U",
+        "setup": "U R L' F L2 F R L B2 L2 U B2 R2 F2 L2 U' D'"
+    },
+    "ER": {
+        "commutator": "[U' R' B : [E , R2]]",
+        "algorithm": "U' R' B E R2 E' R2 B' R U",
+        "setup": "L' U' F' U2 F R2 L' B D B2 D' R2 L2"
+    },
+    "TR": {
+        "commutator": "M' U' M' U' M U' M' U' M2",
+        "algorithm": "M' U' M' U' M U' M' U' M2",
+        "setup": "R L F R2 F R L B2 L2 U' F2 L2 B2 D2 R2 D' L2"
+    },
+    "CR": {
+        "commutator": "[U M : [U' , l' E l]]",
+        "algorithm": "U M U' l' E l U l' E' l M' U'",
+        "setup": "R F' L F' D' F L' F R' U2 F2 U' F2 U' F2 U2 F2 U"
+    },
+    "NR": {
+        "commutator": "[U' r' : [R U R' , E']]",
+        "algorithm": "U' r' R U R' E' R U' R' E r U",
+        "setup": "R' L F R2 F' R L U B2 L2 F2 D R2 F2 U R2 U'"
+    },
+    "MR": {
+        "commutator": "[U l : [L' U' L , E']]",
+        "algorithm": "U l L' U' L E' L' U L E l' U'",
+        "setup": "F' R2 L B' D2 B D L U2 D2 R2 L2 U' D2 F2 U'"
+    },
+    "SR": {
+        "commutator": "[U' : [R B R' , S]]",
+        "algorithm": "U' R B R' S R B' R' S' U",
+        "setup": "F U F' R' F2 U' F' U R' L2 D' R2 F2 L2 U2 R2 B2 R2 U"
+    },
+    "OR": {
+        "commutator": "[U2' : [M , U' L U]]",
+        "algorithm": "U2' M U' L U M' U' L' U U2'",
+        "setup": "L U' F' U2 F R2 L' B D B2 D' R2"
+    },
+    "QR": {
+        "commutator": "[U2 : [M , U R' U']]",
+        "algorithm": "U2 M U R' U' M' U R U' U2",
+        "setup": "R' U F U2 F' R L2 B U' D L2 D' L2 U L2"
+    },
+    "BR": {
+        "commutator": "[D' : [S' , R F R']]",
+        "algorithm": "D' S' R F R' S R F' R' D",
+        "setup": "U R L F' D2 F R L U' D F2 U' R2 U B2 D'"
+    },
+    "JR": {
+        "commutator": "[U L B' L : [S , L2']]",
+        "algorithm": "U L B' L S L2' S' L2' L' B L' U'",
+        "setup": "U R L F' D2 F' R L F2 R2 D' L2 B2 L2 B2 D L2 U'"
+    },
+    "UR": {
+        "commutator": "[U' R' B R' : [S' , R2]]",
+        "algorithm": "U' R' B R' S' R2 S R2 R B' R U",
+        "setup": "U R' L F' D2 F R L' F2 R2 B2 D L2 B2 R2 F2"
+    },
+    "FY": {
+        "commutator": "[R U : [R2' , S]]",
+        "algorithm": "R U R2' S R2' S' U' R'",
+        "setup": "U R' F2 U2 F2 R F2 R2 F2 D2 B2 L2 U' D' B2 D'"
+    },
+    "DY": {
+        "commutator": "[u' : [R E' R' , U]]",
+        "algorithm": "u' R E' R' U R E R' U' u",
+        "setup": "U L' U2 B2 U2 L' U2 F2 U' B2 U F2 B2 U' L2 U2"
+    },
+    "PY": {
+        "commutator": "[U , L E2' L']",
+        "algorithm": "U L E2' L' U' L E2' L'",
+        "setup": "U L' U2 B2 U2 L' D2 B2 U' D2 F2 U' F2 B2 U L2"
+    },
+    "KY": {
+        "commutator": "[M' : [U' , L' E L]]",
+        "algorithm": "M' U' L' E L U L' E' L M",
+        "setup": "U' R U2 R U F' U F R' D' R2 D B2 U' B2 R2 U"
+    },
+    "LY": {
+        "commutator": "[R2' : [E , R U' R']]",
+        "algorithm": "R2' E R U' R' E' R U R' R2'",
+        "setup": "R' U' R' U D' F U F U F2 U' D R2 U'"
+    },
+    "\u00d8Y": {
+        "commutator": "[L : [E', R' U' R]]",
+        "algorithm": "L E' R' U' R E R' U R L'",
+        "setup": "U' B' D L D2 L' F2 B R U D' F2 U' F2 D F2 U"
+    },
+    "IY": {
+        "commutator": "[E' , R' U' R]",
+        "algorithm": "E' R' U' R E R' U R",
+        "setup": "R' U' R U' D B' U B U D'"
+    },
+    "HY": {
+        "commutator": "[U R' : [S , R2]]",
+        "algorithm": "U R' S R2 S' R2 R U'",
+        "setup": "U R F2 U2 F2 R F2 U2 R2 F2 U2 F2 R2 F2 U"
+    },
+    "GY": {
+        "commutator": "[U' R' U , M']",
+        "algorithm": "U' R' U M' U' R U M",
+        "setup": "U L' F' U2 D L2 D B R U' R2 U R2 B2 R2 U D2 L2 B2"
+    },
+    "EY": {
+        "commutator": "[R U' R' : [E , R2]]",
+        "algorithm": "R U' R' E R2 E' R2 R U R'",
+        "setup": "U' R' U2 F2 U2 R' F2 U D F2 L2 D2 L2 F2 R2 D'"
+    },
+    "TY": {
+        "commutator": "[U L' F' : [L2 , E]]",
+        "algorithm": "U L' F' L2 E L2 E' F L U'",
+        "setup": "R' U B2 D2 R F R' F L' F2 U D2 L2 U' L2 B2 U'"
+    },
+    "NY": {
+        "commutator": "[S U L : [E , L2']]",
+        "algorithm": "S U L E L2' E' L2' L' U' S'",
+        "setup": "U B' D' R' D2 R F2 B' L U L2 U' F2 B2 U'"
+    },
+    "MY": {
+        "commutator": "[E , R' U' R]",
+        "algorithm": "E R' U' R E' R' U R",
+        "setup": "R' U' R U D' F' U F U' D"
+    },
+    "SY": {
+        "commutator": "[U' R' U , M]",
+        "algorithm": "U' R' U M U' R U M'",
+        "setup": "B' R' U' R U' B' U2 B L2 U L2 D' B2 D B2"
+    },
+    "OY": {
+        "commutator": "[R U' R : [E' , R2']]",
+        "algorithm": "R U' R E' R2' E R2' R' U R'",
+        "setup": "U' R U2 F2 D2 L D2 F2 U'"
+    },
+    "RY": {
+        "commutator": "[U2' : [U R' U' , M]]",
+        "algorithm": "U2' U R' U' M U R U' M' U2'",
+        "setup": "B' R2 L F' U2 F U L U2 D2 R2 L2 U2 D' B2 D'"
+    },
+    "BY": {
+        "commutator": "[U R' U' : [M' , U2]]",
+        "algorithm": "U R' U' M' U2 M U2 U R U'",
+        "setup": "U R' B2 U2 B2 R' F2 L2 B2 U F2 R2 B2 U' R2 D"
+    },
+    "JY": {
+        "commutator": "R' U R U R U R' U' R' U'",
+        "algorithm": "R' U R U R U R' U' R' U'",
+        "setup": "U R' F2 U2 F2 R F2 U2 F2 R2 U R2 U2 R2 U2 R2"
+    },
+    "VY": {
+        "commutator": "[U' R' U , M2']",
+        "algorithm": "U' R' U M2' U' R U M2'",
+        "setup": "R D R2 L2 U' R U' R2 B2 L2 D L2 B2 R2 U2 L2"
+    },
+    "UY": {
+        "commutator": "[U L : [E , L2']]",
+        "algorithm": "U L E L2' E' L2' L' U'",
+        "setup": "U R' F2 U2 F2 R F2 B2 L2 F2 B2 U D R2 U2 D'"
+    },
+    "FB": {
+        "commutator": "[U2 , M']",
+        "algorithm": "U2 M' U2 M",
+        "setup": "U2 R2 F2 R2 U2 R2 F2 R2"
+    },
+    "DB": {
+        "commutator": "[L F : [L' S' L , F2']]",
+        "algorithm": "L F L' S' L F2' L' S L F2' F' L'",
+        "setup": "U R2 B2 L2 D L2 B2 R2"
+    },
+    "PB": {
+        "commutator": "[R' F' : [R S R' , F2]]",
+        "algorithm": "R' F' R S R' F2 R S' R' F2 F R",
+        "setup": "U' R2 B2 L2 D' L2 B2 R2"
+    },
+    "KB": {
+        "commutator": "[L' F' : [L2 , E']]",
+        "algorithm": "L' F' L2 E' L2 E F L",
+        "setup": "R L' F L2 F' R L B2 L2 U' B2 R2 F2 L2 D'"
+    },
+    "LB": {
+        "commutator": "[U R' F2 : [R S R' , F]]",
+        "algorithm": "U R' F2 R S R' F R S' R' F' F2 R U'",
+        "setup": "D2 F' R2 U2 L2 B L2 U2 R2 F2 D2"
+    },
+    "\u00d8B": {
+        "commutator": "[L F' : [L2' , E']]",
+        "algorithm": "L F' L2' E' L2' E F L'",
+        "setup": "R L F L2 F' R L B2 R2 D' F2 R2 B2 L2 U' R2"
+    },
+    "IB": {
+        "commutator": "[l' U : [S' , L2]]",
+        "algorithm": "l' U S' L2 S L2 U' l",
+        "setup": "F U2 R2 D2 B U2 L2 F2 R2 D2 R2 F2 D2 R2"
+    },
+    "HB": {
+        "commutator": "[D' U L : [E' , L2']]",
+        "algorithm": "D' U L E' L2' E L2' L' U' D",
+        "setup": "R U' R2 L2 D R U F2 R2 B2 D' R2 L2 U2 L2 F2"
+    },
+    "EB": {
+        "commutator": "[U' D R' : [E , R2]]",
+        "algorithm": "U' D R' E R2 E' R2 R D' U",
+        "setup": "D L B2 D2 B2 L F2 R2 B2 U L2 B2 R2 U' L2 U"
+    },
+    "TB": {
+        "commutator": "[R F : [R2' , E]]",
+        "algorithm": "R F R2' E R2' E' F' R'",
+        "setup": "R L F' R2 F R L B2 R2 D B2 L2 F2 R2 U R2"
+    },
+    "CB": {
+        "commutator": "[r U' : [S , R2']]",
+        "algorithm": "r U' S R2' S' R2' U r'",
+        "setup": "F' U2 R2 U2 F U' D' F2 U D F2"
+    },
+    "NB": {
+        "commutator": "[R' F : [E , R2]]",
+        "algorithm": "R' F E R2 E' R2 F' R",
+        "setup": "R' L F R2 F' R L B2 R2 D' B2 L2 F2 R2 U'"
+    },
+    "MB": {
+        "commutator": "[U' L F2' : [L' S' L , F']]",
+        "algorithm": "U' L F2' L' S' L F' L' S L F F2' L' U",
+        "setup": "R2 F' U2 R2 U2 F U' D' F2 U D F2 R2"
+    },
+    "SB": {
+        "commutator": "[U : [S , R' F' R]]",
+        "algorithm": "U S R' F' R S' R' F R U'",
+        "setup": "U R L F' R2 F R L F2 R2 D F2 D' R2 F2 R2 L2 U'"
+    },
+    "OB": {
+        "commutator": "[D U' R : [E' , R2']]",
+        "algorithm": "D U' R E' R2' E R2' R' U D'",
+        "setup": "D L' B2 D2 B2 L' F2 R2 B2 U L2 B2 R2 U' L2 U"
+    },
+    "RB": {
+        "commutator": "[D' : [R F R' , S']]",
+        "algorithm": "D' R F R' S' R F' R' S D",
+        "setup": "F U D' L D2 L' U' D F U2 R2 F2 L2 U2 L2 F2 R2 U2 F2"
+    },
+    "QB": {
+        "commutator": "[U R' U : [M' , U2]]",
+        "algorithm": "U R' U M' U2 M U2 U' R U'",
+        "setup": "R' U' R2 L2 D R F2 U L2 U R2 L2 D' L2 D' B2"
+    },
+    "JB": {
+        "commutator": "[R' F' : [R S' R' , F2]]",
+        "algorithm": "R' F' R S' R' F2 R S R' F2 F R",
+        "setup": "R2 U R2 B2 L2 D L2 B2"
+    },
+    "VB": {
+        "commutator": "M' U2 M' U2 M2'",
+        "algorithm": "M' U2 M' U2 M2'",
+        "setup": "R2 F2 R2 U2 L2 B2 L2 U2"
+    },
+    "UB": {
+        "commutator": "[L F : [L' S L , F2']]",
+        "algorithm": "L F L' S L F2' L' S' L F2' F' L'",
+        "setup": "R2 B2 L2 U' L2 B2 R2 D'"
+    },
+    "FJ": {
+        "commutator": "[U' : [S , R2']]",
+        "algorithm": "U' S R2' S' R2' U",
+        "setup": "U F2 R2 F2 U2 F2 R2 F2 U"
+    },
+    "DJ": {
+        "commutator": "[R' U R' : [S , R2]]",
+        "algorithm": "R' U R' S R2 S' R2 R U' R",
+        "setup": "F2 U L2 B2 R2 D B2 L2"
+    },
+    "PJ": {
+        "commutator": "U R U R' U' R' U' R' U R",
+        "algorithm": "U R U R' U' R' U' R' U R",
+        "setup": "U2 F2 L2 B2 D' B2 L2 F2 U"
+    },
+    "KJ": {
+        "commutator": "[L2 : [L' F' L , S]]",
+        "algorithm": "L2 L' F' L S L' F L S' L2",
+        "setup": "U R L F' U2 F' R L F2 R2 D' R2 F2 R2 F2 D L2 U'"
+    },
+    "LJ": {
+        "commutator": "[U' E' R : [E' , R2']]",
+        "algorithm": "U' E' R E' R2' E R2' R' E U",
+        "setup": "F U F2 B2 D' F U D' L2 D L2 U' D B2 U'"
+    },
+    "\u00d8J": {
+        "commutator": "[L' F' L , S]",
+        "algorithm": "L' F' L S L' F L S'",
+        "setup": "R U D' B R2 B' U' D R L2 B2 R2 U' B2 R2 B2 U L2"
+    },
+    "IJ": {
+        "commutator": "[u' R' : [E , R2]]",
+        "algorithm": "u' R' E R2 E' R2 R u",
+        "setup": "D' F U2 R2 D2 B R2 U2 F2 L2 D2 L2 F2 L2 D'"
+    },
+    "HJ": {
+        "commutator": "U R' U' R' U R U R U R' U2",
+        "algorithm": "U R' U' R' U R U R U R' U2",
+        "setup": "F2 R U2 F2 U2 R U D R2 U' F2 L2 B2 U B2 L2"
+    },
+    "GJ": {
+        "commutator": "[U R' F' R' : [S , R2]]",
+        "algorithm": "U R' F' R' S R2 S' R2 R F R U'",
+        "setup": "R' L F' R2 F R L U2 D2 R2 U' L2 U' D2"
+    },
+    "EJ": {
+        "commutator": "[U' R' : [E , R2]]",
+        "algorithm": "U' R' E R2 E' R2 R U",
+        "setup": "U R U2 F2 U2 R F2 L2 B2 U' D' L2 F2 U2 D'"
+    },
+    "TJ": {
+        "commutator": "[R' F R , S']",
+        "algorithm": "R' F R S' R' F' R S",
+        "setup": "U R' L F R2 F' R L' U R2 F2 L2 B2 D' B2 L2 F2 U"
+    },
+    "CJ": {
+        "commutator": "[u' R : [E' , R2']]",
+        "algorithm": "u' R E' R2' E R2' R' u",
+        "setup": "D' F' U2 R2 U2 F U2 R2 U D R2 U"
+    },
+    "MJ": {
+        "commutator": "[U' E' R' : [E , R2]]",
+        "algorithm": "U' E' R' E R2 E' R2 R E U",
+        "setup": "F' U F2 B2 D' F D F2 B2 U'"
+    },
+    "SJ": {
+        "commutator": "[R' : [U' R' U , M]]",
+        "algorithm": "R' U' R' U M U' R U M' R",
+        "setup": "R L F' U2 F R L U D' F2 D' L2 D B2 U' D"
+    },
+    "OJ": {
+        "commutator": "[U' R : [E' , R2']]",
+        "algorithm": "U' R E' R2' E R2' R' U",
+        "setup": "U R' U2 F2 D2 L B2 D2 F2 R2 U'"
+    },
+    "RJ": {
+        "commutator": "[U L B' L' : [S , L2]]",
+        "algorithm": "U L B' L' S L2 S' L2 L B L' U'",
+        "setup": "R L F D2 F R L' U' F2 U' F2 R2 U2 R2 F2 R2 U2"
+    },
+    "QJ": {
+        "commutator": "U R U R U' R' U' R' U' R",
+        "algorithm": "U R U R U' R' U' R' U' R",
+        "setup": "D2 R B2 U2 F2 L U F2 U2 R2 F2 U2 F2 R2 U' B2"
+    },
+    "BJ": {
+        "commutator": "[R' F : [R S' R' , F2]]",
+        "algorithm": "R' F R S' R' F2 R S R' F2 F' R",
+        "setup": "U' F2 L2 B2 D' R2 B2 L2"
+    },
+    "VJ": {
+        "commutator": "[D' R' F' : [R S' R' , F2]]",
+        "algorithm": "D' R' F' R S' R' F2 R S R' F2 F R D",
+        "setup": "U' F2 L2 B2 D L2 F2 R2 U2"
+    },
+    "UJ": {
+        "commutator": "[U' : [R2' , S']]",
+        "algorithm": "U' R2' S' R2' S U",
+        "setup": "U' F2 R2 F2 U2 B2 L2 B2 U'"
+    },
+    "FV": {
+        "commutator": "[M , U2]",
+        "algorithm": "M U2 M' U2",
+        "setup": "R2 F2 L2 U2 R2 B2 L2 D2"
+    },
+    "DV": {
+        "commutator": "[r M' : [U' R' U , M2']]",
+        "algorithm": "r M' U' R' U M2' U' R U M2' M r'",
+        "setup": "U' R2 F2 L2 D L2 F2 R2 U2"
+    },
+    "PV": {
+        "commutator": "[l' M' : [U L U' , M2']]",
+        "algorithm": "l' M' U L U' M2' U L' U' M2' M l",
+        "setup": "U R2 F2 L2 D' L2 F2 R2 U2"
+    },
+    "KV": {
+        "commutator": "[L' M : [U' L U , M2']]",
+        "algorithm": "L' M U' L U M2' U' L' U M2' M' L",
+        "setup": "R L F' D2 F' R' L D B2 R2 F2 L2 U' R2 B2"
+    },
+    "LV": {
+        "commutator": "[M : [U' L' U , M2']]",
+        "algorithm": "M U' L' U M2' U' L U M2' M'",
+        "setup": "F' R2 U2 L2 B L2 U2 R2 F2"
+    },
+    "\u00d8V": {
+        "commutator": "[U : [S' , L B' L']]",
+        "algorithm": "U S' L B' L' S L B L' U'",
+        "setup": "R L' F' D2 F R' L D2 R2 B2 L2 U' R2 F2 L2 B2 D"
+    },
+    "IV": {
+        "commutator": "[M : [U' L U , M2']]",
+        "algorithm": "M U' L U M2' U' L' U M2' M'",
+        "setup": "D2 F U2 R2 D2 B R2 U2 F2 L2 D2 L2 F2 L2"
+    },
+    "HV": {
+        "commutator": "[M2' , U' R U]",
+        "algorithm": "M2' U' R U M2' U' R' U",
+        "setup": "R U R2 L2 D' R U' F2 R2 B2 D L2 B2 R2 U2 L2"
+    },
+    "GV": {
+        "commutator": "[D : [R F R' , S']]",
+        "algorithm": "D R F R' S' R F' R' S D'",
+        "setup": "R B U F2 R U2 B D' L B2 U R2 U F2 B2 D2 F2 U B2"
+    },
+    "EV": {
+        "commutator": "[M2' , U L' U']",
+        "algorithm": "M2' U L' U' M2' U L U'",
+        "setup": "L' U' R2 L2 D L' U F2 L2 B2 D' R2 B2 L2 U2 R2"
+    },
+    "TV": {
+        "commutator": "[R M : [U R' U' , M2']]",
+        "algorithm": "R M U R' U' M2' U R U' M2' M' R'",
+        "setup": "R' L F D2 F R' L D' B2 R2 F2 L2 U R2 B2 R2"
+    },
+    "CV": {
+        "commutator": "[M : [U R' U' , M2']]",
+        "algorithm": "M U R' U' M2' U R U' M2' M'",
+        "setup": "R2 F R2 U2 L2 B R2 L2 F2 L2 D2 R2 B2 L2"
+    },
+    "NV": {
+        "commutator": "[U' : [S , R' B R]]",
+        "algorithm": "U' S R' B R S' R' B' R U",
+        "setup": "R L F D2 F R' L D' B2 R2 F2 L2 U R2 B2"
+    },
+    "MV": {
+        "commutator": "[M : [U R U' , M2']]",
+        "algorithm": "M U R U' M2' U R' U' M2' M'",
+        "setup": "F R2 U2 L2 B U2 R2 L2 D2 F2 L2 D2 L2 F2"
+    },
+    "SV": {
+        "commutator": "[U : [S , R B R']]",
+        "algorithm": "U S R B R' S' R B' R' U'",
+        "setup": "U R' L F D2 F' R L' U R2 L2 B2 R2 L2 U2"
+    },
+    "OV": {
+        "commutator": "[M2 , U L U']",
+        "algorithm": "M2 U L U' M2 U L' U'",
+        "setup": "L U' R2 L2 D L U F2 L2 B2 D' R2 B2 L2 U2 R2"
+    },
+    "QV": {
+        "commutator": "[M2' , U' R' U]",
+        "algorithm": "M2' U' R' U M2' U' R U",
+        "setup": "R' U R2 L2 D' R L2 U' F2 U R2 L2 D' B2 D L2"
+    },
+    "BV": {
+        "commutator": "u2 M' u2 M'",
+        "algorithm": "u2 M' u2 M'",
+        "setup": "U2 R2 F2 L2 D2 R2 B2 L2"
+    },
+    "JV": {
+        "commutator": "[D' R' F : [R S' R' , F2]]",
+        "algorithm": "D' R' F R S' R' F2 R S R' F2 F' R D",
+        "setup": "U2 R2 F2 L2 D' B2 L2 F2 U"
+    },
+    "UV": {
+        "commutator": "[D L F' : [L' S L , F2']]",
+        "algorithm": "D L F' L' S L F2' L' S' L F2' F L' D'",
+        "setup": "U2 R2 F2 L2 D F2 R2 B2 U'"
+    },
+    "FU": {
+        "commutator": "[U : [S' , L2']]",
+        "algorithm": "U S' L2' S L2' U'",
+        "setup": "U' F2 R2 B2 D2 B2 R2 F2 U'"
+    },
+    "DU": {
+        "commutator": "U' L' U' L U L U L U' L'",
+        "algorithm": "U' L' U' L U L U L U' L'",
+        "setup": "U2 F2 R2 B2 D B2 R2 F2 U'"
+    },
+    "PU": {
+        "commutator": "[L U' L : [S' , L2']]",
+        "algorithm": "L U' L S' L2' S L2' L' U L'",
+        "setup": "R2 F2 U' R2 B2 L2 D' B2"
+    },
+    "KU": {
+        "commutator": "[L F' L' , S]",
+        "algorithm": "L F' L' S L F L' S'",
+        "setup": "U R L' F U2 F' R' L F2 R2 B2 U' L2 B2 R2 F2 U' D'"
+    },
+    "LU": {
+        "commutator": "[U E L : [E' , L2']]",
+        "algorithm": "U E L E' L2' E L2' L' E' U'",
+        "setup": "F U' F2 B2 D F U D' L2 D' L2 U' D B2 U"
+    },
+    "IU": {
+        "commutator": "[u L' : [E , L2]]",
+        "algorithm": "u L' E L2 E' L2 L u'",
+        "setup": "D F U2 R2 D2 B R2 U2 F2 L2 D2 L2 F2 L2 D"
+    },
+    "HU": {
+        "commutator": "[U L : [E' , L2']]",
+        "algorithm": "U L E' L2' E L2' L' U'",
+        "setup": "U R' F2 U2 B2 L' F2 D2 R2 F2 D2 F2 R2 B2 U"
+    },
+    "GU": {
+        "commutator": "[U' L F L : [S' , L2']]",
+        "algorithm": "U' L F L S' L2' S L2' L' F' L' U",
+        "setup": "R F' R F2 L' F L F2 U L2 D' L2 D F2 U' F2 R2"
+    },
+    "EU": {
+        "commutator": "U' L U L U' L' U' L' U' L U2'",
+        "algorithm": "U' L U L U' L' U' L' U' L U2'",
+        "setup": "F2 R' F2 U2 B2 L' B2 U' F2 R2 B2 D2 F2 L2 B2 U"
+    },
+    "TU": {
+        "commutator": "[l' : [U, R' E R]]",
+        "algorithm": "l' U R' E R U' R' E' R l",
+        "setup": "U R' L F' L2 F R L' F2 R2 B2 D B2 R2 F2 L2"
+    },
+    "CU": {
+        "commutator": "[u L : [E' , L2']]",
+        "algorithm": "u L E' L2' E L2' L' u'",
+        "setup": "D F' U2 R2 U2 F D2 L2 U D L2 U'"
+    },
+    "NU": {
+        "commutator": "[R F R' , S']",
+        "algorithm": "R F R' S' R F' R' S",
+        "setup": "R U D' F D2 F' U' D R U' F2 R2 F2 D2 F2 R2 F2 U R2"
+    },
+    "MU": {
+        "commutator": "[U E L' : [E , L2]]",
+        "algorithm": "U E L' E L2 E' L2 L E' U'",
+        "setup": "F' U' F2 B2 D F D' F2 B2 U"
+    },
+    "SU": {
+        "commutator": "[L : [U L U' , M]]",
+        "algorithm": "L U L U' M U L' U' M' L'",
+        "setup": "R L' F U2 F R L U2 L2 F2 R2 D2 L2 B2 D' F2 D'"
+    },
+    "OU": {
+        "commutator": "U' L' U' L' U L U L U L'",
+        "algorithm": "U' L' U' L' U L U L U L'",
+        "setup": "D2 R' U2 F2 D2 L' U R2 F2 U2 B2 L2 D2 B2 U' B2"
+    },
+    "RU": {
+        "commutator": "[U' R' B R : [S' , R2']]",
+        "algorithm": "U' R' B R S' R2' S R2' R' B' R U",
+        "setup": "R L' F' D2 F R' L D' R2 U2 R2 B2 R2 U2 R2 D"
+    },
+    "QU": {
+        "commutator": "[U L' : [E , L2]]",
+        "algorithm": "U L' E L2 E' L2 L U'",
+        "setup": "U R F2 U2 B2 L F2 D2 R2 F2 D2 F2 R2 B2 U"
+    },
+    "BU": {
+        "commutator": "[L F' : [L' S L , F2']]",
+        "algorithm": "L F' L' S L F2' L' S' L F2' F L'",
+        "setup": "U F2 R2 B2 D L2 B2 R2"
+    },
+    "JU": {
+        "commutator": "[U' : [S' , R2']]",
+        "algorithm": "U' S' R2' S R2' U",
+        "setup": "U F2 R2 B2 D2 F2 L2 B2 U"
+    },
+    "VU": {
+        "commutator": "[D L F : [L' S L , F2']]",
+        "algorithm": "D L F L' S L F2' L' S' L F2' F' L' D'",
+        "setup": "U F2 R2 B2 D' R2 F2 L2 U2"
+    }
+}
