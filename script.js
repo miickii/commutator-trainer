@@ -347,4 +347,33 @@ function generateStatistics() {
     return statsHTML;
 }
 
-// Function to Calculat
+// Function to Calculate Median
+function calculateMedian(arr) {
+    const sorted = arr.slice().sort((a, b) => a - b);
+    const mid = Math.floor(sorted.length / 2);
+    return sorted.length % 2 !== 0 ? sorted[mid] : ((sorted[mid - 1] + sorted[mid]) / 2);
+}
+
+// Function to Restart Session
+function restartSession() {
+    // Reset Variables
+    commutators = [];
+    threshold = 4;
+    numPairsPerStep = 1;
+    mode = 'edge';
+    showCommutator = false;
+    currentStep = 0;
+    totalSteps = 0;
+    results = {};
+    masterResults = {}; // Reset masterResults to track new session's performance
+    toRepeat = [];
+    timerInterval = null;
+    startTime = null;
+    waitingForSecondAction = false;
+    sessionActive = false;
+
+    // Reset UI
+    endScreen.classList.remove('active');
+    startScreen.classList.add('active');
+    statisticsDiv.innerHTML = '';
+}
