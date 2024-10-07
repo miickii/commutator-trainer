@@ -201,13 +201,13 @@ function handleNext() {
         if (!waitingForSecondAction) {
             // Show Commutator
             stopTimer();
+            recordResult();
             displayCommutator();
             waitingForSecondAction = true;
             instructions.textContent = 'Press Next to move to the next step.';
             nextButton.style.display = 'inline-block';
         } else {
             // Record Result and Move to Next Step
-            recordResult();
             currentStep++;
             showNextStep();
             startTimer();
