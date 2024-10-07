@@ -159,6 +159,7 @@ function startTimer() {
 
     startTime = Date.now();
     timerInterval = setInterval(updateTimer, 100);
+    console.log("\nTimer started at: " + startTime)
 }
 
 // Function to Update Timer Display
@@ -256,6 +257,7 @@ function recordResult() {
     const startIdx = currentStep * numPairsPerStep;
     const endIdx = startIdx + numPairsPerStep;
     const currentPairs = commutators.slice(startIdx, endIdx);
+    console.log(elapsed.toFixed(2), currentPairs);
 
     currentPairs.forEach(comm => {
         results.push({ pair: comm.pair, time: elapsed.toFixed(2) });
