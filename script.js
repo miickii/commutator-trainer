@@ -1,6 +1,3 @@
-// script.js
-
-// Global Variables
 let commutators = [];
 let threshold = 4;
 let numPairsPerStep = 1;
@@ -13,6 +10,7 @@ let toRepeat = [];
 let timerInterval = null;
 let startTime = null;
 let waitingForSecondAction = false;
+let sessionActive = true; // New Flag to Track Session State
 
 // DOM Elements
 const startScreen = document.getElementById('start-screen');
@@ -96,6 +94,7 @@ function startPractice(event) {
             currentStep = 0;
             results = [];
             toRepeat = [];
+            sessionActive = true; // Reset Session Flag
 
             // Show Practice Screen
             startScreen.classList.remove('active');
@@ -161,6 +160,8 @@ function startTimer() {
 
 // Function to Update Timer Display
 function updateTimer() {
+    if (!sessionActive) return; // Prevent Timer Update if Session Ended
+
     const elapsed = (Date.now() - startTime) / 1000; // in seconds
     const minutes = Math.floor(elapsed / 60);
     const seconds = (elapsed % 60).toFixed(2);
@@ -188,6 +189,8 @@ function stopTimer() {
 
 // Function to Handle Spacebar Press or Next Button Click
 function handleNext() {
+    if (!sessionActive) return; // Ignore if session has ended
+
     if (showCommutator) {
         if (!waitingForSecondAction) {
             // Show Commutator
@@ -205,6 +208,7 @@ function handleNext() {
         }
     } else {
         // Single Action: Stop Timer and Move to Next Step
+        if (!timerInterval) return; // Prevent action if timer is not running
         stopTimer();
         recordResult();
         currentStep++;
@@ -255,7 +259,8 @@ function recordResult() {
 
 // Function to End Training
 function endTraining() {
-    stopTimer();
+    sessionActive = false; // Set Session Flag to False
+    stopTimer(); // Ensure Timer is Stopped
     progressBar.value = totalSteps;
     instructions.textContent = 'Training Completed!';
     pairDisplay.innerHTML = generateStatistics();
@@ -272,16 +277,17 @@ function endTraining() {
             currentStep = 0;
             results = [];
             toRepeat = [];
+            sessionActive = true; // Reactivate Session
             showNextStep();
             startTimer();
             return;
         }
     }
 
-    // Save Results as CSV
-    downloadCSV(results, 'commutator_training_results.csv');
+    // Remove CSV Download Functionality
+    // All CSV-related code has been removed as per your request.
 
-    // Optionally, Redirect to Start Screen
+    // Redirect to Start Screen After a Delay (Optional)
     // setTimeout(() => {
     //     practiceScreen.classList.remove('active');
     //     startScreen.classList.add('active');
@@ -307,7 +313,6 @@ function generateStatistics() {
         <p>Median Time: ${medianTime} seconds</p>
         <p>Minimum Time: ${minTime} seconds</p>
         <p>Maximum Time: ${maxTime} seconds</p>
-        <p>Results have been downloaded as a CSV file.</p>
     `;
 }
 
@@ -316,27 +321,4 @@ function calculateMedian(arr) {
     const sorted = arr.slice().sort((a, b) => a - b);
     const mid = Math.floor(sorted.length / 2);
     return sorted.length % 2 !== 0 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
-}
-
-// Function to Download CSV
-function downloadCSV(data, filename) {
-    const csvRows = [];
-    const headers = ['Letter Pair', 'Time Taken (seconds)'];
-    csvRows.push(headers.join(','));
-
-    data.forEach(row => {
-        csvRows.push([row.pair, row.time].join(','));
-    });
-
-    const csvString = csvRows.join('\n');
-    const blob = new Blob([csvString], { type: 'text/csv' });
-    const url = window.URL.createObjectURL(blob);
-
-    const a = document.createElement('a');
-    a.setAttribute('hidden', '');
-    a.setAttribute('href', url);
-    a.setAttribute('download', filename);
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
 }
