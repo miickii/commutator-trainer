@@ -24,11 +24,14 @@ const startForm = document.getElementById('start-form');
 const progressBar = document.getElementById('progress-bar');
 const pairDisplay = document.getElementById('pair-display');
 const timerDisplay = document.getElementById('timer');
+const instructions = document.getElementById('instructions');
+const nextButton = document.getElementById('next-button');
 const statisticsDiv = document.getElementById('statistics');
 const restartButton = document.getElementById('restart-button');
 
 // Event Listeners
 startForm.addEventListener('submit', startPractice);
+nextButton.addEventListener('click', handleNext);
 restartButton.addEventListener('click', restartSession);
 
 // Function to Start Practice
@@ -129,6 +132,8 @@ function showNextStep() {
 
     // Clear Previous Display
     pairDisplay.innerHTML = '';
+    instructions.innerHTML = '';
+    nextButton.classList.remove('visible'); // Hide button smoothly
     waitingForSecondAction = false;
 
     // Determine Pairs for Current Step
@@ -147,6 +152,13 @@ function showNextStep() {
 
     // Update Progress Bar
     progressBar.value = currentStep;
+
+    // Update Instructions
+    if (showCommutator) {
+        instructions.textContent = 'Tap anywhere on the screen or press "Next" to display commutator.';
+    } else {
+        instructions.textContent = 'Tap anywhere on the screen or press "Next" to move to the next step.';
+    }
 }
 
 // Function to Start Timer
@@ -202,11 +214,14 @@ function handleNext() {
             recordResult(elapsed);
             displayCommutator();
             waitingForSecondAction = true;
+            instructions.textContent = 'Press "Next" or tap anywhere to move to the next step.';
+            nextButton.classList.add('visible'); // Show button smoothly
         } else {
             // Second action: move to next step
             currentStep++;
             showNextStep();
             startTimer();
+            nextButton.classList.remove('visible'); // Hide button smoothly
         }
     } else {
         // Single Action: stop timer, record result, move to next step
@@ -290,7 +305,7 @@ function endTraining() {
             currentStep = 0;
             toRepeat = [];
             sessionActive = true; // Reactivate Session
-            practiceScreen.classList.remove('active');
+            practiceScreen.classList.add('active'); // Activate Practice Screen Correctly
             endScreen.classList.remove('active');
             // Display the repeated pairs
             showNextStep();
