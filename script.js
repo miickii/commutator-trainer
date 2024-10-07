@@ -1,3 +1,6 @@
+// script.js
+
+// Global Variables
 let commutators = [];
 let threshold = 4;
 let numPairsPerStep = 1;
@@ -5,12 +8,12 @@ let mode = 'edge';
 let showCommutator = false;
 let currentStep = 0;
 let totalSteps = 0;
-let results = [];
+let results = {}; // Object to track best times per pair
 let toRepeat = [];
 let timerInterval = null;
 let startTime = null;
 let waitingForSecondAction = false;
-let sessionActive = true; // Flag to Track if Session is Active
+let sessionActive = true; // Flag to track if session is active
 
 // DOM Elements
 const startScreen = document.getElementById('start-screen');
@@ -92,7 +95,7 @@ function startPractice(event) {
             progressBar.max = totalSteps;
             progressBar.value = 0;
             currentStep = 0;
-            results = [];
+            results = {}; // Reset results
             toRepeat = [];
             sessionActive = true; // Reset Session Flag
 
@@ -124,7 +127,7 @@ function showNextStep() {
     // Clear Previous Display
     pairDisplay.innerHTML = '';
     instructions.innerHTML = '';
-    nextButton.style.display = 'none';
+    nextButton.classList.remove('visible'); // Hide button smoothly
     waitingForSecondAction = false;
 
     // Determine Pairs for Current Step
@@ -154,12 +157,9 @@ function showNextStep() {
 
 // Function to Start Timer
 function startTimer() {
-    // Ensure any existing timer is stopped
-    stopTimer();
-
+    if (timerInterval) return; // Prevent multiple timers
     startTime = Date.now();
-    timerInterval = setInterval(updateTimer, 100);
-    console.log("\nTimer started at: " + startTime)
+    timerInterval = setInterval(updateTimer, 10); // Update every 10 milliseconds for higher precision
 }
 
 // Function to Update Timer Display
@@ -186,12 +186,15 @@ function pad(num) {
     return num.toString().padStart(2, '0');
 }
 
-// Function to Stop Timer
+// Function to Stop Timer and Return Elapsed Time
 function stopTimer() {
-    if (timerInterval !== null) {
+    if (timerInterval) {
         clearInterval(timerInterval);
         timerInterval = null;
+        const elapsed = (Date.now() - startTime) / 1000; // in seconds
+        return elapsed;
     }
+    return 0;
 }
 
 // Function to Handle Spacebar Press or Next Button Click
@@ -200,24 +203,24 @@ function handleNext() {
 
     if (showCommutator) {
         if (!waitingForSecondAction) {
-            // Show Commutator
-            stopTimer();
-            recordResult();
+            // First action: stop timer, record result, show commutator
+            const elapsed = stopTimer();
+            recordResult(elapsed);
             displayCommutator();
             waitingForSecondAction = true;
-            instructions.textContent = 'Press Next to move to the next step.';
-            nextButton.style.display = 'inline-block';
+            instructions.textContent = 'Press "Next" to move to the next step.';
+            nextButton.classList.add('visible'); // Show button smoothly
         } else {
-            // Record Result and Move to Next Step
+            // Second action: move to next step
             currentStep++;
             showNextStep();
             startTimer();
+            nextButton.classList.remove('visible'); // Hide button smoothly
         }
     } else {
-        // Single Action: Stop Timer and Move to Next Step
-        if (timerInterval === null) return; // Prevent action if timer is not running
-        stopTimer();
-        recordResult();
+        // Single Action: stop timer, record result, move to next step
+        const elapsed = stopTimer();
+        recordResult(elapsed);
         currentStep++;
         showNextStep();
         startTimer();
@@ -250,24 +253,21 @@ function displayCommutator() {
 }
 
 // Function to Record Results
-function recordResult() {
-    if (startTime === null) return; // Ensure startTime is valid
-
-    const elapsed = (Date.now() - startTime) / 1000; // in seconds
+function recordResult(elapsed) {
     const startIdx = currentStep * numPairsPerStep;
     const endIdx = startIdx + numPairsPerStep;
     const currentPairs = commutators.slice(startIdx, endIdx);
-    console.log(elapsed.toFixed(2), currentPairs);
 
     currentPairs.forEach(comm => {
-        results.push({ pair: comm.pair, time: elapsed.toFixed(2) });
+        if (!results[comm.pair] || elapsed < results[comm.pair]) {
+            results[comm.pair] = elapsed.toFixed(2); // Store best (minimum) time
+        }
         if (elapsed > threshold) {
-            toRepeat.push(comm);
+            if (!toRepeat.find(c => c.pair === comm.pair)) {
+                toRepeat.push(comm);
+            }
         }
     });
-
-    // Reset startTime to prevent accidental reuse
-    startTime = null;
 }
 
 // Function to End Training
@@ -277,7 +277,7 @@ function endTraining() {
     progressBar.value = totalSteps;
     instructions.textContent = 'Training Completed!';
     pairDisplay.innerHTML = generateStatistics();
-    nextButton.style.display = 'none';
+    nextButton.classList.remove('visible'); // Hide button smoothly
 
     // Optionally, Prompt to Repeat Challenging Pairs
     if (toRepeat.length > 0) {
@@ -288,7 +288,7 @@ function endTraining() {
             progressBar.max = totalSteps;
             progressBar.value = 0;
             currentStep = 0;
-            results = [];
+            results = {}; // Reset results to track all pairs
             toRepeat = [];
             sessionActive = true; // Reactivate Session
             showNextStep();
@@ -297,29 +297,49 @@ function endTraining() {
         }
     }
 
+    // Remove CSV Download Functionality
+    // All CSV-related code has been removed as per your request.
+
+    // Optionally, Redirect to Start Screen After a Delay (Optional)
+    // setTimeout(() => {
+    //     practiceScreen.classList.remove('active');
+    //     startScreen.classList.add('active');
+    // }, 5000);
 }
 
 // Function to Generate Statistics
 function generateStatistics() {
-    if (results.length === 0) {
-        return "No commutators completed.";
+    const totalPairs = Object.keys(results).length;
+    if (totalPairs === 0) {
+        return "<h2>Training Completed!</h2><p>No commutators completed.</p>";
     }
 
-    const times = results.map(r => parseFloat(r.time));
+    const times = Object.values(results).map(time => parseFloat(time));
     const avgTime = (times.reduce((a, b) => a + b, 0) / times.length).toFixed(2);
     const medianTime = calculateMedian(times).toFixed(2);
     const minTime = Math.min(...times).toFixed(2);
     const maxTime = Math.max(...times).toFixed(2);
 
-    return `
+    let statsHTML = `
         <h2>Training Completed!</h2>
-        <p>Total Pairs: ${results.length}</p>
+        <p>Total Pairs: ${totalPairs}</p>
         <p>Average Time: ${avgTime} seconds</p>
         <p>Median Time: ${medianTime} seconds</p>
         <p>Minimum Time: ${minTime} seconds</p>
         <p>Maximum Time: ${maxTime} seconds</p>
+        <h3>Individual Pair Times:</h3>
+        <ul>
     `;
+
+    for (const [pair, time] of Object.entries(results)) {
+        statsHTML += `<li>${pair}: ${time} seconds</li>`;
+    }
+
+    statsHTML += `</ul>`;
+
+    return statsHTML;
 }
+
 // Function to Calculate Median
 function calculateMedian(arr) {
     const sorted = arr.slice().sort((a, b) => a - b);

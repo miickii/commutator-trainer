@@ -1,34 +1,61 @@
+/* styles.css */
+
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #2E2E2E;
     color: #FFFFFF;
     font-family: Arial, sans-serif;
     text-align: center;
-    margin: 0;
-    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .screen {
     display: none;
     padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    background-color: #3E3E3E;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
 .screen.active {
     display: block;
 }
 
+h1 {
+    margin-bottom: 30px;
+}
+
 .form-group {
     margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
 }
 
 input[type="text"],
 input[type="number"] {
     padding: 10px;
-    width: 80%;
-    max-width: 300px;
+    width: 100%;
     border: none;
     border-radius: 5px;
     background-color: #444444;
     color: #FFFFFF;
+    font-size: 16px;
 }
 
 input[type="radio"],
@@ -38,12 +65,13 @@ input[type="checkbox"] {
 
 button {
     padding: 15px 30px;
-    font-size: 16px;
+    font-size: 18px;
     border: none;
     border-radius: 5px;
     background-color: #555555;
     color: #FFFFFF;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
@@ -59,16 +87,42 @@ button:hover {
 #progress-bar {
     width: 100%;
     height: 20px;
+    appearance: none;
+}
+
+#progress-bar::-webkit-progress-bar {
+    background-color: #555555;
+    border-radius: 10px;
+}
+
+#progress-bar::-webkit-progress-value {
+    background-color: #FFC107;
+    border-radius: 10px;
 }
 
 #pair-display {
     font-size: 36px;
     margin: 40px 0;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pair, .commutator {
+    margin: 10px;
+    padding: 20px;
+    background-color: #555555;
+    border-radius: 10px;
+    min-width: 100px;
+    text-align: center;
 }
 
 #timer {
     font-size: 48px;
     color: #FFC107;
+    margin-bottom: 20px;
 }
 
 #instructions {
@@ -77,8 +131,50 @@ button:hover {
     margin-top: 20px;
 }
 
+#next-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555555;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* Reserve space and make button always visible, but disable when not needed */
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s linear;
+}
+
+#next-button.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+#next-button:hover {
+    background-color: #666666;
+}
+
 /* Responsive Design for Mobile */
 @media (max-width: 600px) {
+    .screen {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .form-group label,
+    .form-group input {
+        font-size: 14px;
+    }
+
+    button, #next-button {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+
     #pair-display {
         font-size: 24px;
         margin: 20px 0;
@@ -88,8 +184,13 @@ button:hover {
         font-size: 36px;
     }
 
-    button#next-button {
-        padding: 10px 20px;
-        font-size: 14px;
+    .pair, .commutator {
+        font-size: 18px;
+        padding: 15px;
+        min-width: 80px;
+    }
+
+    #instructions {
+        font-size: 12px;
     }
 }
