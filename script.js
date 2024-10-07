@@ -1,3 +1,6 @@
+// script.js
+
+// Global Variables
 let commutators = [];
 let threshold = 4;
 let numPairsPerStep = 1;
@@ -10,7 +13,7 @@ let toRepeat = [];
 let timerInterval = null;
 let startTime = null;
 let waitingForSecondAction = false;
-let sessionActive = true; // New Flag to Track Session State
+let sessionActive = true; // Flag to track if the session is active
 
 // DOM Elements
 const startScreen = document.getElementById('start-screen');
@@ -146,7 +149,7 @@ function showNextStep() {
 
     // Update Instructions
     if (showCommutator) {
-        instructions.textContent = 'Press Spacebar (or "Show Commutator" button) to display commutator.';
+        instructions.textContent = 'Press Spacebar (or "Next" button) to display commutator.';
     } else {
         instructions.textContent = 'Press Spacebar (or "Next" button) to move to the next step.';
     }
@@ -154,6 +157,7 @@ function showNextStep() {
 
 // Function to Start Timer
 function startTimer() {
+    stopTimer(); // Ensure no existing timer is running
     startTime = Date.now();
     timerInterval = setInterval(updateTimer, 100);
 }
@@ -184,7 +188,10 @@ function pad(num) {
 
 // Function to Stop Timer
 function stopTimer() {
-    clearInterval(timerInterval);
+    if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+    }
 }
 
 // Function to Handle Spacebar Press or Next Button Click
@@ -197,7 +204,7 @@ function handleNext() {
             stopTimer();
             displayCommutator();
             waitingForSecondAction = true;
-            instructions.textContent = 'Press Next to move to the next step.';
+            instructions.textContent = 'Press "Next" to move to the next step.';
             nextButton.style.display = 'inline-block';
         } else {
             // Record Result and Move to Next Step
@@ -270,6 +277,7 @@ function endTraining() {
     if (toRepeat.length > 0) {
         const repeat = confirm(`Training Completed!\n\nDo you want to repeat the ${toRepeat.length} pairs that exceeded ${threshold} seconds?`);
         if (repeat) {
+            // Reset session variables for repeating
             commutators = shuffleArray(toRepeat);
             totalSteps = Math.ceil(commutators.length / numPairsPerStep);
             progressBar.max = totalSteps;
@@ -278,26 +286,24 @@ function endTraining() {
             results = [];
             toRepeat = [];
             sessionActive = true; // Reactivate Session
+
             showNextStep();
             startTimer();
             return;
         }
     }
 
-    // Remove CSV Download Functionality
-    // All CSV-related code has been removed as per your request.
-
-    // Redirect to Start Screen After a Delay (Optional)
-    // setTimeout(() => {
-    //     practiceScreen.classList.remove('active');
-    //     startScreen.classList.add('active');
-    // }, 5000);
+    // Redirect to Start Screen After a Short Delay (Optional)
+    setTimeout(() => {
+        practiceScreen.classList.remove('active');
+        startScreen.classList.add('active');
+    }, 5000); // Redirect after 5 seconds
 }
 
 // Function to Generate Statistics
 function generateStatistics() {
     if (results.length === 0) {
-        return "No commutators completed.";
+        return "<h2>No commutators completed.</h2>";
     }
 
     const times = results.map(r => parseFloat(r.time));
@@ -313,6 +319,7 @@ function generateStatistics() {
         <p>Median Time: ${medianTime} seconds</p>
         <p>Minimum Time: ${minTime} seconds</p>
         <p>Maximum Time: ${maxTime} seconds</p>
+        <p>You will be redirected to the start screen shortly.</p>
     `;
 }
 
