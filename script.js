@@ -18,16 +18,20 @@ let sessionActive = true; // Flag to track if session is active
 // DOM Elements
 const startScreen = document.getElementById('start-screen');
 const practiceScreen = document.getElementById('practice-screen');
+const endScreen = document.getElementById('end-screen');
 const startForm = document.getElementById('start-form');
 const progressBar = document.getElementById('progress-bar');
 const pairDisplay = document.getElementById('pair-display');
 const timerDisplay = document.getElementById('timer');
 const instructions = document.getElementById('instructions');
 const nextButton = document.getElementById('next-button');
+const statisticsDiv = document.getElementById('statistics');
+const restartButton = document.getElementById('restart-button');
 
 // Event Listeners
 startForm.addEventListener('submit', startPractice);
 nextButton.addEventListener('click', handleNext);
+restartButton.addEventListener('click', restartSession);
 
 // Function to Start Practice
 function startPractice(event) {
@@ -101,6 +105,7 @@ function startPractice(event) {
 
             // Show Practice Screen
             startScreen.classList.remove('active');
+            endScreen.classList.remove('active');
             practiceScreen.classList.add('active');
 
             // Start First Step
@@ -149,9 +154,9 @@ function showNextStep() {
 
     // Update Instructions
     if (showCommutator) {
-        instructions.textContent = 'Press Spacebar (or "Next" button) to display commutator.';
+        instructions.textContent = 'Tap anywhere on the screen or press "Next" to display commutator.';
     } else {
-        instructions.textContent = 'Press Spacebar (or "Next" button) to move to the next step.';
+        instructions.textContent = 'Tap anywhere on the screen or press "Next" to move to the next step.';
     }
 }
 
@@ -197,7 +202,7 @@ function stopTimer() {
     return 0;
 }
 
-// Function to Handle Spacebar Press or Next Button Click
+// Function to Handle Spacebar Press, Next Button Click, and Touch Events
 function handleNext() {
     if (!sessionActive) return; // Ignore if session has ended
 
@@ -208,7 +213,7 @@ function handleNext() {
             recordResult(elapsed);
             displayCommutator();
             waitingForSecondAction = true;
-            instructions.textContent = 'Press "Next" to move to the next step.';
+            instructions.textContent = 'Press "Next" or tap anywhere to move to the next step.';
             nextButton.classList.add('visible'); // Show button smoothly
         } else {
             // Second action: move to next step
@@ -235,6 +240,12 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
+// Function to Handle Touch Events on Mobile
+document.addEventListener('touchstart', function(event) {
+    event.preventDefault(); // Prevent default touch actions
+    handleNext();
+}, { passive: false });
+
 // Function to Display Commutator
 function displayCommutator() {
     const startIdx = currentStep * numPairsPerStep;
@@ -259,9 +270,11 @@ function recordResult(elapsed) {
     const currentPairs = commutators.slice(startIdx, endIdx);
 
     currentPairs.forEach(comm => {
+        // Track the best (minimum) time for each pair
         if (!results[comm.pair] || elapsed < results[comm.pair]) {
             results[comm.pair] = elapsed.toFixed(2); // Store best (minimum) time
         }
+        // Queue for repetition if exceeded threshold and not already in queue
         if (elapsed > threshold) {
             if (!toRepeat.find(c => c.pair === comm.pair)) {
                 toRepeat.push(comm);
@@ -275,9 +288,11 @@ function endTraining() {
     sessionActive = false; // Set Session Flag to False
     stopTimer(); // Ensure Timer is Stopped
     progressBar.value = totalSteps;
-    instructions.textContent = 'Training Completed!';
-    pairDisplay.innerHTML = generateStatistics();
-    nextButton.classList.remove('visible'); // Hide button smoothly
+    practiceScreen.classList.remove('active');
+    endScreen.classList.add('active');
+
+    // Generate and Display Statistics
+    statisticsDiv.innerHTML = generateStatistics();
 
     // Optionally, Prompt to Repeat Challenging Pairs
     if (toRepeat.length > 0) {
@@ -288,30 +303,23 @@ function endTraining() {
             progressBar.max = totalSteps;
             progressBar.value = 0;
             currentStep = 0;
-            results = {}; // Reset results to track all pairs
             toRepeat = [];
             sessionActive = true; // Reactivate Session
+            results = {}; // Reset results to track all pairs again
+            endScreen.classList.remove('active');
+            practiceScreen.classList.add('active');
             showNextStep();
             startTimer();
             return;
         }
     }
-
-    // Remove CSV Download Functionality
-    // All CSV-related code has been removed as per your request.
-
-    // Optionally, Redirect to Start Screen After a Delay (Optional)
-    // setTimeout(() => {
-    //     practiceScreen.classList.remove('active');
-    //     startScreen.classList.add('active');
-    // }, 5000);
 }
 
 // Function to Generate Statistics
 function generateStatistics() {
     const totalPairs = Object.keys(results).length;
     if (totalPairs === 0) {
-        return "<h2>Training Completed!</h2><p>No commutators completed.</p>";
+        return "<p>No commutators completed.</p>";
     }
 
     const times = Object.values(results).map(time => parseFloat(time));
@@ -321,12 +329,11 @@ function generateStatistics() {
     const maxTime = Math.max(...times).toFixed(2);
 
     let statsHTML = `
-        <h2>Training Completed!</h2>
-        <p>Total Pairs: ${totalPairs}</p>
-        <p>Average Time: ${avgTime} seconds</p>
-        <p>Median Time: ${medianTime} seconds</p>
-        <p>Minimum Time: ${minTime} seconds</p>
-        <p>Maximum Time: ${maxTime} seconds</p>
+        <p><strong>Total Pairs:</strong> ${totalPairs}</p>
+        <p><strong>Average Time:</strong> ${avgTime} seconds</p>
+        <p><strong>Median Time:</strong> ${medianTime} seconds</p>
+        <p><strong>Minimum Time:</strong> ${minTime} seconds</p>
+        <p><strong>Maximum Time:</strong> ${maxTime} seconds</p>
         <h3>Individual Pair Times:</h3>
         <ul>
     `;
@@ -345,4 +352,27 @@ function calculateMedian(arr) {
     const sorted = arr.slice().sort((a, b) => a - b);
     const mid = Math.floor(sorted.length / 2);
     return sorted.length % 2 !== 0 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
+}
+
+// Function to Restart Session
+function restartSession() {
+    // Reset Variables
+    commutators = [];
+    threshold = 4;
+    numPairsPerStep = 1;
+    mode = 'edge';
+    showCommutator = false;
+    currentStep = 0;
+    totalSteps = 0;
+    results = {};
+    toRepeat = [];
+    timerInterval = null;
+    startTime = null;
+    waitingForSecondAction = false;
+    sessionActive = true;
+
+    // Reset UI
+    endScreen.classList.remove('active');
+    startScreen.classList.add('active');
+    statisticsDiv.innerHTML = '';
 }

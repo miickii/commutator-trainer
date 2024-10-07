@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Prevent Zooming on Mobile Devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Rubik's Cube Commutator Trainer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -29,7 +30,7 @@
             <!-- Time Threshold Input -->
             <div class="form-group">
                 <label for="threshold">Set Time Threshold (seconds):</label><br>
-                <input type="number" id="threshold" name="threshold" min="1" step="0.01" required>
+                <input type="number" id="threshold" name="threshold" min="0.01" step="0.01" required>
             </div>
 
             <!-- Number of Pairs per Step Input -->
@@ -69,6 +70,15 @@
 
         <!-- Next Button for Mobile Interaction -->
         <button id="next-button">Next</button>
+    </div>
+
+    <!-- End Screen -->
+    <div id="end-screen" class="screen">
+        <h2>Training Completed!</h2>
+        <div id="statistics">
+            <!-- Statistics will be dynamically inserted here -->
+        </div>
+        <button id="restart-button">Start New Session</button>
     </div>
 
     <script src="script.js"></script>

@@ -26,14 +26,18 @@ body {
     border-radius: 10px;
     background-color: #3E3E3E;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .screen.active {
     display: block;
 }
 
-h1 {
-    margin-bottom: 30px;
+h1, h2, h3 {
+    margin-bottom: 20px;
 }
 
 .form-group {
@@ -71,7 +75,7 @@ button {
     background-color: #555555;
     color: #FFFFFF;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, opacity 0.3s;
 }
 
 button:hover {
@@ -131,7 +135,7 @@ button:hover {
     margin-top: 20px;
 }
 
-#next-button {
+#next-button, #restart-button {
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -139,20 +143,42 @@ button:hover {
     background-color: #555555;
     color: #FFFFFF;
     cursor: pointer;
-    transition: background-color 0.3s;
-    /* Reserve space and make button always visible, but disable when not needed */
+    transition: background-color 0.3s, opacity 0.3s;
+    /* Reserve space and make button always present */
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 0.3s linear;
 }
 
-#next-button.visible {
+#next-button.visible, #restart-button.visible {
     visibility: visible;
     opacity: 1;
 }
 
-#next-button:hover {
+#next-button:hover, #restart-button:hover {
     background-color: #666666;
+}
+
+#statistics {
+    text-align: left;
+    max-height: 60vh;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+#statistics ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#statistics li {
+    margin-bottom: 5px;
+}
+
+/* Prevent Text Selection */
+body, button {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 /* Responsive Design for Mobile */
@@ -161,7 +187,7 @@ button:hover {
         width: 95%;
     }
 
-    h1 {
+    h1, h2, h3 {
         font-size: 24px;
     }
 
@@ -170,7 +196,7 @@ button:hover {
         font-size: 14px;
     }
 
-    button, #next-button {
+    button, #next-button, #restart-button {
         font-size: 16px;
         padding: 12px 24px;
     }
