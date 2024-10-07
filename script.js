@@ -1,6 +1,3 @@
-// script.js
-
-// Global Variables
 let commutators = [];
 let threshold = 4;
 let numPairsPerStep = 1;
@@ -13,7 +10,7 @@ let toRepeat = [];
 let timerInterval = null;
 let startTime = null;
 let waitingForSecondAction = false;
-let sessionActive = true; // Flag to track if the session is active
+let sessionActive = true; // Flag to Track if Session is Active
 
 // DOM Elements
 const startScreen = document.getElementById('start-screen');
@@ -157,7 +154,9 @@ function showNextStep() {
 
 // Function to Start Timer
 function startTimer() {
-    stopTimer(); // Ensure no existing timer is running
+    // Ensure any existing timer is stopped
+    stopTimer();
+
     startTime = Date.now();
     timerInterval = setInterval(updateTimer, 100);
 }
@@ -188,7 +187,7 @@ function pad(num) {
 
 // Function to Stop Timer
 function stopTimer() {
-    if (timerInterval) {
+    if (timerInterval !== null) {
         clearInterval(timerInterval);
         timerInterval = null;
     }
@@ -204,7 +203,7 @@ function handleNext() {
             stopTimer();
             displayCommutator();
             waitingForSecondAction = true;
-            instructions.textContent = 'Press "Next" to move to the next step.';
+            instructions.textContent = 'Press Next to move to the next step.';
             nextButton.style.display = 'inline-block';
         } else {
             // Record Result and Move to Next Step
@@ -215,7 +214,7 @@ function handleNext() {
         }
     } else {
         // Single Action: Stop Timer and Move to Next Step
-        if (!timerInterval) return; // Prevent action if timer is not running
+        if (timerInterval === null) return; // Prevent action if timer is not running
         stopTimer();
         recordResult();
         currentStep++;
@@ -251,6 +250,8 @@ function displayCommutator() {
 
 // Function to Record Results
 function recordResult() {
+    if (startTime === null) return; // Ensure startTime is valid
+
     const elapsed = (Date.now() - startTime) / 1000; // in seconds
     const startIdx = currentStep * numPairsPerStep;
     const endIdx = startIdx + numPairsPerStep;
@@ -262,6 +263,9 @@ function recordResult() {
             toRepeat.push(comm);
         }
     });
+
+    // Reset startTime to prevent accidental reuse
+    startTime = null;
 }
 
 // Function to End Training
@@ -277,7 +281,6 @@ function endTraining() {
     if (toRepeat.length > 0) {
         const repeat = confirm(`Training Completed!\n\nDo you want to repeat the ${toRepeat.length} pairs that exceeded ${threshold} seconds?`);
         if (repeat) {
-            // Reset session variables for repeating
             commutators = shuffleArray(toRepeat);
             totalSteps = Math.ceil(commutators.length / numPairsPerStep);
             progressBar.max = totalSteps;
@@ -286,24 +289,18 @@ function endTraining() {
             results = [];
             toRepeat = [];
             sessionActive = true; // Reactivate Session
-
             showNextStep();
             startTimer();
             return;
         }
     }
 
-    // Redirect to Start Screen After a Short Delay (Optional)
-    setTimeout(() => {
-        practiceScreen.classList.remove('active');
-        startScreen.classList.add('active');
-    }, 5000); // Redirect after 5 seconds
 }
 
 // Function to Generate Statistics
 function generateStatistics() {
     if (results.length === 0) {
-        return "<h2>No commutators completed.</h2>";
+        return "No commutators completed.";
     }
 
     const times = results.map(r => parseFloat(r.time));
@@ -319,10 +316,8 @@ function generateStatistics() {
         <p>Median Time: ${medianTime} seconds</p>
         <p>Minimum Time: ${minTime} seconds</p>
         <p>Maximum Time: ${maxTime} seconds</p>
-        <p>You will be redirected to the start screen shortly.</p>
     `;
 }
-
 // Function to Calculate Median
 function calculateMedian(arr) {
     const sorted = arr.slice().sort((a, b) => a - b);
